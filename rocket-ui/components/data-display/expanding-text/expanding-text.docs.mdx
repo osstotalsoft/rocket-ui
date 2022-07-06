@@ -1,24 +1,30 @@
 ---
-description: 'A ExpandingText component.'
-labels: ['label1', 'label2', 'label3']
+description: 'ExpandingText component.'
+labels: ['mui', 'react', 'expanding-text']
 ---
 
 import ExpandingText from './ExpandingText'
 
-## React Component for rendering text
+## Basic ExpandingText component
 
-A basic div that renders some text
+Basic example that renders an expanding-text
 
 ### Component usage
 
 ```js
-<ExpandingText text='hello from ExpandingText' />
+<ExpandingText text={'Cards are surfaces that display content and actions on a single topic.'} display='inline-block' minLength={250} />
 ```
 
-### Using props to customize the text
+### Use this live example to interact with ExpandingText component
 
-Modify the text to see it change live:
+Live example:
 
 ```js live
-<ExpandingText text='hello from ExpandingText' />
+<ExpandingText
+  text={
+    'Cards are surfaces that display content and actions on a single topic. They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy. Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards are entry points to more complex and detailed information.'
+  }
+  display='inline-block'
+  minLength={250}
+/>
 ```

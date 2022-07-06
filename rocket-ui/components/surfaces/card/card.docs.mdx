@@ -1,24 +1,37 @@
 ---
-description: 'A Card component.'
-labels: ['label1', 'label2', 'label3']
+description: 'Card component.'
+labels: ['mui', 'react', 'card']
 ---
 
 import Card from './Card'
+import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 
-## React Component for rendering text
+## Basic Card component
 
-A basic div that renders some text
+Basic example that renders an card
 
 ### Component usage
 
 ```js
-<Card text='hello from Card' />
+<Card color='danger'>
+  <Typography>
+    {
+      'Cards are surfaces that display content and actions on a single topic. They should be easy to scan for relevant and actionable information.'
+    }
+  </Typography>
+</Card>
 ```
 
-### Using props to customize the text
+### Use this live example to interact with Card component
 
-Modify the text to see it change live:
+Live example:
 
 ```js live
-<Card text='hello from Card' />
+<Card color='danger'>
+  <Typography>
+    {
+      'Cards are surfaces that display content and actions on a single topic. They should be easy to scan for relevant and actionable information.'
+    }
+  </Typography>
+</Card>
 ```

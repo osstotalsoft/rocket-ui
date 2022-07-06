@@ -1,24 +1,25 @@
 ---
-description: 'A UploadButton component.'
-labels: ['label1', 'label2', 'label3']
+description: 'UploadButton component.'
+labels: ['mui', 'react', 'upload-button']
 ---
 
 import UploadButton from './UploadButton'
+import { BrowserUpdated } from '@mui/icons-material'
 
-## React Component for rendering text
+## Basic UploadButton component
 
-A basic div that renders some text
+Basic example that renders an upload-button
 
 ### Component usage
 
 ```js
-<UploadButton text='hello from UploadButton' />
+<UploadButton Icon={BrowserUpdated} tooltip='BrowserUpdated' />
 ```
 
-### Using props to customize the text
+### Use this live example to interact with UploadButton component
 
-Modify the text to see it change live:
+Live example:
 
 ```js live
-<UploadButton text='hello from UploadButton' />
+<UploadButton Icon={BrowserUpdated} tooltip='BrowserUpdated' />
 ```

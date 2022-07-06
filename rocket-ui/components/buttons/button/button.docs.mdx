@@ -1,24 +1,28 @@
 ---
-description: 'A Button component.'
-labels: ['label1', 'label2', 'label3']
+description: 'Button component'
+labels: ['mui', 'react', 'button']
 ---
 
 import Button from './Button'
 
-## React Component for rendering text
+## Basic button component
 
-A basic div that renders some text
+Basic example that renders a button
 
 ### Component usage
 
 ```js
-<Button text='hello from Button' />
+<Button color='primary' size='small' capitalize={false}>
+  Primary
+</Button>
 ```
 
-### Using props to customize the text
+### Use this live example to interact with button component
 
-Modify the text to see it change live:
+Live example:
 
 ```js live
-<Button text='hello from Button' />
+<Button color='primary' size='small' capitalize={false}>
+  Primary
+</Button>
 ```

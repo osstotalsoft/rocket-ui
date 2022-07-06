@@ -1,24 +1,29 @@
 ---
-description: 'A IconButton component.'
-labels: ['label1', 'label2', 'label3']
+description: 'IconButton component.'
+labels: ['mui', 'react', 'icon-button']
 ---
 
 import IconButton from './IconButton'
+import RocketIcon from '@mui/icons-material/Rocket'
 
-## React Component for rendering text
+## Basic IconButton component
 
-A basic div that renders some text
+Basic example that renders an icon-button
 
 ### Component usage
 
 ```js
-<IconButton text='hello from IconButton' />
+<IconButton color='primary' size='small' tooltip='primary'>
+  <RocketIcon />
+</IconButton>
 ```
 
-### Using props to customize the text
+### Use this live example to interact with IconButton component
 
-Modify the text to see it change live:
+Live example:
 
 ```js live
-<IconButton text='hello from IconButton' />
+<IconButton color='primary' size='small' tooltip='primary'>
+  <RocketIcon />
+</IconButton>
 ```

@@ -44,6 +44,8 @@
         "@babel/plugin-syntax-jsx": "7.18.6",
         "@mui/icons-material": "5.8.4",
         "@mui/lab": "5.0.0-alpha.88",
+        "@teambit/babel": "0.0.780",
+        "@teambit/compiler": "0.0.780",
         "@teambit/dependencies.modules.packages-excluder": "0.0.54",
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@teambit/react": "0.0.775",

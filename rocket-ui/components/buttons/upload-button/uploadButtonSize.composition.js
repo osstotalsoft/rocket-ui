@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import { Grid } from '@mui/material'
 import UploadButton from './UploadButton'
 import { join, map, prop } from 'ramda'
@@ -45,7 +45,7 @@ export const UploadButtonSize = () => {
       </Grid>
       <Grid item xs={12}>
         <Typography variant='body1' color='error'>
-          {error?.files && (error.files |> map(prop('name')) |> join('; '))}
+          {error?.files && join('; ', map(prop('name'), error.files))}
         </Typography>
       </Grid>
     </Grid>

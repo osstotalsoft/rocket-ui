@@ -23,7 +23,7 @@ const UploadButton = ({
 }) => {
   const handleFileSelected = useCallback(
     ({ target: { files } }) => {
-      const filesValidator = validators |> map(v => v(onError, __, files))
+      const filesValidator = map(v => v(onError, __, files), validators)
       const { validFileTypes, validMaxItemSize, validMaxTotalSize, validMinItemSize, validMinTotalSize } = filesValidator
 
       if (accept && !validFileTypes(accept)) return

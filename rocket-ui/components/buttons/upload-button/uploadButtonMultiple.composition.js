@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import { Grid } from '@mui/material'
 import UploadButton from './UploadButton'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
@@ -8,8 +8,8 @@ export const UploadButtonMultiple = () => {
   const [file, setFile] = useState('')
   const [files, setFiles] = useState([])
 
-  const handleFileSelected = useCallback(files => setFile(files |> head |> prop('name')), [])
-  const handleFilesSelected = useCallback(files => setFiles(files |> map(prop('name')) |> join('; ')), [])
+  const handleFileSelected = useCallback(files => setFile(prop('name', head(files))), [])
+  const handleFilesSelected = useCallback(files => setFiles(join('; ', map(prop('name'), files))), [])
 
   return (
     <Grid container spacing={3}>

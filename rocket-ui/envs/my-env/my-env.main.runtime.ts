@@ -1,5 +1,8 @@
 import { MainRuntime } from '@teambit/cli'
-import { ReactAspect, ReactMain, UseTypescriptModifiers } from '@teambit/react'
+import { ReactAspect, ReactMain /*, UseTypescriptModifiers*/ } from '@teambit/react'
+import { CompilerAspect } from '@teambit/compiler'
+import { BabelAspect, BabelMain } from '@teambit/babel'
+import babelConfig from './babel.config'
 import { EnvsAspect, EnvsMain } from '@teambit/envs'
 import { MyEnvAspect } from './my-env.aspect'
 //import {
@@ -14,11 +17,11 @@ import { MyEnvAspect } from './my-env.aspect'
 export class MyEnvMain {
   static slots = []
 
-  static dependencies = [ReactAspect, EnvsAspect]
+  static dependencies = [ReactAspect, EnvsAspect, BabelAspect]
 
   static runtime = MainRuntime
 
-  static async provider([react, envs]: [ReactMain, EnvsMain]) {
+  static async provider([react, envs, babel]: [ReactMain, EnvsMain, BabelMain]) {
     //const webpackModifiers: UseWebpackModifiers = {
     //  previewConfig: [previewConfigTransformer],
     //  devServerConfig: [devServerConfigTransformer],
@@ -28,6 +31,17 @@ export class MyEnvMain {
     //  devConfig: [devConfigTransformer],
     //  buildConfig: [buildConfigTransformer],
     //};
+
+    // const babelCompiler = babel.createCompiler({
+    //   babelTransformOptions: babelConfig
+    // })
+
+    // // Get React's build pipeline
+    // const basicBuildPipeline = react.reactEnv.getBuildPipe()
+    // // Filter out compilation build tasks
+    // const basicBuildPipelineWithoutCompilation = basicBuildPipeline.filter(task => task.aspectId !== CompilerAspect.id)
+
+    // const compilerBuildTask = [compiler.createTask('BabelCompiler', babelCompiler), ...basicBuildPipelineWithoutCompilation]
 
     const MyEnvEnv = envs.compose(react.reactEnv, [
       /**
@@ -90,7 +104,7 @@ export class MyEnvMain {
               {
                 name: '@mui/material',
                 supportedRange: '^5.0.0',
-                version: '5.3.1'
+                version: '^5.8.6'
               }
             ]
           }

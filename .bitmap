@@ -63,6 +63,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/card-header"
     },
+    "components/surfaces/collapse-card": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/surfaces/collapse-card"
+    },
     "envs/my-env": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.15",

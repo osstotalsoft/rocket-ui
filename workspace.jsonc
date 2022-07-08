@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -44,11 +44,6 @@
         "@babel/plugin-syntax-jsx": "7.18.6",
         "@mui/icons-material": "5.8.4",
         "@mui/lab": "5.0.0-alpha.88",
-        "@teambit/babel": "0.0.780",
-        "@teambit/compiler": "0.0.780",
-        "@teambit/dependencies.modules.packages-excluder": "0.0.54",
-        "@teambit/eslint-config-bit-react": "~0.0.367",
-        "@teambit/react": "0.0.775",
         "@testing-library/react-hooks": "8.0.1",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "@typescript-eslint/parser": "4.0.0",
@@ -70,7 +65,8 @@
         "@emotion/styled": "11.9.3",
         "@testing-library/react": "^12.1.5",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "react-router-dom": "^5.2.0"
       }
     }
   },

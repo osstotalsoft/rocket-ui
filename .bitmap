@@ -57,6 +57,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/pagination"
     },
+    "components/navigation/side-menu": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/navigation/side-menu"
+    },
     "components/surfaces/accordion": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.1",

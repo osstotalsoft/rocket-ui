@@ -1,0 +1,40 @@
+---
+description: 'Pagination component.'
+labels: ['mui', 'react', 'pagination']
+---
+
+import Pagination from './Pagination'
+
+## Basic Pagination component
+
+Basic example that renders a pagination
+
+### Component usage
+
+```js
+<Pagination
+  component='div'
+  count={100}
+  page={0}
+  onPageChange={() => {}}
+  pageSize={25}
+  onRowsPerPageChange={() => {}}
+  rowsPerPageOptions={[25, 50, 75, 100]}
+/>
+```
+
+### Use this live example to interact with Pagination component
+
+Modify the text to see it change live:
+
+```js live
+<Pagination
+  component='div'
+  count={100}
+  page={0}
+  onPageChange={() => {}}
+  pageSize={25}
+  onRowsPerPageChange={() => {}}
+  rowsPerPageOptions={[25, 50, 75, 100]}
+/>
+```

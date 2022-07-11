@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -58,11 +58,12 @@
         "eslint-plugin-react-hooks": "4.6.0",
         "prop-types": "15.8.1",
         "ramda": "0.28.0",
+        "react-syntax-highlighter": "15.5.0",
         "typescript": "4.7.4"
       },
       "peerDependencies": {
-        "@emotion/react": "11.9.3",
-        "@emotion/styled": "11.9.3",
+        "@emotion/react": "^11.9.3",
+        "@emotion/styled": "^11.9.3",
         "@testing-library/react": "^12.1.5",
         "react": "17.0.2",
         "react-dom": "17.0.2",

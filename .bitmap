@@ -52,8 +52,8 @@
         "rootDir": "rocket-ui/components/navigation/nav-pills"
     },
     "components/navigation/pagination": {
-        "scope": "",
-        "version": "",
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/pagination"
     },

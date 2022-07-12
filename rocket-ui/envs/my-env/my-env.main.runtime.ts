@@ -105,7 +105,13 @@ export class MyEnvMain {
                 name: '@mui/material',
                 supportedRange: '^5.0.0',
                 version: '^5.8.6'
-              }
+              },
+              {
+                name: 'react-chartjs-2',
+                supportedRange: '^4.0.0',
+                version: '4.2.0'
+              },
+              { name: 'chart.js', supportedRange: '^3.0.0', version: '3.8.0' }
             ]
           }
         }

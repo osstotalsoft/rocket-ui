@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -56,8 +56,11 @@
         "eslint-plugin-mdx": "1.15.0",
         "eslint-plugin-react": "7.25.1",
         "eslint-plugin-react-hooks": "4.6.0",
+        "i18next": "21.8.13",
+        "lodash": "4.17.21",
         "prop-types": "15.8.1",
         "ramda": "0.28.0",
+        "react-number-format": "4.9.3",
         "react-syntax-highlighter": "15.5.0",
         "typescript": "4.7.4"
       },
@@ -65,11 +68,11 @@
         "@emotion/react": "^11.9.3",
         "@emotion/styled": "^11.9.3",
         "@testing-library/react": "^12.1.5",
+        "chart.js": "3.8.0",
         "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "react-router-dom": "^5.2.0",
         "react-chartjs-2": "4.2.0",
-        "chart.js": "3.8.0"
+        "react-dom": "17.0.2",
+        "react-router-dom": "^5.2.0"
       }
     }
   },

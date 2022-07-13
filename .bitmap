@@ -39,6 +39,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/charts/chart"
     },
+    "components/charts/stats-chart": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/charts/stats-chart"
+    },
     "components/data-display/expanding-text": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.14",
@@ -50,6 +56,12 @@
         "version": "0.0.19",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/typography"
+    },
+    "components/inputs/text-field": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.2",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/inputs/text-field"
     },
     "components/navigation/nav-pills": {
         "scope": "totalsoft_oss.rocket-ui",

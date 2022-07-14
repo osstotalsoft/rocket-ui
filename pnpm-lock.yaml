@@ -13,11 +13,12 @@ importers:
       '@mui/icons-material': 5.8.4
       '@mui/lab': 5.0.0-alpha.88
       '@mui/material': 5.3.1
+      '@mui/x-date-pickers': 5.0.0-beta.0
       '@teambit/dependencies.modules.packages-excluder': 0.0.54
       '@teambit/harmony': 0.3.3
       '@testing-library/react': ^12.1.5
       '@testing-library/react-hooks': 8.0.1
-      '@types/jest': 26.0.20
+      '@types/jest': '>=26.0.0 <27.0.0'
       '@types/node': 12.20.4
       '@types/react': '>=17.0.8 <18.0.0'
       '@types/react-dom': '>=17.0.5 <18.0.0'
@@ -28,6 +29,7 @@ importers:
       chart.js: 3.8.0
       classnames: 2.3.1
       core-js: '>=3.0.0 <4.0.0'
+      date-fns: 2.28.0
       eslint-import-resolver-node: 0.3.6
       eslint-plugin-import: 2.22.1
       eslint-plugin-jest: 24.4.0
@@ -54,8 +56,9 @@ importers:
       '@emotion/react': registry.npmjs.org/@emotion/react/11.9.3_fdea76e38bfe11cd49674414f331ee2b
       '@emotion/styled': registry.npmjs.org/@emotion/styled/11.9.3_47b848cc8abb2ef7b7ddfdd0455a949c
       '@mui/icons-material': registry.npmjs.org/@mui/icons-material/5.8.4_3ebff0a4aebccc2ed18ead8116e6bb49
-      '@mui/lab': registry.npmjs.org/@mui/lab/5.0.0-alpha.88_9b4b8acc848974b27a576a62f26e2804
+      '@mui/lab': registry.npmjs.org/@mui/lab/5.0.0-alpha.88_2f10d94e369c1a01c0991006d1755538
       '@mui/material': registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65
+      '@mui/x-date-pickers': registry.npmjs.org/@mui/x-date-pickers/5.0.0-beta.0_fac445085cac2474741c3535cfb25c35
       '@teambit/dependencies.modules.packages-excluder': registry.npmjs.org/@teambit/dependencies.modules.packages-excluder/0.0.54_react@17.0.2
       '@teambit/harmony': registry.npmjs.org/@teambit/harmony/0.3.3
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2
@@ -66,6 +69,7 @@ importers:
       chart.js: registry.npmjs.org/chart.js/3.8.0
       classnames: registry.npmjs.org/classnames/2.3.1
       core-js: registry.npmjs.org/core-js/3.23.4
+      date-fns: registry.npmjs.org/date-fns/2.28.0
       eslint-import-resolver-node: registry.npmjs.org/eslint-import-resolver-node/0.3.6
       eslint-plugin-import: registry.npmjs.org/eslint-plugin-import/2.22.1_@typescript-eslint+parser@4.0.0
       eslint-plugin-jest: registry.npmjs.org/eslint-plugin-jest/24.4.0_022d33ae93dfb53b58b41819147f2e23
@@ -113,6 +117,12 @@ importers:
     specifiers: {}
 
   rocket-ui/components/data-display/typography:
+    specifiers: {}
+
+  rocket-ui/components/inputs/date-time:
+    specifiers: {}
+
+  rocket-ui/components/inputs/password-field:
     specifiers: {}
 
   rocket-ui/components/inputs/simple-slider:
@@ -589,8 +599,9 @@ packages:
     version: 2.14.0
     dev: false
 
-  registry.npmjs.org/@date-io/date-fns/2.14.0:
+  registry.npmjs.org/@date-io/date-fns/2.14.0_date-fns@2.28.0:
     resolution: {integrity: sha512-4fJctdVyOd5cKIKGaWUM+s3MUXMuzkZaHuTY15PH70kU1YTMrCoauA7hgQVx9qj0ZEbGrH9VSPYJYnYro7nKiA==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@date-io/date-fns/-/date-fns-2.14.0.tgz}
+    id: registry.npmjs.org/@date-io/date-fns/2.14.0
     name: '@date-io/date-fns'
     version: 2.14.0
     peerDependencies:
@@ -600,6 +611,7 @@ packages:
         optional: true
     dependencies:
       '@date-io/core': registry.npmjs.org/@date-io/core/2.14.0
+      date-fns: registry.npmjs.org/date-fns/2.28.0
     dev: false
 
   registry.npmjs.org/@date-io/dayjs/2.14.0:
@@ -949,7 +961,7 @@ packages:
       react: registry.npmjs.org/react/17.0.2
     dev: false
 
-  registry.npmjs.org/@mui/lab/5.0.0-alpha.88_9b4b8acc848974b27a576a62f26e2804:
+  registry.npmjs.org/@mui/lab/5.0.0-alpha.88_2f10d94e369c1a01c0991006d1755538:
     resolution: {integrity: sha512-YS2NPw0D0CHG9z9Y6Wjocl3g2LNzdXdkvORPoyc05ea9Xm+m8buddvMeTuL/r/e3S7yLK8HOMN2uHE0rwD/oVQ==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/lab/-/lab-5.0.0-alpha.88.tgz}
     id: registry.npmjs.org/@mui/lab/5.0.0-alpha.88
     name: '@mui/lab'
@@ -995,9 +1007,10 @@ packages:
       '@mui/material': registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65
       '@mui/system': registry.npmjs.org/@mui/system/5.9.0_0724b4cf6fedc68155e0ac947672c616
       '@mui/utils': registry.npmjs.org/@mui/utils/5.9.0_react@17.0.2
-      '@mui/x-date-pickers': registry.npmjs.org/@mui/x-date-pickers/5.0.0-alpha.1_35745f1e77a703f7303ff0baafb9b89a
+      '@mui/x-date-pickers': registry.npmjs.org/@mui/x-date-pickers/5.0.0-alpha.1_dc27cf325d0fb738ced60b9499d77717
       '@types/react': registry.npmjs.org/@types/react/17.0.47
       clsx: registry.npmjs.org/clsx/1.2.1
+      date-fns: registry.npmjs.org/date-fns/2.28.0
       prop-types: registry.npmjs.org/prop-types/15.8.1
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
@@ -1167,7 +1180,7 @@ packages:
       react-is: registry.npmjs.org/react-is/18.2.0
     dev: false
 
-  registry.npmjs.org/@mui/x-date-pickers/5.0.0-alpha.1_35745f1e77a703f7303ff0baafb9b89a:
+  registry.npmjs.org/@mui/x-date-pickers/5.0.0-alpha.1_dc27cf325d0fb738ced60b9499d77717:
     resolution: {integrity: sha512-dLPkRiIn2Gr0momblxiOnIwrxn4SijVix+8e08mwAGWhiWcmWep1O9XTRDpZsjB0kjHYCf+kZjlRX4dxnj2acg==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/x-date-pickers/-/x-date-pickers-5.0.0-alpha.1.tgz}
     id: registry.npmjs.org/@mui/x-date-pickers/5.0.0-alpha.1
     name: '@mui/x-date-pickers'
@@ -1200,7 +1213,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@date-io/date-fns': registry.npmjs.org/@date-io/date-fns/2.14.0
+      '@date-io/date-fns': registry.npmjs.org/@date-io/date-fns/2.14.0_date-fns@2.28.0
       '@date-io/dayjs': registry.npmjs.org/@date-io/dayjs/2.14.0
       '@date-io/luxon': registry.npmjs.org/@date-io/luxon/2.14.0
       '@date-io/moment': registry.npmjs.org/@date-io/moment/2.14.0
@@ -1208,11 +1221,69 @@ packages:
       '@mui/system': registry.npmjs.org/@mui/system/5.9.0_0724b4cf6fedc68155e0ac947672c616
       '@mui/utils': registry.npmjs.org/@mui/utils/5.9.0_react@17.0.2
       clsx: registry.npmjs.org/clsx/1.2.1
+      date-fns: registry.npmjs.org/date-fns/2.28.0
       prop-types: registry.npmjs.org/prop-types/15.8.1
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
       react-transition-group: registry.npmjs.org/react-transition-group/4.4.2_react-dom@17.0.2+react@17.0.2
       rifm: registry.npmjs.org/rifm/0.12.1_react@17.0.2
+    dev: false
+
+  registry.npmjs.org/@mui/x-date-pickers/5.0.0-beta.0_fac445085cac2474741c3535cfb25c35:
+    resolution: {integrity: sha512-WfcYe+5j3xbGO9d+uMFem06b9q+9yIcFj0dP3PKCa1zb6m3Tbkigig6vlCuHLKLSXe1P6IQCt+BNVVbU1rfh7A==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/x-date-pickers/-/x-date-pickers-5.0.0-beta.0.tgz}
+    id: registry.npmjs.org/@mui/x-date-pickers/5.0.0-beta.0
+    name: '@mui/x-date-pickers'
+    version: 5.0.0-beta.0
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@emotion/react': '*'
+      '@emotion/styled': '*'
+      '@mui/material': '*'
+      '@mui/system': '*'
+      date-fns: '*'
+      dayjs: '*'
+      luxon: '*'
+      moment: '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@emotion/react':
+        optional: true
+      '@emotion/styled':
+        optional: true
+      '@mui/material':
+        optional: true
+      '@mui/system':
+        optional: true
+      date-fns:
+        optional: true
+      dayjs:
+        optional: true
+      luxon:
+        optional: true
+      moment:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.18.6
+      '@date-io/core': registry.npmjs.org/@date-io/core/2.14.0
+      '@date-io/date-fns': registry.npmjs.org/@date-io/date-fns/2.14.0_date-fns@2.28.0
+      '@date-io/dayjs': registry.npmjs.org/@date-io/dayjs/2.14.0
+      '@date-io/luxon': registry.npmjs.org/@date-io/luxon/2.14.0
+      '@date-io/moment': registry.npmjs.org/@date-io/moment/2.14.0
+      '@emotion/react': registry.npmjs.org/@emotion/react/11.9.3_fdea76e38bfe11cd49674414f331ee2b
+      '@emotion/styled': registry.npmjs.org/@emotion/styled/11.9.3_47b848cc8abb2ef7b7ddfdd0455a949c
+      '@mui/material': registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65
+      '@mui/utils': registry.npmjs.org/@mui/utils/5.9.0_react@17.0.2
+      '@types/react-transition-group': registry.npmjs.org/@types/react-transition-group/4.4.5
+      clsx: registry.npmjs.org/clsx/1.2.1
+      date-fns: registry.npmjs.org/date-fns/2.28.0
+      prop-types: registry.npmjs.org/prop-types/15.8.1
+      react: registry.npmjs.org/react/17.0.2
+      react-transition-group: registry.npmjs.org/react-transition-group/4.4.2_react-dom@17.0.2+react@17.0.2
+      rifm: registry.npmjs.org/rifm/0.12.1_react@17.0.2
+    transitivePeerDependencies:
+      - react-dom
     dev: false
 
   registry.npmjs.org/@nodelib/fs.scandir/2.1.5:
@@ -2137,6 +2208,13 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz}
     name: damerau-levenshtein
     version: 1.0.8
+    dev: false
+
+  registry.npmjs.org/date-fns/2.28.0:
+    resolution: {integrity: sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz}
+    name: date-fns
+    version: 2.28.0
+    engines: {node: '>=0.11'}
     dev: false
 
   registry.npmjs.org/debug/2.6.9:

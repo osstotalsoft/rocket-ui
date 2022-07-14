@@ -1,0 +1,27 @@
+import { styled, Slider as MuiSlider, FormControl as MuiFormControl, FormHelperText as MuiFormHelperText } from '@mui/material'
+import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
+
+export const Slider = styled(MuiSlider)(() => ({
+  [`&.MuiSlider-root`]: {
+    top: '-1px',
+    margin: 0,
+    [`& .MuiSlider-markLabel`]: {
+      top: '20px',
+      fontSize: '14px',
+      lineHeight: '1.5em'
+    }
+  }
+}))
+
+export const StyledTextField = styled(TextField)(() => ({
+  margin: '-14px 0'
+}))
+
+export const FormControl = styled(MuiFormControl)(() => ({
+  overflow: 'visible', // fix for mobile horizontal scroll
+  marginLeft: 0
+}))
+
+export const FormHelperText = styled(MuiFormHelperText)(() => ({
+  marginLeft: 0
+}))

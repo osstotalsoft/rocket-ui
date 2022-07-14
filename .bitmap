@@ -57,6 +57,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/typography"
     },
+    "components/inputs/simple-slider": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.2",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/inputs/simple-slider"
+    },
     "components/inputs/text-field": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.2",

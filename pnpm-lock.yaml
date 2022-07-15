@@ -16,7 +16,7 @@ importers:
       '@mui/x-date-pickers': 5.0.0-beta.0
       '@teambit/dependencies.modules.packages-excluder': 0.0.54
       '@teambit/harmony': 0.3.3
-      '@testing-library/react': ^12.1.5
+      '@testing-library/react': ^12.1.2
       '@testing-library/react-hooks': 8.0.1
       '@types/jest': '>=26.0.0 <27.0.0'
       '@types/node': 12.20.4
@@ -117,6 +117,9 @@ importers:
     specifiers: {}
 
   rocket-ui/components/data-display/typography:
+    specifiers: {}
+
+  rocket-ui/components/inputs/autocomplete:
     specifiers: {}
 
   rocket-ui/components/inputs/date-time:
@@ -1979,7 +1982,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: registry.npmjs.org/caniuse-lite/1.0.30001366
-      electron-to-chromium: registry.npmjs.org/electron-to-chromium/1.4.189
+      electron-to-chromium: registry.npmjs.org/electron-to-chromium/1.4.191
       node-releases: registry.npmjs.org/node-releases/2.0.6
       update-browserslist-db: registry.npmjs.org/update-browserslist-db/1.0.4_browserslist@4.21.2
     dev: false
@@ -2317,10 +2320,10 @@ packages:
       csstype: registry.npmjs.org/csstype/3.1.0
     dev: false
 
-  registry.npmjs.org/electron-to-chromium/1.4.189:
-    resolution: {integrity: sha512-dQ6Zn4ll2NofGtxPXaDfY2laIa6NyCQdqXYHdwH90GJQW0LpJJib0ZU/ERtbb0XkBEmUD2eJtagbOie3pdMiPg==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.189.tgz}
+  registry.npmjs.org/electron-to-chromium/1.4.191:
+    resolution: {integrity: sha512-MeEaiuoSFh4G+rrN+Ilm1KJr8pTTZloeLurcZ+PRcthvdK1gWThje+E6baL7/7LoNctrzCncavAG/j/vpES9jg==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.191.tgz}
     name: electron-to-chromium
-    version: 1.4.189
+    version: 1.4.191
     dev: false
 
   registry.npmjs.org/emoji-regex/9.2.2:

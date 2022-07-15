@@ -11,139 +11,145 @@
 {
     "components/buttons/back-to-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/back-to-button"
     },
     "components/buttons/button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/button"
     },
     "components/buttons/icon-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/icon-button"
     },
     "components/buttons/upload-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/upload-button"
     },
     "components/charts/chart": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/charts/chart"
     },
     "components/charts/stats-chart": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/charts/stats-chart"
     },
     "components/data-display/expanding-text": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.14",
+        "version": "0.0.15",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/expanding-text"
     },
     "components/data-display/typography": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.19",
+        "version": "0.0.20",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/typography"
     },
-    "components/inputs/date-time": {
+    "components/inputs/autocomplete": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/inputs/autocomplete"
+    },
+    "components/inputs/date-time": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.2",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/date-time"
     },
     "components/inputs/password-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/password-field"
     },
     "components/inputs/simple-slider": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/simple-slider"
     },
     "components/inputs/text-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/text-field"
     },
     "components/navigation/nav-pills": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/nav-pills"
     },
     "components/navigation/pagination": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/pagination"
     },
     "components/navigation/side-menu": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/side-menu"
     },
     "components/surfaces/accordion": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/accordion"
     },
     "components/surfaces/accordion-list": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/accordion-list"
     },
     "components/surfaces/card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.20",
+        "version": "0.0.21",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/card"
     },
     "components/surfaces/card-actions": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.18",
+        "version": "0.0.19",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/card-actions"
     },
     "components/surfaces/card-header": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.18",
+        "version": "0.0.19",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/card-header"
     },
     "components/surfaces/collapse-card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/collapse-card"
     },
     "components/surfaces/stats-card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/stats-card"
     },
     "envs/my-env": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.16",
+        "version": "0.0.17",
         "mainFile": "index.ts",
         "rootDir": "rocket-ui/envs/my-env"
     },
@@ -161,7 +167,7 @@
     },
     "utils/test-wrapper": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/utils/test-wrapper"
     },

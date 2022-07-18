@@ -57,6 +57,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/typography"
     },
+    "components/feedback/dialog-display": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/feedback/dialog-display"
+    },
     "components/inputs/autocomplete": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.3",

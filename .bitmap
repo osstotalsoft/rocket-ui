@@ -75,6 +75,12 @@
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/forbidden"
     },
+    "components/feedback/linear-progress": {
+        "scope": "totalsoft_oss.rocket-ui",
+        "version": "0.0.1",
+        "mainFile": "index.js",
+        "rootDir": "rocket-ui/components/feedback/linear-progress"
+    },
     "components/feedback/loading-fake-text": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.1",

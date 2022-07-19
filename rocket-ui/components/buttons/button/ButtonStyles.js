@@ -8,8 +8,8 @@ const sizeTransformations = {
   lg: 'large'
 }
 
-export const transformDeprecatedSizes = color => {
-  return sizeTransformations[color] || color
+export const transformDeprecatedSizes = size => {
+  return sizeTransformations[size] || size
 }
 
 export const basicColors = [

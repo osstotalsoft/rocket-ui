@@ -6,7 +6,7 @@ export const NotFoundText = styled(Typography)(({ theme }) => ({
   fontFamily: theme.typography.defaultFont.fontFamily
 }))
 
-export const NotFoundImage = styled(Grid)(() => ({
+export const NotFoundImage = styled('div')(() => ({
   marginBottom: '30px',
   marginTop: '50px',
   textAlign: 'center'

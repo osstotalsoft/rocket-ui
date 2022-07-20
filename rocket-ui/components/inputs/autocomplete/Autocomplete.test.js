@@ -37,15 +37,15 @@ describe('Single-value Autocomplete', () => {
 
   it('is clearable', () => {
     render(<Autocomplete isClearable simpleValue value={1} options={basicOptions} onChange={jest.fn()} />)
-    expect(screen.getByRole('textbox').value).toBe('first option')
+    expect(screen.getByRole('combobox').value).toBe('first option')
 
     userClick(screen.getByTitle('Clear'))
-    expect(screen.getByRole('textbox').value).toBe('')
+    expect(screen.getByRole('combobox').value).toBe('')
   })
 
   it('text field is read-only when isSearchable={false}', () => {
     render(<Autocomplete simpleValue isSearchable={false} value={1} options={basicOptions} onChange={jest.fn()} />)
-    expect(screen.getByRole('textbox')).toHaveAttribute('readonly')
+    expect(screen.getByRole('combobox')).toHaveAttribute('readonly')
   })
 
   it("sets 'No option' text to typographyContentColor", () => {
@@ -55,19 +55,19 @@ describe('Single-value Autocomplete', () => {
 
   it('sets input text to inputSelectedColor', () => {
     render(<Autocomplete open simpleValue value={1} options={basicOptions} onChange={jest.fn()} inputSelectedColor={'rgb(255,0,0)'} />)
-    expect(screen.getByRole('textbox')).toHaveStyle('color: rgb(255,0,0)')
+    expect(screen.getByRole('combobox')).toHaveStyle('color: rgb(255,0,0)')
   })
 
   describe('creatable', () => {
     test('displays created label text after typing some characters', () => {
       render(<Autocomplete open creatable={true} createdLabel={'Add'} onChange={jest.fn()} options={basicOptions} />)
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
       expect(screen.getByText('Add "new"')).toBeInTheDocument()
     })
 
     test("doesn't show 'Add' option for the ones that already exist", () => {
       render(<Autocomplete open creatable createdLabel={'Add'} onChange={jest.fn()} options={basicOptions} />)
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'first option' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'first option' } })
       expect(screen.queryByText('Add "first option"')).not.toBeInTheDocument()
     })
 
@@ -84,7 +84,7 @@ describe('Single-value Autocomplete', () => {
           options={basicOptions}
         />
       )
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
       userClick(screen.getByText('Add "new"'))
 
       await waitFor(() => {
@@ -105,7 +105,7 @@ describe('Single-value Autocomplete', () => {
           options={basicOptions}
         />
       )
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
       userClick(screen.getByText('Add "new"'))
 
       await waitFor(() => {
@@ -132,19 +132,19 @@ describe('Single-value Autocomplete', () => {
 
     test('displays custom styles when error={true}', () => {
       render(<Autocomplete options={basicOptions} onChange={jest.fn()} error={true} />)
-      expect(screen.getByRole('combobox').querySelector('.Mui-error')).toBeInTheDocument()
+      expect(screen.getByRole('combobox').parentElement).toHaveClass('Mui-error')
     })
   })
 
   describe('with simpleValue={true}', () => {
     test('displays value of [labelKey] property', () => {
       render(<Autocomplete simpleValue labelKey={'displayName'} value={1} options={basicOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('First Option')
+      expect(screen.getByRole('combobox').value).toBe('First Option')
     })
 
     test('displays value of name by default', () => {
       render(<Autocomplete simpleValue value={1} options={basicOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('first option')
+      expect(screen.getByRole('combobox').value).toBe('first option')
     })
 
     test('calls onChange with value of [valueKey] property', () => {
@@ -167,14 +167,14 @@ describe('Single-value Autocomplete', () => {
 
     test('can display a value that is number', () => {
       render(<Autocomplete simpleValue value={1} labelKey='id' options={basicOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('1')
+      expect(screen.getByRole('combobox').value).toBe('1')
     })
   })
 
   describe('with simpleValue={false} (default)', () => {
     test('displays value of labelKey property', () => {
       render(<Autocomplete labelKey={'displayName'} value={basicOptions[0]} options={basicOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('First Option')
+      expect(screen.getByRole('combobox').value).toBe('First Option')
     })
 
     test('calls onChange with the option object', () => {
@@ -190,7 +190,7 @@ describe('Single-value Autocomplete', () => {
   describe('with primitive options', () => {
     test('displays selected option in input', () => {
       render(<Autocomplete value={'first option'} options={primitiveOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('first option')
+      expect(screen.getByRole('combobox').value).toBe('first option')
     })
 
     test('calls onChange with selected option', () => {
@@ -204,7 +204,7 @@ describe('Single-value Autocomplete', () => {
 
     test('displays selected option in input for numeric options', () => {
       render(<Autocomplete value={1} options={numericOptions} onChange={jest.fn()} />)
-      expect(screen.getByRole('textbox').value).toBe('1')
+      expect(screen.getByRole('combobox').value).toBe('1')
     })
 
     test('calls onChange with selected option for numeric options', () => {
@@ -263,8 +263,8 @@ describe('Multi-value Autocomplete', () => {
   describe('creatable', () => {
     test('displays created label text after typing some characters (simpleValue={false})', () => {
       render(<Autocomplete isMultiSelection creatable createdLabel={'Add'} value={[]} options={basicOptions} onChange={jest.fn()} />)
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new option' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new option' } })
       expect(screen.getByText('Add "new option"')).toBeInTheDocument()
     })
 
@@ -272,8 +272,8 @@ describe('Multi-value Autocomplete', () => {
       render(
         <Autocomplete isMultiSelection creatable simpleValue createdLabel={'Add'} value={[]} options={basicOptions} onChange={jest.fn()} />
       )
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new option' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new option' } })
       expect(screen.getByText('Add "new option"')).toBeInTheDocument()
     })
   })
@@ -383,7 +383,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete loadOptions={mockLoadOptions} value={basicOptions[0]} onChange={jest.fn()} />)
       await act(() => promise)
-      expect(screen.getByRole('textbox').value).toBe('first option')
+      expect(screen.getByRole('combobox').value).toBe('first option')
     })
 
     test('calls loadOptions with input value - when defaultOptions={true}', async () => {
@@ -424,7 +424,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete loadOptions={mockLoadOptions} simpleValue defaultOptions value={1} onChange={jest.fn()} />)
       await act(() => promise)
-      expect(screen.getByRole('textbox').value).toBe('first option')
+      expect(screen.getByRole('combobox').value).toBe('first option')
     })
 
     test('displays initial value - when defaultOptions={false}', async () => {
@@ -432,7 +432,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete loadOptions={mockLoadOptions} simpleValue value={1} onChange={jest.fn()} />)
       await act(() => promise)
-      expect(screen.getByRole('textbox').value).toBe('first option')
+      expect(screen.getByRole('combobox').value).toBe('first option')
     })
 
     test('calls loadOptions with input value - when defaultOptions is an array', async () => {
@@ -468,7 +468,7 @@ describe('Async Autocomplete', () => {
       render(<Autocomplete open creatable={true} createdLabel={'Add'} onChange={jest.fn()} loadOptions={mockLoadOptions} defaultOptions />)
 
       await act(() => promise)
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
       await act(() => promise)
 
       expect(screen.getByText('Add "new"')).toBeInTheDocument()
@@ -490,7 +490,7 @@ describe('Async Autocomplete', () => {
       )
 
       await act(() => promise)
-      fireEvent.change(screen.getByRole('textbox'), { target: { value: 'new' } })
+      fireEvent.change(screen.getByRole('combobox'), { target: { value: 'new' } })
       await act(() => promise)
 
       expect(screen.getByText('Add "new"')).toBeInTheDocument()

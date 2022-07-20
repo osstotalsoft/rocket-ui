@@ -2,19 +2,8 @@ import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import DialogDisplay from '@totalsoft_oss/rocket-ui.components.feedback.dialog-display'
-import { deprecatedPropType } from '@mui/material'
 
-const CustomDialog = ({
-  onYes,
-  onClose,
-  buttonProps: receivedButtonProps,
-  buttonColor,
-  buttonSize,
-  textDialogYes,
-  textDialogNo,
-  disableBackdropClick,
-  ...rest
-}) => {
+const CustomDialog = ({ onYes, onClose, buttonProps, textDialogYes, textDialogNo, disableBackdropClick, ...rest }) => {
   const handleClose = useCallback(
     (event, reason) => {
       if (disableBackdropClick && reason === 'backdropClick') return
@@ -23,8 +12,6 @@ const CustomDialog = ({
     },
     [disableBackdropClick, onClose]
   )
-
-  const buttonProps = { color: buttonColor, size: buttonSize || 'small', ...receivedButtonProps }
 
   return (
     <DialogDisplay
@@ -56,20 +43,6 @@ CustomDialog.propTypes = {
    */
   buttonProps: PropTypes.object,
   /**
-   * Color of actions.
-   */
-  buttonColor: deprecatedPropType(
-    PropTypes.oneOf(['primary', 'secondary', 'info', 'success', 'warning', 'error', 'rose', 'white', 'simple', 'transparent', 'inherit']),
-    'This prop is deprecated and will be removed in a future version. Use `buttonProps` instead.'
-  ),
-  /**
-   * Size of buttons.
-   */
-  buttonSize: deprecatedPropType(
-    PropTypes.oneOf(['tiny', 'small', 'medium', 'large']),
-    'This prop is deprecated and will be removed in a future version. Use `buttonProps` instead.'
-  ),
-  /**
    * Callback fired when a "click" event is detected.
    */
   onYes: PropTypes.func,
@@ -80,13 +53,6 @@ CustomDialog.propTypes = {
    * @param {string} reason Can be: "escapeKeyDown", "backdropClick", "closeActionClick".
    */
   onClose: PropTypes.func,
-  /**
-   * If true, the actions (buttons) are shown below.
-   */
-  showActions: deprecatedPropType(
-    PropTypes.bool,
-    "This prop is deprecated since it is always true. If you don't need actions, use DialogDisplay instead."
-  ),
   /**
    * Text content of the first (left) action.
    */

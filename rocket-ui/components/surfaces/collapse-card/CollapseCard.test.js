@@ -57,7 +57,7 @@ describe('CollapseCard', () => {
   })
 
   test('displays summary', () => {
-    render(<CollapseCard summary={text} />)
+    render(<CollapseCard subheader={text} />)
     expect(screen.getByText(text)).toBeInTheDocument()
   })
 })

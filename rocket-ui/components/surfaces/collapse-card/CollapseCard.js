@@ -1,23 +1,12 @@
 import React, { useCallback, useState } from 'react'
-import { Collapse, deprecatedPropType } from '@mui/material'
+import { Collapse } from '@mui/material'
 import PropTypes from 'prop-types'
 import { ExpandMore, ExpandLess } from '@mui/icons-material'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import Card from '@totalsoft_oss/rocket-ui.components.surfaces.card'
 import { CardContent } from './CollapseCardStyles'
 
-const CollapseCard = ({
-  content,
-  children,
-  actions,
-  variant,
-  defaultExpanded,
-  expanded,
-  canExpand: _canExpand,
-  onToggle,
-  summary,
-  ...rest
-}) => {
+const CollapseCard = ({ content, children, actions, variant, defaultExpanded, expanded, onToggle, subheader, ...rest }) => {
   const [localExpanded, setLocalExpanded] = useState(defaultExpanded || false)
   const exp = expanded || localExpanded
 
@@ -34,7 +23,7 @@ const CollapseCard = ({
       disablePadding
       actions={Array.isArray(actions) ? [...actions, iconButton] : [actions, iconButton]}
       variant={variant}
-      subheader={summary}
+      subheader={subheader}
       {...rest}
     >
       <Collapse in={exp}>
@@ -66,9 +55,9 @@ CollapseCard.propTypes = {
    */
   variant: PropTypes.oneOf(['standard', 'filled']),
   /**
-   * Summary of the component.
+   * Content of the subheader.
    */
-  summary: deprecatedPropType(PropTypes.string, 'This prop is deprecated. Use `subheader` instead.'),
+  subheader: PropTypes.node,
   /**
    * If true, the card will be expanded by default.
    */
@@ -77,10 +66,6 @@ CollapseCard.propTypes = {
    * If true, the card will be expanded.
    */
   expanded: PropTypes.bool,
-  /**
-   * If true, the card can be expanded.
-   */
-  canExpand: deprecatedPropType(PropTypes.bool, 'This prop is deprecated. Use `Card` to achieve the same.'),
   /**
    * Callback fired on toggle.
    */

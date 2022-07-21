@@ -13,13 +13,13 @@ importers:
       '@emotion/styled': ^11.9.3
       '@mui/icons-material': 5.8.4
       '@mui/lab': 5.0.0-alpha.88
-      '@mui/material': '>=5.9.1 <6.0.0'
+      '@mui/material': ^5.9.1
       '@mui/x-date-pickers': 5.0.0-beta.0
       '@teambit/dependencies.modules.packages-excluder': 0.0.54
       '@teambit/harmony': 0.3.3
       '@testing-library/react': ^12.1.2
       '@testing-library/react-hooks': 8.0.1
-      '@types/jest': 26.0.20
+      '@types/jest': '>=26.0.0 <27.0.0'
       '@types/node': 12.20.4
       '@types/react': '>=17.0.8 <18.0.0'
       '@types/react-dom': '>=17.0.5 <18.0.0'
@@ -196,16 +196,10 @@ importers:
     specifiers: {}
 
   rocket-ui/providers/theme:
-    specifiers:
-      '@mui/material': 5.3.1
-    dependencies:
-      '@mui/material': registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65
+    specifiers: {}
 
   rocket-ui/themes:
-    specifiers:
-      '@mui/material': 5.3.1
-    dependencies:
-      '@mui/material': registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65
+    specifiers: {}
 
   rocket-ui/utils/test-wrapper:
     specifiers: {}
@@ -912,36 +906,6 @@ packages:
     version: 1.6.22
     dev: false
 
-  registry.npmjs.org/@mui/base/5.0.0-alpha.66_6b79dcf651fa0d4fc8b46fa68013a7bf:
-    resolution: {integrity: sha512-LARfVx0HmGV5YwU2pdIqEApQwz/CtEnYtKkV856hlY0cgi5NQL2htzZ/9ujKz0j3LFUaMYiYuJ2AOwrNtGFGrw==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/base/-/base-5.0.0-alpha.66.tgz}
-    id: registry.npmjs.org/@mui/base/5.0.0-alpha.66
-    name: '@mui/base'
-    version: 5.0.0-alpha.66
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      '@types/react': '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.18.9
-      '@emotion/is-prop-valid': registry.npmjs.org/@emotion/is-prop-valid/1.1.3
-      '@mui/utils': registry.npmjs.org/@mui/utils/5.9.1_react@17.0.2
-      '@popperjs/core': registry.npmjs.org/@popperjs/core/2.11.5
-      '@types/react': registry.npmjs.org/@types/react/17.0.47
-      clsx: registry.npmjs.org/clsx/1.2.1
-      prop-types: registry.npmjs.org/prop-types/15.8.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-      react-is: registry.npmjs.org/react-is/17.0.2
-    dev: false
-
   registry.npmjs.org/@mui/base/5.0.0-alpha.87_6b79dcf651fa0d4fc8b46fa68013a7bf:
     resolution: {integrity: sha512-PuxRYrvG63Yj/UTwf4hSwZ5ClMv88iXHK+5hUV1CrG3kNPo6FFQiIFNRaNpRt/3nsXj6+xygJByNFA8m4Leetg==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/base/-/base-5.0.0-alpha.87.tgz}
     id: registry.npmjs.org/@mui/base/5.0.0-alpha.87
@@ -1084,49 +1048,6 @@ packages:
       react-is: registry.npmjs.org/react-is/17.0.2
       react-transition-group: registry.npmjs.org/react-transition-group/4.4.2_react-dom@17.0.2+react@17.0.2
       rifm: registry.npmjs.org/rifm/0.12.1_react@17.0.2
-    dev: false
-
-  registry.npmjs.org/@mui/material/5.3.1_66581c895a851b16dd21f66d733daa65:
-    resolution: {integrity: sha512-XWPsJ2jet2zfnKojth5d2IaHIJPpJnHq1ACCSlNf898BjYh1j50gRWsPpIHiptQ0oc0pdWmMcmrXbdANKR1ybw==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/@mui/material/-/material-5.3.1.tgz}
-    id: registry.npmjs.org/@mui/material/5.3.1
-    name: '@mui/material'
-    version: 5.3.1
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      '@emotion/react': '*'
-      '@emotion/styled': '*'
-      '@types/react': '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      '@emotion/react':
-        optional: true
-      '@emotion/styled':
-        optional: true
-      '@types/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.18.9
-      '@emotion/react': registry.npmjs.org/@emotion/react/11.9.3_fdea76e38bfe11cd49674414f331ee2b
-      '@emotion/styled': registry.npmjs.org/@emotion/styled/11.9.3_47b848cc8abb2ef7b7ddfdd0455a949c
-      '@mui/base': registry.npmjs.org/@mui/base/5.0.0-alpha.66_6b79dcf651fa0d4fc8b46fa68013a7bf
-      '@mui/system': registry.npmjs.org/@mui/system/5.9.1_0724b4cf6fedc68155e0ac947672c616
-      '@mui/types': registry.npmjs.org/@mui/types/7.1.4_@types+react@17.0.47
-      '@mui/utils': registry.npmjs.org/@mui/utils/5.9.1_react@17.0.2
-      '@types/react': registry.npmjs.org/@types/react/17.0.47
-      '@types/react-transition-group': registry.npmjs.org/@types/react-transition-group/4.4.5
-      clsx: registry.npmjs.org/clsx/1.2.1
-      csstype: registry.npmjs.org/csstype/3.1.0
-      hoist-non-react-statics: registry.npmjs.org/hoist-non-react-statics/3.3.2
-      prop-types: registry.npmjs.org/prop-types/15.8.1
-      react: registry.npmjs.org/react/17.0.2
-      react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
-      react-is: registry.npmjs.org/react-is/17.0.2
-      react-transition-group: registry.npmjs.org/react-transition-group/4.4.2_react-dom@17.0.2+react@17.0.2
     dev: false
 
   registry.npmjs.org/@mui/material/5.9.1_66581c895a851b16dd21f66d733daa65:

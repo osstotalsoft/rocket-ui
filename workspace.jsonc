@@ -95,5 +95,9 @@
     "{components/**}": {
       "totalsoft_oss.rocket-ui/envs/my-env": {}
     }
-  }
+  },
+  "teambit.generator/generator": {
+    "aspects": ["rocket-ui/generator/component-templates"]
+  },
+  "rocket-ui/generator/component-templates": {}
 }

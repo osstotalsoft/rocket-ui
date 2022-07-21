@@ -11,7 +11,7 @@
 {
     "components/buttons/back-to-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/back-to-button"
     },
@@ -23,13 +23,13 @@
     },
     "components/buttons/icon-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/icon-button"
     },
     "components/buttons/upload-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/buttons/upload-button"
     },
@@ -47,7 +47,7 @@
     },
     "components/data-display/expanding-text": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.26",
+        "version": "0.0.27",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/data-display/expanding-text"
     },
@@ -59,13 +59,13 @@
     },
     "components/feedback/custom-dialog": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/custom-dialog"
     },
     "components/feedback/dialog-display": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/dialog-display"
     },
@@ -77,13 +77,13 @@
     },
     "components/feedback/linear-progress": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/linear-progress"
     },
     "components/feedback/loading-fake-text": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/loading-fake-text"
     },
@@ -95,55 +95,55 @@
     },
     "components/feedback/toast": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/feedback/toast"
     },
     "components/inputs/autocomplete": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/autocomplete"
     },
     "components/inputs/date-time": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/date-time"
     },
     "components/inputs/dynamic-input": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.10",
+        "version": "0.0.11",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/dynamic-input"
     },
     "components/inputs/password-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/password-field"
     },
     "components/inputs/simple-slider": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/simple-slider"
     },
     "components/inputs/text-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/inputs/text-field"
     },
     "components/navigation/nav-pills": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/nav-pills"
     },
     "components/navigation/pagination": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.14",
+        "version": "0.0.15",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/navigation/pagination"
     },
@@ -185,7 +185,7 @@
     },
     "components/surfaces/collapse-card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "0.0.13",
+        "version": "0.0.14",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/components/surfaces/collapse-card"
     },

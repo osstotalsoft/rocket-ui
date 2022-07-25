@@ -81,7 +81,7 @@ bit test
 
 Also, if a new feature is added, in addition to the tests, an example with the new functionality should also be added. The examples files are in each component directory inside `compositions` directory
 
-After changing the component you need to run `bit compile` in order to have the latest modifications in your UI.
+After changing the component you need to run `bit status` to check for bit related issues and then `bit compile` in order to have the latest modifications in your UI.
 
 ```shell 
 bit compile

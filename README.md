@@ -42,7 +42,7 @@ We implement and enforce this structure by creating our own component generator,
 As you will see, all the components and the ones that will be created using the `rocket-generator` template will have the following structure
 
 <picture>
-<img src ='rocket-ui/utils/img/generator.png'>
+<img src ='rocket-ui/utils/img/generator.PNG'>
 </picture>
 
 * `index.js`                           main file

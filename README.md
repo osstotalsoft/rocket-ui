@@ -84,6 +84,9 @@ Also, if a new feature is added, in addition to the tests, an example with the n
 After changing the component you need to run `bit status` to check for bit related issues and then `bit compile` in order to have the latest modifications in your UI.
 
 ```shell 
+bit status
+```
+```shell 
 bit compile
 ```
 

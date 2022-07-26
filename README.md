@@ -7,7 +7,8 @@
 </p>
 
 > A set of reusable and composable React components built on top of Material UI core for developing fast and friendly web applications interfaces.
-## 👷‍♂️ Usage
+
+## 🛠 Installation
 
 Npmrc is npm config file and in order to use our library, you need to configured this file.
 
@@ -15,7 +16,19 @@ Run ```shell npm config set '@owner:registry' https://node.bit.cloud```.
 
 This command will add an entry in your root .npmrc file. If it doesn't exist, it will create one.
 
-And then just import the component/s you need in your project and enjoy the experience!
+### - Installing one component
+
+Go to component main page and then select the command for the package manager that you use. You can also choose the version that you want to install.
+
+<picture>
+<img src ='rocket-ui/utils/img/installation.png'>
+</picture>
+
+Run the command in your terminal and you'll be ready to use it!
+```shell 
+npm i @totalsoft_oss/rocket-ui.components.data-display.typography
+```
+## 👷‍♂️ Usage
 
 ```jsx 
     import React from 'react'
@@ -29,13 +42,6 @@ And then just import the component/s you need in your project and enjoy the expe
         )
     }
 ```
-
-In order to get the package/s name for the component/s you want to use just go to our [Bit collection](https://bit.cloud/totalsoft_oss/rocket-ui) and navigate to your desired component:
-
-<picture>
-<img src ='rocket-ui/utils/img/example.png'>
-</picture>
-
 ## 🧬 Components structure
 
 Each component is in a section that is appropriate for its purpose. For example, all buttons related components resides in `buttons` folder.

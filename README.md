@@ -9,8 +9,10 @@
 > A set of reusable and composable React components built on top of Material UI core for developing fast and friendly web applications interfaces.
 ## 👷‍♂️ Usage
 
-Npmrc is npm config file and in order to use our library, you need to configured this file. 
+Npmrc is npm config file and in order to use our library, you need to configured this file.
+
 Run ```shell npm config set '@owner:registry' https://node.bit.cloud```. 
+
 This command will add an entry in your root .npmrc file. If it doesn't exist, it will create one.
 
 And then just import the component/s you need in your project and enjoy the experience!

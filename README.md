@@ -87,7 +87,7 @@ After changing/fixing the component according to your needs, you should run `bit
 bit test
 ```
 
-Also, if a new feature is added, in addition to the tests, an example with the new functionality should also be added. The examples files are in each component directory inside `compositions` directory
+Also, if a new feature is added, in addition to the tests, an example with the new functionality should also be added. The examples files are in each component directory inside `compositions` directory.
 
 After changing the component you need to run `bit status` to check for bit related issues and then `bit compile` in order to have the latest modifications in your UI.
 
@@ -102,7 +102,14 @@ bit compile
 For creating a new component you should use our own component generator, `rocket-generator`, that provides a template which is helpful in implementing a new component.
 An example using our template: `bit create rocket-generator components/buttons/my-component`
 ### - Open pull request
-If the change/feature/fix suits your needs and all the tests are passing, the next step is to create a pull request.
+
+When your change/feature/fix is done and you want to mark which components are published, their next version and a changelog message use --soft option.
+
+```shell 
+bit tag -m "my message" --soft
+```
+
+After running the above command you should see the `bitmap` file changed and after that you can create your pull request.
 
 You can read more about Bit and other functionalitites that he provides [here.](https://bit.dev/docs/quick-start)
 

@@ -31,6 +31,11 @@ jobs:
           bit config set user.token $BIT_TOKEN
     - name: Install packages using bit
       run: bit install
+    - uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Europe/Bucharest"
+        timezoneMacos: "Europe/Bucharest"
+        timezoneWindows: "Europe/Bucharest"
     - name: Hard-tag pending components
       run: bit tag --persist
     - name: Export components

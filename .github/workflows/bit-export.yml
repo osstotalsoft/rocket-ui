@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'skip-ci')"
     env:
+      NODE_OPTIONS: --max-old-space-size=4096
       BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
     steps:
     - uses: actions/checkout@v2

@@ -33,11 +33,23 @@ npm i @totalsoft_oss/rocket-ui.components.data-display.typography
 
 If you want to have all the components in your project in just one package. navigate to [core](https://bit.cloud/totalsoft_oss/rocket-ui/components/core) component in bit cloud.
 
+<picture>
+<img src ='rocket-ui/utils/img/core.png'>
+</picture>
+
+Install `core` package by running
+```shell
+npm i @totalsoft_oss/rocket-ui.components.core
+```
+
 ## 👷‍♂️ Usage
 
 ```jsx 
     import React from 'react'
     import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
+    /* example using core package
+    import { Typography } from '@totalsoft_oss/rocket-ui.components.core'
+    */
 
     const App = () => {
         return (

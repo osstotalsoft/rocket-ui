@@ -28,6 +28,11 @@ Run the command in your terminal and you'll be ready to use it!
 ```shell 
 npm i @totalsoft_oss/rocket-ui.components.data-display.typography
 ```
+
+### - Install all components with a single package
+
+If you want to have all the components in your project in just one package. navigate to [core](https://bit.cloud/totalsoft_oss/rocket-ui/components/core) component in bit cloud.
+
 ## 👷‍♂️ Usage
 
 ```jsx 
@@ -100,7 +105,9 @@ bit compile
 
 ### - Adding a new component
 For creating a new component you should use our own component generator, `rocket-generator`, that provides a template which is helpful in implementing a new component.
-An example using our template: `bit create rocket-generator components/buttons/my-component`
+```shell 
+bit create rocket-generator components/buttons/my-component
+```
 ### - Open pull request
 
 When your change/feature/fix is done and you want to mark which components are published, their next version and a changelog message use --soft option.

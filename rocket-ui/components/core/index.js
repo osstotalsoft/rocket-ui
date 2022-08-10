@@ -6,7 +6,7 @@ export { default as UploadButton } from '@totalsoft_oss/rocket-ui.components.but
 
 //charts
 export { default as Chart } from '@totalsoft_oss/rocket-ui.components.charts.chart'
-export { Default as StatsChart } from '@totalsoft_oss/rocket-ui.components.charts.stats-chart'
+export { default as StatsChart } from '@totalsoft_oss/rocket-ui.components.charts.stats-chart'
 
 //data-display
 export { default as ExpandingText } from '@totalsoft_oss/rocket-ui.components.data-display.expanding-text'
@@ -19,11 +19,11 @@ export { default as Forbidden } from '@totalsoft_oss/rocket-ui.components.feedba
 export { default as LinearProgress } from '@totalsoft_oss/rocket-ui.components.feedback.linear-progress'
 export { default as LoadingFakeText } from '@totalsoft_oss/rocket-ui.components.feedback.loading-fake-text'
 export { default as NotFound } from '@totalsoft_oss/rocket-ui.components.feedback.not-found'
-export { default as Toast } from '@totalsoft_oss/rocket-ui.components.feedback.toast'
+export * from '@totalsoft_oss/rocket-ui.components.feedback.toast'
 
 //inputs
 export { default as Autocomplete } from '@totalsoft_oss/rocket-ui.components.inputs.autocomplete'
-export { default as DateTime } from '@totalsoft_oss/rocket-ui.components.inputs.date-time'
+// export { default as DateTime } from '@totalsoft_oss/rocket-ui.components.inputs.date-time'
 export { default as DynamicInput } from '@totalsoft_oss/rocket-ui.components.inputs.dynamic-input'
 export { default as PasswordField } from '@totalsoft_oss/rocket-ui.components.inputs.password-field'
 export { default as SimpleSlider } from '@totalsoft_oss/rocket-ui.components.inputs.simple-slider'

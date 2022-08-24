@@ -4,7 +4,7 @@ import generatePalette from './common/palette'
 import typography from './common/typography'
 import { generateShadows, generateCustomShadows } from './common/shadows'
 
-const palette = generatePalette({
+export const palette = generatePalette({
   PRIMARY: {
     lighter: '#9d9d9d',
     light: '#6f6f6f',

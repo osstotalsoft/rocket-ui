@@ -4,7 +4,7 @@ import { generateCustomShadows, generateShadows } from './common/shadows';
 import { palette } from './orangeTheme';
 import typography from './common/typography'
 
-const vividOrangeTheme = createTheme({
+export const vividOrangeTheme = createTheme({
   palette: {
     ...palette,
     BACKGROUND: {

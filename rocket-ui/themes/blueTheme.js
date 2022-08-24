@@ -8,7 +8,7 @@ const palette = generatePalette({
   PRIMARY: {
     lighter: '#81b8f8',
     light: '#4c88c5',
-    main: '#005B94',
+    main: '#00497b',
     dark: '#003266',
     darker: '#000a3b',
     contrastText: '#fff',
@@ -17,11 +17,11 @@ const palette = generatePalette({
   SECONDARY: {
     lighter: '#77a2dc',
     light: '#4574aa',
-    main: '#00497b',
+    main: '#005B94',
     dark: '#00224e',
     darker: '#000026',
     contrastText: '#fff',
-    rgba: 'rgba(0, 73, 123, 1)'
+    rgba: 'rgb(188 228 250)'
   },
   BACKGROUND: {
     main: '#F5F8FA'
@@ -31,7 +31,12 @@ const palette = generatePalette({
     color: '#00385F',
     hoverBgColor: '#DFF2FD',
     hoverTextColor: '#00385F',
-    bgOpacity: '1'
+    bgOpacity: '1',
+    activeBgColor: '#00497b'
+  },
+  WHITE: {
+    main: '#fff',
+    contrastText: '#00497b'
   }
 })
 

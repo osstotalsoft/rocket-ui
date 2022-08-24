@@ -47,11 +47,6 @@ export const SUCCESS = {
   contrastText: '#fff'
 }
 
-export const WHITE = {
-  main: '#fff',
-  contrastText: '#fff'
-}
-
 export const DARK = {
   lighter: '#848484',
   light: '#575757',

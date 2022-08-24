@@ -4,7 +4,7 @@ import generatePalette from './common/palette'
 import typography from './common/typography'
 import { generateShadows, generateCustomShadows } from './common/shadows'
 
-export const palette = generatePalette({
+const palette = generatePalette({
   PRIMARY: {
     lighter: '#b0b0b0',
     light: '#818181',
@@ -21,7 +21,7 @@ export const palette = generatePalette({
     dark: '#c43e00',
     darker: '#8c0000',
     contrastText: '#fff',
-    rgba: 'rgba(255, 111, 0, 1)'
+    rgba: 'rgba(255, 111, 0)'
   },
   BACKGROUND: {
     main: '#fff'
@@ -31,7 +31,12 @@ export const palette = generatePalette({
     color: '#fff',
     hoverBgColor: 'rgba(200, 200, 200, 0.2)',
     hoverTextColor: '#fff',
-    bgOpacity: '0.8'
+    bgOpacity: '0.8',
+    activeBgColor: '#FF6F00'
+  },
+  WHITE: {
+    main: '#fff',
+    contrastText: '#555555'
   }
 })
 

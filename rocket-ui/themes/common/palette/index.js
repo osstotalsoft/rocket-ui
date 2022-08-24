@@ -1,4 +1,4 @@
-import { BLACK, ERROR, DARK, DEFAULT, GREY, INFO, LINK, ROSE, SUCCESS, WARNING, WHITE } from './basicColors'
+import { BLACK, ERROR, DARK, DEFAULT, GREY, INFO, LINK, ROSE, SUCCESS, WARNING } from './basicColors'
 
 export const createGradient = colorsArray => {
   const colors = colorsArray.join(', ')
@@ -6,7 +6,7 @@ export const createGradient = colorsArray => {
 }
 
 const generatePalette = themePalette => {
-  const { PRIMARY, SECONDARY, BACKGROUND, SIDE_MENU } = themePalette
+  const { PRIMARY, SECONDARY, BACKGROUND, SIDE_MENU, WHITE } = themePalette
 
   return {
     primary: PRIMARY,

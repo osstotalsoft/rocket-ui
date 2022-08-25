@@ -1,7 +1,7 @@
 import React, { useCallback, useLayoutEffect, useMemo, useState } from 'react'
 import PropTypes from 'prop-types'
 import { TimePicker, LocalizationProvider, DatePicker, DateTimePicker } from '@mui/x-date-pickers'
-import DefaultAdapterFns from '@mui/lab/AdapterDateFns'
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
 import { CalendarTodaySmallIcon } from './DateTimeStyles'
 import * as R from 'ramda'
@@ -127,7 +127,7 @@ const DateTime = props => {
 }
 
 DateTime.defaultProps = {
-  dateAdapter: DefaultAdapterFns,
+  dateAdapter: AdapterDateFns,
   showPicker: 'date',
   format: 'ro',
   open: false,

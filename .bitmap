@@ -16,7 +16,7 @@
         "rootDir": "rocket-ui/components/buttons/back-to-button",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -28,7 +28,7 @@
         "rootDir": "rocket-ui/components/buttons/button",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -40,7 +40,7 @@
         "rootDir": "rocket-ui/components/buttons/icon-button",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components (bump dependencies versions)",
+            "message": "update packages + modify imports (bump dependencies versions)",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -52,7 +52,7 @@
         "rootDir": "rocket-ui/components/buttons/upload-button",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -64,7 +64,7 @@
         "rootDir": "rocket-ui/components/charts/chart",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -76,7 +76,7 @@
         "rootDir": "rocket-ui/components/charts/stats-chart",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -88,7 +88,7 @@
         "rootDir": "rocket-ui/components/data-display/expanding-text",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -100,7 +100,7 @@
         "rootDir": "rocket-ui/components/data-display/typography",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -112,7 +112,7 @@
         "rootDir": "rocket-ui/components/feedback/custom-dialog",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -124,7 +124,7 @@
         "rootDir": "rocket-ui/components/feedback/dialog-display",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -136,7 +136,7 @@
         "rootDir": "rocket-ui/components/feedback/forbidden",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -148,7 +148,7 @@
         "rootDir": "rocket-ui/components/feedback/linear-progress",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -160,7 +160,7 @@
         "rootDir": "rocket-ui/components/feedback/loading-fake-text",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -169,7 +169,13 @@
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/not-found"
+        "rootDir": "rocket-ui/components/feedback/not-found",
+        "nextVersion": {
+            "version": "patch",
+            "message": "update packages + modify imports (bump dependencies versions)",
+            "username": "Costi",
+            "email": "cdiaconita@totalsoft.ro"
+        }
     },
     "components/feedback/toast": {
         "scope": "totalsoft_oss.rocket-ui",
@@ -178,7 +184,7 @@
         "rootDir": "rocket-ui/components/feedback/toast",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -190,7 +196,7 @@
         "rootDir": "rocket-ui/components/inputs/autocomplete",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -202,7 +208,7 @@
         "rootDir": "rocket-ui/components/inputs/date-time",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -214,7 +220,7 @@
         "rootDir": "rocket-ui/components/inputs/dynamic-input",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -226,7 +232,7 @@
         "rootDir": "rocket-ui/components/inputs/password-field",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -238,7 +244,7 @@
         "rootDir": "rocket-ui/components/inputs/simple-slider",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -250,7 +256,7 @@
         "rootDir": "rocket-ui/components/inputs/text-field",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -262,7 +268,7 @@
         "rootDir": "rocket-ui/components/navigation/nav-pills",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -274,7 +280,7 @@
         "rootDir": "rocket-ui/components/navigation/pagination",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -286,7 +292,7 @@
         "rootDir": "rocket-ui/components/navigation/side-menu",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -298,7 +304,7 @@
         "rootDir": "rocket-ui/components/surfaces/accordion",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -310,7 +316,7 @@
         "rootDir": "rocket-ui/components/surfaces/accordion-list",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components (bump dependencies versions)",
+            "message": "update packages + modify imports (bump dependencies versions)",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -322,7 +328,7 @@
         "rootDir": "rocket-ui/components/surfaces/card",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -334,7 +340,7 @@
         "rootDir": "rocket-ui/components/surfaces/card-actions",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -346,7 +352,7 @@
         "rootDir": "rocket-ui/components/surfaces/card-header",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components (bump dependencies versions)",
+            "message": "update packages + modify imports (bump dependencies versions)",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -358,7 +364,7 @@
         "rootDir": "rocket-ui/components/surfaces/collapse-card",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -370,7 +376,7 @@
         "rootDir": "rocket-ui/components/surfaces/stats-card",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components",
+            "message": "update packages + modify imports",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -382,7 +388,7 @@
         "rootDir": "rocket-ui/core",
         "nextVersion": {
             "version": "patch",
-            "message": "update package + remove core components (bump dependencies versions)",
+            "message": "update packages + modify imports (bump dependencies versions)",
             "username": "Costi",
             "email": "cdiaconita@totalsoft.ro"
         }
@@ -391,7 +397,13 @@
         "scope": "totalsoft_oss.rocket-ui",
         "version": "0.0.34",
         "mainFile": "index.ts",
-        "rootDir": "rocket-ui/envs/my-env"
+        "rootDir": "rocket-ui/envs/my-env",
+        "nextVersion": {
+            "version": "patch",
+            "message": "update packages + modify imports",
+            "username": "Costi",
+            "email": "cdiaconita@totalsoft.ro"
+        }
     },
     "generator/component-templates": {
         "scope": "totalsoft_oss.rocket-ui",

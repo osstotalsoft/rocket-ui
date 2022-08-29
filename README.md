@@ -88,7 +88,10 @@ As you will see, all the components and the ones that will be created using the 
 ### - Install bit
 Is recommended to use Command Prompt instead of Powershell due to some compatibility issues.
 ```shell 
-npx @teambit/bvm install
+npm i -g @teambit/bvm
+```
+```shell
+bvm install
 ```
 If any error occurs at installation, please check the [troubleshooting section.](https://bit.dev/docs/reference/using-bvm#troubleshooting)
 

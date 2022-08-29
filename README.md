@@ -12,9 +12,10 @@
 
 Npmrc is npm config file and in order to use our library, you need to configured this file.
 
-Run ```shell 
+Run 
+```shell 
 npm config set '@owner:registry' https://node.bit.cloud
-```. 
+```
 
 This command will add an entry in your root .npmrc file. If it doesn't exist, it will create one.
 

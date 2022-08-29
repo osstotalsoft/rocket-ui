@@ -10,11 +10,12 @@
 
 ## 🛠 Installation
 
-Npmrc is npm config file and in order to use our library, you need to configured this file.
+Npmrc is npm config file and in order to use our library, you need to configured this file. 
+‼ Skip this step if the project is generated with our [Webapp Rocket Generator](https://github.com/osstotalsoft/generator-webapp-rocket). The .npmrc file is already configured
 
 Run 
 ```shell 
-npm config set '@totalsoft_oss:registry' https://node.bit.cloud
+npm config set @totalsoft_oss:registry https://node.bit.cloud
 ```
 
 This command will add an entry in your root .npmrc file. If it doesn't exist, it will create one.

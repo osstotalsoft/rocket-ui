@@ -5,7 +5,7 @@ export const defaultFont = {
   fontWeight: '300'
 }
 
-const typography = {
+export const generateTypography = palette => ({
   ...defaultFont,
   defaultFont,
   useNextVariants: true,
@@ -20,7 +20,25 @@ const typography = {
   body: {
     ...defaultFont,
     fontSize: 14
+  },
+  header: {
+    title: {
+      borderRadius: '3px',
+      textTransform: 'none',
+      fontWeight: 'bold',
+      color: palette.primary.main,
+      '&:hover,&:focus': {
+        background: 'transparent'
+      }
+    },
+    titleMobile: {
+      borderRadius: '3px',
+      textTransform: 'none',
+      fontWeight: 'bold',
+      color: palette.primary.main,
+      '&:hover,&:focus': {
+        background: 'transparent'
+      }
+    }
   }
-}
-
-export default typography
+})

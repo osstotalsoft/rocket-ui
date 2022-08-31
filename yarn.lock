@@ -758,30 +758,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/base@npm:5.0.0-alpha.95":
-  version: 5.0.0-alpha.95
-  resolution: "@mui/base@npm:5.0.0-alpha.95::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40mui%2Fbase%2F-%2Fbase-5.0.0-alpha.95.tgz"
-  dependencies:
-    "@babel/runtime": ^7.18.9
-    "@emotion/is-prop-valid": ^1.2.0
-    "@mui/types": ^7.2.0
-    "@mui/utils": ^5.10.3
-    "@popperjs/core": ^2.11.6
-    clsx: ^1.2.1
-    prop-types: ^15.8.1
-    react-is: ^18.2.0
-  peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: b05f18ed2f1fbb6e1ab1d58e54e38b09aa43ad10a0f5e8cf7c86da745a1feca298429c34d2437298b3125c3096cf8b32ee18ad4dbc616ac88d2bd6be57b5c21c
-  languageName: node
-  linkType: hard
-
-"@mui/core-downloads-tracker@npm:^5.10.3":
+"@mui/core-downloads-tracker@npm:^5.10.2":
   version: 5.10.3
   resolution: "@mui/core-downloads-tracker@npm:5.10.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40mui%2Fcore-downloads-tracker%2F-%2Fcore-downloads-tracker-5.10.3.tgz"
   checksum: 07c7d3ddda9dfcd402633e7ab7b367505cbc097ac7ae59bb9232caa11896902e76241f5bf905b62b0c96429cb94009e1006492c172926390f1936fb6e5a1326d
@@ -833,16 +810,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.9.1":
-  version: 5.10.3
-  resolution: "@mui/material@npm:5.10.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40mui%2Fmaterial%2F-%2Fmaterial-5.10.3.tgz"
+"@mui/material@npm:5.10.2":
+  version: 5.10.2
+  resolution: "@mui/material@npm:5.10.2::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40mui%2Fmaterial%2F-%2Fmaterial-5.10.2.tgz"
   dependencies:
-    "@babel/runtime": ^7.18.9
-    "@mui/base": 5.0.0-alpha.95
-    "@mui/core-downloads-tracker": ^5.10.3
-    "@mui/system": ^5.10.3
-    "@mui/types": ^7.2.0
-    "@mui/utils": ^5.10.3
+    "@babel/runtime": ^7.17.2
+    "@mui/base": 5.0.0-alpha.94
+    "@mui/core-downloads-tracker": ^5.10.2
+    "@mui/system": ^5.10.2
+    "@mui/types": ^7.1.5
+    "@mui/utils": ^5.9.3
     "@types/react-transition-group": ^4.4.5
     clsx: ^1.2.1
     csstype: ^3.1.0
@@ -862,7 +839,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: af7502c5340bfd4a777daa986940a86664e3c3c724fe9e2821f95172cbc55e27e85bbad011f1c4e0554df93aed1d881d81d8fad16f8b8e011e7b2d2b31f34c9c
+  checksum: 2d44933c28e25b112a18cdcee4ea4c71d6eeba6b91ee33e3b66ec636c05daf3a9b03715d0a86c34a5670a3e25e39d13b10fc57aac524d52631134db0daca88de
   languageName: node
   linkType: hard
 
@@ -904,7 +881,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^5.10.2, @mui/system@npm:^5.10.3":
+"@mui/system@npm:^5.10.2":
   version: 5.10.3
   resolution: "@mui/system@npm:5.10.3::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40mui%2Fsystem%2F-%2Fsystem-5.10.3.tgz"
   dependencies:
@@ -1544,7 +1521,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "accordion-50d011@workspace:rocket-ui/components/surfaces/accordion"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1554,7 +1531,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "accordion-list-e6e093@workspace:rocket-ui/components/surfaces/accordion-list"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1671,7 +1648,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "autocomplete-911825@workspace:rocket-ui/components/inputs/autocomplete"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1706,7 +1683,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "back-to-button-5c923e@workspace:rocket-ui/components/buttons/back-to-button"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1763,7 +1740,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "button-3874e5@workspace:rocket-ui/components/buttons/button"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1797,7 +1774,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "card-05bca2@workspace:rocket-ui/components/surfaces/card"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1807,7 +1784,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "card-actions-6f96a4@workspace:rocket-ui/components/surfaces/card-actions"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1817,7 +1794,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "card-header-1d31a6@workspace:rocket-ui/components/surfaces/card-header"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -1883,7 +1860,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chart-576109@workspace:rocket-ui/components/charts/chart"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     chart.js: 3.8.0
     react: 17.0.2
     react-chartjs-2: 4.2.0
@@ -1932,7 +1909,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "collapse-card-ea0bf7@workspace:rocket-ui/components/surfaces/collapse-card"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2079,7 +2056,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-dialog-276637@workspace:rocket-ui/components/feedback/custom-dialog"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2103,7 +2080,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "date-time-ee6052@workspace:rocket-ui/components/inputs/date-time"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2153,7 +2130,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dialog-display-c50d65@workspace:rocket-ui/components/feedback/dialog-display"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2222,7 +2199,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dynamic-input-1ca32d@workspace:rocket-ui/components/inputs/dynamic-input"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2557,7 +2534,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "expanding-text-a3ef16@workspace:rocket-ui/components/data-display/expanding-text"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2643,7 +2620,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forbidden-b5e79b@workspace:rocket-ui/components/feedback/forbidden"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -2906,7 +2883,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "icon-button-7027f7@workspace:rocket-ui/components/buttons/icon-button"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3329,7 +3306,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "linear-progress-3cb015@workspace:rocket-ui/components/feedback/linear-progress"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3358,7 +3335,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "loading-fake-text-4e85b4@workspace:rocket-ui/components/feedback/loading-fake-text"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3562,7 +3539,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nav-pills-2dda05@workspace:rocket-ui/components/navigation/nav-pills"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3591,7 +3568,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "not-found-088a34@workspace:rocket-ui/components/feedback/not-found"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3699,7 +3676,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "pagination-c7402b@workspace:rocket-ui/components/navigation/pagination"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -3753,7 +3730,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "password-field-9d2009@workspace:rocket-ui/components/inputs/password-field"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4285,7 +4262,7 @@ __metadata:
     "@emotion/styled": ^11.9.3
     "@mui/icons-material": 5.8.4
     "@mui/lab": 5.0.0-alpha.96
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@mui/x-date-pickers": 5.0.0-beta.6
     "@teambit/dependencies.modules.packages-excluder": 0.0.54
     "@teambit/harmony": 0.3.3
@@ -4325,7 +4302,7 @@ __metadata:
   peerDependencies:
     "@emotion/react": ^11.9.3
     "@emotion/styled": ^11.9.3
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     chart.js: 3.8.0
     react: 17.0.2
@@ -4405,7 +4382,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "side-menu-f3ce22@workspace:rocket-ui/components/navigation/side-menu"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4415,7 +4392,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "simple-slider-470898@workspace:rocket-ui/components/inputs/simple-slider"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4496,7 +4473,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "stats-card-c0ea73@workspace:rocket-ui/components/surfaces/stats-card"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4506,7 +4483,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "stats-chart-6e55da@workspace:rocket-ui/components/charts/stats-chart"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     chart.js: 3.8.0
     react: 17.0.2
     react-chartjs-2: 4.2.0
@@ -4625,7 +4602,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "text-field-295800@workspace:rocket-ui/components/inputs/text-field"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4635,7 +4612,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "theme-d04481@workspace:rocket-ui/providers/theme"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   languageName: unknown
@@ -4645,7 +4622,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "themes-6e004c@workspace:rocket-ui/themes"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   languageName: unknown
@@ -4685,7 +4662,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "toast-faa454@workspace:rocket-ui/components/feedback/toast"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4773,7 +4750,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "typography-101e3e@workspace:rocket-ui/components/data-display/typography"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown
@@ -4900,7 +4877,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "upload-button-f339ce@workspace:rocket-ui/components/buttons/upload-button"
   peerDependencies:
-    "@mui/material": ^5.9.1
+    "@mui/material": 5.10.2
     "@testing-library/react": ^12.1.2
     react: 17.0.2
   languageName: unknown

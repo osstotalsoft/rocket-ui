@@ -11,6 +11,7 @@
 ## 🛠 Installation
 
 Npmrc is npm config file and in order to use our library, you need to configured this file. 
+
 ‼ Skip this step if the project is generated with our [Webapp Rocket Generator](https://github.com/osstotalsoft/generator-webapp-rocket). The .npmrc file is already configured
 
 Run 

@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -37,6 +37,7 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
+    "nodeLinker": "hoisted",
     "policy": {
       "dependencies": {
         "@babel/core": "7.18.6",
@@ -97,9 +98,7 @@
     }
   },
   "teambit.generator/generator": {
-    "aspects": [
-      "rocket-ui/generator/component-templates"
-    ]
+    "aspects": ["rocket-ui/generator/component-templates"]
   },
   "rocket-ui/generator/component-templates": {}
 }

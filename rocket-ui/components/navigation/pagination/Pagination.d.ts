@@ -41,7 +41,7 @@ export interface PaginationProps extends Omit<MuiTablePaginationProps, 'onPageCh
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/navigation/pagination
  *
- * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/tree/master/components/Pagination
+ * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/navigation/pagination
  *
  * Material-UI components used:
  *

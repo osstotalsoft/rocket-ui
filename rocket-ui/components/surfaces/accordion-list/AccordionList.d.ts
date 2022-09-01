@@ -18,4 +18,14 @@ export interface AccordionListProps extends Omit<AccordionProps, 'defaultExpande
   }[]
 }
 
+/**
+ *
+ * Demos:
+ *
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/surfaces/accordion-list
+ *
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/surfaces/accordion-list
+ *
+ */
+
 export default function AccordionList(props: AccordionListProps): JSX.Element

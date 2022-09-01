@@ -4,9 +4,8 @@ import {
   DialogContentProps as MuiDialogContentProps,
   DialogContentTextProps as MuiDialogContentTextProps,
   DialogActionsProps as MuiDialogActionsProps,
-  // TODO: replace with local IconButton props after it gets re-written
-  IconButtonProps as MuiIconButtonProps
 } from '@mui/material'
+import { IconButtonProps } from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 
 export interface DialogDisplayProps extends Omit<MuiDialogProps, 'maxWidth' | 'title'> {
   /**
@@ -58,7 +57,7 @@ export interface DialogDisplayProps extends Omit<MuiDialogProps, 'maxWidth' | 't
   /**
    * Props sent to the close button.
    */
-  closeButtonProps?: MuiIconButtonProps
+  closeButtonProps?: IconButtonProps
   /**
    * @default false
    * If `true`, the backdrop will be transparent.
@@ -87,7 +86,7 @@ export interface DialogDisplayProps extends Omit<MuiDialogProps, 'maxWidth' | 't
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/feedback/dialog-display
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/DialogDisplay/DialogDisplay.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/feedback/dialog-display
  *
  *  Material UI components used:
  *

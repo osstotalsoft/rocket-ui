@@ -103,8 +103,21 @@ it('should render with the correct text', () => {
   expect(rendered).toBeTruthy();
 });
 `
+            },
+
+            // index.d.ts
+            {
+              relativePath: `index.d.ts`,
+              content: `export { default } from './MyComponent';
+export * from './MyComponent';
+`
+            },
+
+            // .d.ts file
+            {
+              relativePath: `${context.namePascalCase}.d.ts`,
+              content: ``
             }
-            // add more files here such as css/sass
           ]
         }
       }

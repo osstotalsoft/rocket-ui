@@ -22,6 +22,8 @@ export interface AccordionProps extends Omit<MuiAccordionProps, 'variant' | 'tit
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/surfaces/accordion
  *
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/surfaces/accordion
+ *
  */
 
 export default function Accordion(props: AccordionProps): JSX.Element

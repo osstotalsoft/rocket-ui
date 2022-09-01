@@ -31,11 +31,13 @@ export interface ChartProps {
 }
 
 /**
- * Demos: 
- * 
+ *
+ * Demos:
+ *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/charts/chart
  *
- * https://react-chartjs-2.js.org/examples
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/charts/chart
+ * 
  */
 
 export default function Chart(props: ChartProps): JSX.Element

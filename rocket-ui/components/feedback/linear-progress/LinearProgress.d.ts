@@ -17,9 +17,9 @@ export interface LinearProgressProps extends Omit<MuiLinearProgressProps, 'color
  *
  * Demos:
  *
- * - https://bit.dev/totalsoft_oss/react-mui/custom-linear-progress
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/feedback/linear-progress
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/CustomLinearProgress/CustomLinearProgress.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/feedback/linear-progress
  *
  * Material-UI component used:
  *

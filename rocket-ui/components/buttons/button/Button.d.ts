@@ -62,7 +62,7 @@ export interface ButtonProps extends Omit<MuiButtonProps, 'color' | 'size'> {
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/buttons/button
  *
- *   Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/Button/Button.js
+ *   Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/buttons/button
  *
  * Material-UI components used:
  *

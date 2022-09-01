@@ -97,19 +97,21 @@ export interface AutocompleteProps<
    */
   size?: 'small' | 'medium'
 }
+
 /**
  *
  * Demos:
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/autocomplete
  *
- * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/tree/master/components/Autocomplete
+ * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/inputs/autocomplete
  *
  * Material-UI components used:
  *
  * - Autocomplete: https://mui.com/api/autocomplete/
  *
  */
+
 export default function Autocomplete<
   T,
   Multiple extends boolean | undefined = undefined,

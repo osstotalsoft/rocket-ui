@@ -34,6 +34,7 @@ export interface StatsCardProps {
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/surfaces/stats-card
  *
+ * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/surfaces/stats-card
  *
  * Material-UI components used:
  *

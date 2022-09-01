@@ -94,7 +94,7 @@ export interface NavPillsProps extends Omit<TabsProps, 'textColor' | 'indicatorC
    *
    * - https://bit.cloud/totalsoft_oss/rocket-ui/components/navigation/nav-pills
    *
-   *  Take a look over the code for further information:https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/NavPills/NavPills.js
+   *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/navigation/nav-pills
    *
    * Material-UI components used:
    *

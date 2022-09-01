@@ -26,7 +26,7 @@ export interface LoadingFakeTextProps extends Omit<MuiSkeletonProps, 'animation'
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/feedback/loading-fake-text
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/FakeText/LoadingFakeText.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/feedback/loading-fake-text
  *
  * Material-UI component used:
  *

@@ -46,9 +46,9 @@ export interface SimpleSliderProps extends Omit<SliderProps, 'onChange'> {
 /**
  * Demos:
  *
- * - https://bit.dev/totalsoft_oss/react-mui/simple-slider
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/simple-slider
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/SimpleSlider/SimpleSlider.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/inputs/simple-slider
  *
  * Material-UI component used:
  *

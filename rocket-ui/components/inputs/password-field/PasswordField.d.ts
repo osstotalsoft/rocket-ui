@@ -17,13 +17,13 @@ export interface PasswordFieldProps extends TextFieldProps {
  * 
  * Demos:
  *
- * - https://bit.dev/totalsoft_oss/react-mui/password-field
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/password-field
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/PasswordField/PasswordField.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/inputs/password-field
  * 
  * Bit component used:
  * 
- * - TextField: https://bit.dev/totalsoft_oss/react-mui/custom-text-field
+ * - TextField: https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/text-field
  * 
  */
 

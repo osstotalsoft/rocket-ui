@@ -62,9 +62,9 @@ export interface CardProps extends Omit<MuiCardProps, 'title' | 'variant'> {
  *
  * Demos:
  *
- * - https://bit.dev/totalsoft_oss/react-mui/card
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/surfaces/card
  *
- * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/Card/Card.js
+ * Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/surfaces/card
  *
  * Material-UI components used:
  *

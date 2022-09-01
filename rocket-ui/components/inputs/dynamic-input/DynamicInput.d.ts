@@ -31,7 +31,7 @@ export interface DynamicInputProps {
  *
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/dynamic-input
  *
- *  Take a look over the code for further information:https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/DynamicInput/DynamicInput.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/inputs/dynamic-input
  * 
  * Components used:
  * 

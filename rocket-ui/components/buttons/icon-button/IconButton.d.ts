@@ -32,13 +32,13 @@ export interface IconButtonProps extends Omit<ButtonProps, 'color' | 'type'> {
 /**
  * Demos:
  *
- * - https://bit.dev/totalsoft_oss/react-mui/icon-button
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/buttons/icon-button
  *
- *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-webapp-components/blob/master/components/IconButton/IconButton.js
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/buttons/icon-button
  *
  * Bit component used:
  *
- * - Button: https://bit.dev/totalsoft_oss/react-mui/button
+ * - Button: https://bit.cloud/totalsoft_oss/rocket-ui/components/buttons/button
  *
  */
 

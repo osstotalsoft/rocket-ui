@@ -25,4 +25,14 @@ export interface CustomDialogProps extends DialogDisplayProps {
   textDialogNo?: string
 }
 
+/**
+ *
+ * Demos:
+ *
+ * - https://bit.cloud/totalsoft_oss/rocket-ui/components/feedback/custom-dialog
+ *
+ *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/feedback/custom-dialog
+ * 
+ */
+
 export default function CustomDialog(props: CustomDialogProps): JSX.Element

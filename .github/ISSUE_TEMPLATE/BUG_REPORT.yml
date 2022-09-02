@@ -17,14 +17,14 @@ body:
     id: bug-description
     attributes:
       label: Current behavior
-      description: Describe the current behavior
+      description: Describe the current behavior.
     validations:
       required: true
   - type: textarea
     id: expected-behavior
     attributes:
       label: Expected behavior
-      description: Describe what should happened
+      description: Describe what should happened.
     validations:
       required: true
   - type: textarea
@@ -36,7 +36,13 @@ body:
     id: versions
     attributes:
       label: Software Version
-      description: What version of our software are you running?
+      description: What is your environment?
+      value: |
+        1. Bit:
+        2. Rocket-ui:
+        3. Material UI:
+        4. React:
+        5. NPM/YARN:
     validations:
       required: true
   - type: dropdown

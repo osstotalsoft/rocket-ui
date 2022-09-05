@@ -6,6 +6,10 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://bit.cloud/totalsoft_oss/rocket-ui">Bit collection</a>
+</p>
+
 > A set of reusable and composable React components built on top of Material UI core for developing fast and friendly web applications interfaces.
 
 > 👨‍🚀 Check the [migration guide](https://app.gitbook.com/o/awVgoXokQ8iqYbJLuD6c/s/I3UNecQp7m3xwC9LeO7G/) from bit legacy to bit harmony version.
@@ -38,7 +42,7 @@ npm i @totalsoft_oss/rocket-ui.components.data-display.typography
 
 ### - Install all components with a single package
 
-If you want to have all the components in your project in just one package. navigate to [core](https://bit.cloud/totalsoft_oss/rocket-ui/components/core) component in bit cloud.
+If you want to have all the components in your project in just one package. navigate to [core](https://bit.cloud/totalsoft_oss/rocket-ui/core) component in bit cloud.
 
 <picture>
 <img src ='rocket-ui/utils/img/core.png'>
@@ -46,7 +50,7 @@ If you want to have all the components in your project in just one package. navi
 
 Install `core` package by running
 ```shell
-npm i @totalsoft_oss/rocket-ui.components.core
+npm i @totalsoft_oss/rocket-ui.core
 ```
 
 ## 👷‍♂️ Usage

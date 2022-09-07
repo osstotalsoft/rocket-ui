@@ -9,8 +9,8 @@ const CardHeader = styled(MuiCardHeader, {
   },
   [`& .MuiCardHeader-avatar`]: {
     ...(hasIcon && {
-      width: '3.8rem',
-      height: '3.8rem',
+      width: '3rem',
+      height: '3rem',
       borderRadius: '0.75rem',
       background: `linear-gradient(195deg, ${theme.palette[iconColor].light}, ${theme.palette[iconColor].main})`,
       position: 'absolute',

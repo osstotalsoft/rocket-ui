@@ -57,7 +57,7 @@ IconButton.propTypes = {
   /**
    * Size of the button
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large']),
   /**
    * Override or extend the styles applied to the component
    */

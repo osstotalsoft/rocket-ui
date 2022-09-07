@@ -10,7 +10,7 @@ const CollapseCard = ({ content, children, actions, variant, defaultExpanded, ex
   const [localExpanded, setLocalExpanded] = useState(defaultExpanded || false)
   const exp = expanded || localExpanded
 
-  const toggleCard = useCallback((_, event) => (onToggle ? onToggle(event) : setLocalExpanded(current => !current)), [onToggle])
+  const toggleCard = useCallback(event => (onToggle ? onToggle(event) : setLocalExpanded(current => !current)), [onToggle])
 
   const iconButton = (
     <IconButton size='small' variant='text' color='primary' onClick={toggleCard}>

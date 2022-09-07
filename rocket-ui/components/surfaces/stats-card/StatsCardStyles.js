@@ -46,8 +46,8 @@ export const CardDescription = styled(Typography)(() => ({
 
 export const iconStyle = {
   color: '#FFFFFF',
-  width: '30px',
-  height: '30px',
+  width: '3rem',
+  height: '3rem',
   margin: 'auto',
   padding: '2px'
 }

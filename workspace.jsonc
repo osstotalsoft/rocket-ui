@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -49,6 +49,7 @@
         "@typescript-eslint/eslint-plugin": "4.x",
         "@typescript-eslint/parser": "4.x",
         "attr-accept": "2.x",
+        "chart.js": "3.x",
         "classnames": "2.x",
         "date-fns": "2.x",
         "eslint-import-resolver-node": "0.x",
@@ -62,6 +63,7 @@
         "lodash": "4.x",
         "prop-types": "15.x",
         "ramda": "0.x",
+        "react-chartjs-2": "4.x",
         "react-number-format": "4.x",
         "react-syntax-highlighter": "15.x",
         "react-toastify": "9.x",
@@ -72,9 +74,7 @@
         "@emotion/styled": "^11.x",
         "@mui/material": "5.x",
         "@testing-library/react": "^12.x",
-        "chart.js": "3.x",
         "react": "17.x",
-        "react-chartjs-2": "4.x",
         "react-dom": "17.x",
         "react-router-dom": "^5.x"
       }
@@ -96,9 +96,7 @@
     }
   },
   "teambit.generator/generator": {
-    "aspects": [
-      "rocket-ui/generator/component-templates"
-    ]
+    "aspects": ["rocket-ui/generator/component-templates"]
   },
   "rocket-ui/generator/component-templates": {}
 }

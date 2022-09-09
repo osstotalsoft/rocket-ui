@@ -59,7 +59,7 @@ npm i @totalsoft_oss/rocket-ui.core
     import React from 'react'
     import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
     /* example using core package
-    import { Typography } from '@totalsoft_oss/rocket-ui.components.core'
+    import { Typography } from '@totalsoft_oss/rocket-ui.core'
     */
 
     const App = () => {

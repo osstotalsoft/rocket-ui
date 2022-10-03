@@ -81,12 +81,12 @@ As you will see, all the components and the ones that will be created using the 
 <img src ='rocket-ui/utils/img/generator.PNG'>
 </picture>
 
-* `index.js`                           main file
-* `MyComponent.js`                     implementation of the component
-* `MyComponent.test.js`                test file of the component
-* `MyComponent.docs.mdx`               docs file for the component
-* `compositions`                       folder with example files
-    * `MyComponent.composition.js`     compositions for simulating the component in different states
+* `index.js`                           Entry file.
+* `MyComponent.js`                     Main file.
+* `MyComponent.test.js`                Test file.
+* `MyComponent.docs.mdx`               Docs file for the component.
+* `compositions`                       Compositions folder.
+    * `MyComponent.composition.js`     Compositions for simulating the component in different states and contexts.
 
 
 ## 🔧 Contributing guide

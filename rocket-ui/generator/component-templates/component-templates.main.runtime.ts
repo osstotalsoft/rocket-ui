@@ -8,10 +8,7 @@ export class ComponentTemplatesMain {
   static runtime = MainRuntime
   static async provider([generator]: [GeneratorMain]) {
     /**
-     * Array of templates. Add as many templates as you want
-     * Separate the templates to multiple files if you prefer
-     * Modify, add or remove files as needed
-     * See the docs file of this component for more info
+     * Custom component generator that will get you started with what you need in order to develop new components.
      */
 
     generator.registerComponentTemplate([

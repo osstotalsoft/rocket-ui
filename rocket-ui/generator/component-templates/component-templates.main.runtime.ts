@@ -31,7 +31,6 @@ export default ${context.namePascalCase};
               relativePath: `${context.namePascalCase}.js`,
               content: `import React from 'react';
 import PropTypes from 'prop-types';
-import ${context.namePascalCase} from './${context.namePascalCase}'
 
 const ${context.namePascalCase} = () => {}
 
@@ -105,15 +104,17 @@ it('should render with the correct text', () => {
             // index.d.ts
             {
               relativePath: `index.d.ts`,
-              content: `export { default } from './MyComponent';
-export * from './MyComponent';
+              content: `export { default } from './${context.namePascalCase}';
+export * from './${context.namePascalCase}';
 `
             },
 
             // .d.ts file
             {
               relativePath: `${context.namePascalCase}.d.ts`,
-              content: ``
+              content: `export interface ${context.namePascalCase}Props {}
+export default function ${context.namePascalCase}(props: ${context.namePascalCase}Props): JSX.Element
+`
             }
           ]
         }

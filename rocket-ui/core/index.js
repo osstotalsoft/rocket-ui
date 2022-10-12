@@ -6,11 +6,12 @@ export { default as UploadButton } from '@totalsoft_oss/rocket-ui.components.but
 
 //charts
 export { default as Chart } from '@totalsoft_oss/rocket-ui.components.charts.chart'
-export { Default as StatsChart } from '@totalsoft_oss/rocket-ui.components.charts.stats-chart'
+export { default as StatsChart } from '@totalsoft_oss/rocket-ui.components.charts.stats-chart'
 
 //data-display
 export { default as ExpandingText } from '@totalsoft_oss/rocket-ui.components.data-display.expanding-text'
 export { default as Typography } from '@totalsoft_oss/rocket-ui.components.data-display.typography'
+export { default as FavIcon } from '@totalsoft_oss/rocket-ui.components.data-display.fav-icon'
 
 //feedback
 export { default as CustomDialog } from '@totalsoft_oss/rocket-ui.components.feedback.custom-dialog'

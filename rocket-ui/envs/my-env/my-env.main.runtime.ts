@@ -1,18 +1,8 @@
 import { MainRuntime } from '@teambit/cli'
 import { ReactAspect, ReactMain /*, UseTypescriptModifiers*/ } from '@teambit/react'
-import { CompilerAspect } from '@teambit/compiler'
-import { BabelAspect, BabelMain } from '@teambit/babel'
-import babelConfig from './babel.config'
+import { BabelAspect } from '@teambit/babel'
 import { EnvsAspect, EnvsMain } from '@teambit/envs'
 import { MyEnvAspect } from './my-env.aspect'
-//import {
-//  previewConfigTransformer,
-//  devServerConfigTransformer
-//} from './webpack/webpack-transformers';
-//import {
-//  devConfigTransformer,
-//  buildConfigTransformer,
-//} from "./typescript/ts-transformer";
 
 export class MyEnvMain {
   static slots = []
@@ -21,7 +11,7 @@ export class MyEnvMain {
 
   static runtime = MainRuntime
 
-  static async provider([react, envs, babel]: [ReactMain, EnvsMain, BabelMain]) {
+  static async provider([react, envs]: [ReactMain, EnvsMain]) {
     //const webpackModifiers: UseWebpackModifiers = {
     //  previewConfig: [previewConfigTransformer],
     //  devServerConfig: [devServerConfigTransformer],
@@ -32,25 +22,11 @@ export class MyEnvMain {
     //  buildConfig: [buildConfigTransformer],
     //};
 
-    // const babelCompiler = babel.createCompiler({
-    //   babelTransformOptions: babelConfig
-    // })
-
-    // // Get React's build pipeline
-    // const basicBuildPipeline = react.reactEnv.getBuildPipe()
-    // // Filter out compilation build tasks
-    // const basicBuildPipelineWithoutCompilation = basicBuildPipeline.filter(task => task.aspectId !== CompilerAspect.id)
-
-    // const compilerBuildTask = [compiler.createTask('BabelCompiler', babelCompiler), ...basicBuildPipelineWithoutCompilation]
-
     const MyEnvEnv = envs.compose(react.reactEnv, [
       /**
        * Uncomment to override the config files for TypeScript, Webpack or Jest
        * Your config gets merged with the defaults
        */
-
-      // react.useTypescript(tsModifiers),  // note: this cannot be used in conjunction with react.overrideCompiler
-      // react.useWebpack(webpackModifiers),
       react.overrideJestConfig(require.resolve('./jest/jest.config')),
 
       /**

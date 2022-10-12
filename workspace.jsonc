@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -36,7 +36,7 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/yarn",
+    "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
         "@babel/core": "7.x",
@@ -45,6 +45,7 @@
         "@mui/icons-material": "5.x",
         "@mui/lab": "5.0.0-alpha.96",
         "@mui/x-date-pickers": "5.0.0-beta.6",
+        "@testing-library/dom": "8.x",
         "@testing-library/react-hooks": "8.x",
         "@typescript-eslint/eslint-plugin": "4.x",
         "@typescript-eslint/parser": "4.x",
@@ -78,7 +79,8 @@
         "react-dom": "17.x",
         "react-router-dom": "^5.x"
       }
-    }
+    },
+    "linkCoreAspects": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your
@@ -96,9 +98,7 @@
     }
   },
   "teambit.generator/generator": {
-    "aspects": [
-      "rocket-ui/generator/component-templates"
-    ]
+    "aspects": ["rocket-ui/generator/component-templates"]
   },
   "rocket-ui/generator/component-templates": {}
 }

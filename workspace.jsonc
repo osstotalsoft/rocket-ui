@@ -67,7 +67,7 @@
         "react-chartjs-2": "4.x",
         "react-number-format": "4.x",
         "react-syntax-highlighter": "15.x",
-        "react-toastify": "9.x",
+        "react-toastify": "8.x",
         "typescript": "4.x"
       },
       "peerDependencies": {

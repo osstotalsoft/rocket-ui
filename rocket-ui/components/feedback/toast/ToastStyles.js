@@ -37,9 +37,9 @@ const Container = styled('div')(({ theme }) => ({
     '--toastify-icon-color-warning': theme.palette.warning.main,
     '--toastify-color-progress-warning': theme.palette.warning.main
   },
-  [`&.${classes.toastWrapper}`]: {
+  [`& .${classes.toastWrapper}`]: {
     borderRadius: '6px',
-    width: '500px',
+    width: '350px',
     overflowWrap: 'anywhere'
   },
   [`.Toastify__close-button`]: {

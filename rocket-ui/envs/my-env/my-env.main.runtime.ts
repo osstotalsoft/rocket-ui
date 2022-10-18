@@ -76,18 +76,19 @@ export class MyEnvMain {
 
           return {
             ...baseDependencies,
+            dependencies: [
+            {
+              name: 'react-chartjs-2',
+              supportedRange: '^4.0.0',
+              version: '4.x'
+            },
+            { name: 'chart.js', supportedRange: '^3.0.0', version: '3.x' }],
             peers: [
               {
                 name: '@mui/material',
                 supportedRange: '^5.0.0',
                 version: '5.x'
-              },
-              {
-                name: 'react-chartjs-2',
-                supportedRange: '^4.0.0',
-                version: '4.x'
-              },
-              { name: 'chart.js', supportedRange: '^3.0.0', version: '3.x' }
+              }
             ]
           }
         }

@@ -76,6 +76,10 @@ export class MyEnvMain {
 
           return {
             ...baseDependencies,
+            dependencies: {
+              'chart.js': '3.x',
+              'react-chartjs-2': '4.x'
+            },
             peers: [
               {
                 name: '@mui/material',

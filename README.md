@@ -12,7 +12,7 @@
 
 > A set of reusable and composable React components built on top of Material UI core for developing fast and friendly web applications interfaces.
 
-> 👨‍🚀 Check the [migration guide](https://app.gitbook.com/o/awVgoXokQ8iqYbJLuD6c/s/I3UNecQp7m3xwC9LeO7G/) from bit legacy to bit harmony version.
+> 👨‍🚀 Check the [migration guide](https://totalsoft.gitbook.io/migrating-to-rocket-ui/) from bit legacy to bit harmony version.
 
 ## 🛠 Installation
 

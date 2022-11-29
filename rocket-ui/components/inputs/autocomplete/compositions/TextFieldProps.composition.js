@@ -31,6 +31,15 @@ export const TextFieldProps = () => {
                 options={options}
               />
             </Grid>
+            <Grid item xs={3}>
+              <Autocomplete
+                label='Variant outlined'
+                value={helperValue}
+                onChange={setHelperValue}
+                options={options}
+                inputTextFieldProps={{ variant: 'outlined' }}
+              />
+            </Grid>
           </Grid>
         </Grid>
       }

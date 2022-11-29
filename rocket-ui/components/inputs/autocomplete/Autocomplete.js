@@ -45,6 +45,7 @@ const Autocomplete = ({
   isSearchable,
   getOptionDisabled,
   placeholder,
+  inputTextFieldProps,
   ...other
 }) => {
   const [options, setOptions] = useState(receivedOptions)
@@ -95,7 +96,8 @@ const Autocomplete = ({
         error,
         helperText,
         required,
-        placeholder
+        placeholder,
+        ...inputTextFieldProps
       }
 
       return (
@@ -110,7 +112,7 @@ const Autocomplete = ({
         />
       )
     },
-    [inputSelectedColor, isSearchable, label, error, helperText, required, placeholder]
+    [inputSelectedColor, isSearchable, label, error, helperText, required, placeholder, inputTextFieldProps]
   )
 
   const handleOptionLabel = useCallback(
@@ -399,7 +401,11 @@ Autocomplete.propTypes = {
   /**
    * The color of selected input.
    */
-  inputSelectedColor: PropTypes.string
+  inputSelectedColor: PropTypes.string,
+  /**
+   *  Properties that will be passed to the rendered input. This is a TextField.
+   */
+  inputTextFieldProps: PropTypes.object
 }
 
 export default Autocomplete

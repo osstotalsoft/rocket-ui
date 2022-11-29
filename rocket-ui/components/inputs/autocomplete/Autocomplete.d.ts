@@ -96,6 +96,10 @@ export interface AutocompleteProps<
    * The size of the autocomplete.
    */
   size?: 'small' | 'medium'
+  /**
+   *  Properties that will be passed to the rendered input. This is a TextField.
+   */
+  inputTextFieldProps?: object
 }
 
 /**

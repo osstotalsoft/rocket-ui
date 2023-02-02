@@ -2,9 +2,9 @@ import React from 'react'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import { Bounce, Flip, Slide, Zoom } from 'react-toastify'
 import { screen, waitFor, fireEvent } from '@testing-library/react'
-import { renderHook } from '@testing-library/react-hooks'
 import { ToastContainer, useToast, usePromiseToast } from '@totalsoft_oss/rocket-ui.components.feedback.toast'
 import fns from '@totalsoft_oss/rocket-ui.utils.test-wrapper'
+import { renderHook } from '@testing-library/react-hooks'
 
 const { render } = fns
 

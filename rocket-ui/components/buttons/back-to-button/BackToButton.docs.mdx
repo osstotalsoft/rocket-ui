@@ -4,6 +4,7 @@ labels: ['mui', 'react', 'back-to-button']
 ---
 
 import BackToButton from './BackToButton'
+import { BrowserRouter } from 'react-router-dom'
 
 ## Basic BackToButton component
 
@@ -20,5 +21,7 @@ Basic example that renders an back-to-button
 Live example:
 
 ```js live
-<BackToButton size='small' tooltip='small' path='https://bit.cloud/totalsoft_oss/rocket-ui' />
+<BrowserRouter>
+  <BackToButton size='small' tooltip='small' path='https://bit.cloud/totalsoft_oss/rocket-ui' />
+</BrowserRouter>
 ```

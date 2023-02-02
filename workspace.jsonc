@@ -46,7 +46,6 @@
         "@mui/lab": "5.0.0-alpha.96",
         "@mui/x-date-pickers": "5.0.0-beta.6",
         "@testing-library/dom": "8.x",
-        "@testing-library/react-hooks": "8.x",
         "@typescript-eslint/eslint-plugin": "4.x",
         "@typescript-eslint/parser": "4.x",
         "attr-accept": "2.x",
@@ -64,7 +63,7 @@
         "lodash": "4.x",
         "prop-types": "15.x",
         "ramda": "0.x",
-        "react-chartjs-2": "4.x",
+        "react-chartjs-2": "5.x",
         "react-number-format": "4.x",
         "react-syntax-highlighter": "15.x",
         "react-toastify": "8.x",
@@ -75,9 +74,9 @@
         "@emotion/styled": "^11.x",
         "@mui/material": "5.x",
         "@testing-library/react": "^12.x",
-        "react": "17.x",
-        "react-dom": "17.x",
-        "react-router-dom": "^5.x"
+        "react": "18.x",
+        "react-dom": "18.x",
+        "react-router-dom": "^6.x"
       }
     },
     "linkCoreAspects": true
@@ -102,5 +101,8 @@
       "rocket-ui/generator/component-templates"
     ]
   },
-  "rocket-ui/generator/component-templates": {}
+  "rocket-ui/generator/component-templates": {},
+  "teambit.defender/tester":{
+    "watchOnStart": true
+  }
 }

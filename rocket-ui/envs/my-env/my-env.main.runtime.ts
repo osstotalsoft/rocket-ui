@@ -38,7 +38,7 @@ export class MyEnvMain {
       react.useEslint({
         transformers: [
           config => {
-            config.addPlugins(['@babel/preset-react', '@babel/plugin-proposal-pipeline-operator'])
+            config.addPlugins(['@babel/preset-react'])
             return config
           }
         ]
@@ -78,7 +78,7 @@ export class MyEnvMain {
             ...baseDependencies,
             dependencies: {
               'chart.js': '3.x',
-              'react-chartjs-2': '4.x'
+              'react-chartjs-2': '5.x'
             },
             peers: [
               {

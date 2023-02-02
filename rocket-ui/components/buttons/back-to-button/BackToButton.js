@@ -1,14 +1,14 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import ArrowBack from '@mui/icons-material/ArrowBack'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 
 const BackToButton = ({ path, fontSize, ...rest }) => {
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const onBackToList = useCallback(() => {
-    path && history.push(path)
+    path && navigate(path)
   }, [history, path])
 
   return (

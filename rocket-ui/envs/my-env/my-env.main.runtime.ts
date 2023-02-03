@@ -66,8 +66,24 @@ export class MyEnvMain {
        */
       react.overrideDependencies({
         devDependencies: {
-          // '@types/react': '17.0.3'
-        }
+          '@types/react': '^18.0.17',
+          '@types/react-dom': '^18.0.6',
+          "@teambit/react.react-env": "0.0.23"
+        },
+        peers: [
+          {
+            name: 'react',
+            version: '18.2.0',
+            supportedRange: '^18.2.0',
+            force: true
+          },
+          {
+            name: 'react-dom',
+            version: '18.2.0',
+            supportedRange: '^18.2.0',
+            force: true
+          }
+        ]
       }),
 
       envs.override({

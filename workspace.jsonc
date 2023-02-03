@@ -40,11 +40,11 @@
     "policy": {
       "dependencies": {
         "@babel/core": "7.x",
-        "@babel/plugin-proposal-pipeline-operator": "7.x",
         "@babel/plugin-syntax-jsx": "7.x",
         "@mui/icons-material": "5.x",
         "@mui/lab": "5.0.0-alpha.96",
         "@mui/x-date-pickers": "5.0.0-beta.6",
+        "@teambit/harmony": "0.4.6",
         "@testing-library/dom": "8.x",
         "@typescript-eslint/eslint-plugin": "4.x",
         "@typescript-eslint/parser": "4.x",
@@ -54,9 +54,9 @@
         "date-fns": "2.x",
         "eslint-import-resolver-node": "0.x",
         "eslint-plugin-import": "2.x",
-        "eslint-plugin-jest": "24.x",
+        "eslint-plugin-jest": "27.x",
         "eslint-plugin-jsx-a11y": "6.x",
-        "eslint-plugin-mdx": "1.x",
+        "eslint-plugin-mdx": "2.x",
         "eslint-plugin-react": "7.x",
         "eslint-plugin-react-hooks": "4.x",
         "i18next": "21.x",
@@ -73,7 +73,7 @@
         "@emotion/react": "^11.x",
         "@emotion/styled": "^11.x",
         "@mui/material": "5.x",
-        "@testing-library/react": "^12.x",
+        "@testing-library/react": "^13.x",
         "react": "18.x",
         "react-dom": "18.x",
         "react-router-dom": "^6.x"

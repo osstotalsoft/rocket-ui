@@ -13,193 +13,385 @@
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/back-to-button"
+        "rootDir": "rocket-ui/components/buttons/back-to-button",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/buttons/button": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/button"
+        "rootDir": "rocket-ui/components/buttons/button",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/buttons/icon-button": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/icon-button"
+        "rootDir": "rocket-ui/components/buttons/icon-button",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/buttons/upload-button": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/upload-button"
+        "rootDir": "rocket-ui/components/buttons/upload-button",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/charts/chart": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/charts/chart"
+        "rootDir": "rocket-ui/components/charts/chart",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/charts/stats-chart": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/charts/stats-chart"
+        "rootDir": "rocket-ui/components/charts/stats-chart",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/data-display/expanding-text": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/expanding-text"
+        "rootDir": "rocket-ui/components/data-display/expanding-text",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/data-display/fav-icon": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/fav-icon"
+        "rootDir": "rocket-ui/components/data-display/fav-icon",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/data-display/typography": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/typography"
+        "rootDir": "rocket-ui/components/data-display/typography",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/custom-dialog": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/custom-dialog"
+        "rootDir": "rocket-ui/components/feedback/custom-dialog",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/dialog-display": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/dialog-display"
+        "rootDir": "rocket-ui/components/feedback/dialog-display",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/forbidden": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/forbidden"
+        "rootDir": "rocket-ui/components/feedback/forbidden",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/linear-progress": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/linear-progress"
+        "rootDir": "rocket-ui/components/feedback/linear-progress",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/loading-fake-text": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/loading-fake-text"
+        "rootDir": "rocket-ui/components/feedback/loading-fake-text",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/not-found": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/not-found"
+        "rootDir": "rocket-ui/components/feedback/not-found",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/feedback/toast": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/toast"
+        "rootDir": "rocket-ui/components/feedback/toast",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/autocomplete": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/autocomplete"
+        "rootDir": "rocket-ui/components/inputs/autocomplete",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/date-time": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/date-time"
+        "rootDir": "rocket-ui/components/inputs/date-time",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/dynamic-input": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/dynamic-input"
+        "rootDir": "rocket-ui/components/inputs/dynamic-input",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/password-field": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/password-field"
+        "rootDir": "rocket-ui/components/inputs/password-field",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/simple-slider": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/simple-slider"
+        "rootDir": "rocket-ui/components/inputs/simple-slider",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/inputs/text-field": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/text-field"
+        "rootDir": "rocket-ui/components/inputs/text-field",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/navigation/nav-pills": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/nav-pills"
+        "rootDir": "rocket-ui/components/navigation/nav-pills",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/navigation/pagination": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/pagination"
+        "rootDir": "rocket-ui/components/navigation/pagination",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/navigation/side-menu": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/side-menu"
+        "rootDir": "rocket-ui/components/navigation/side-menu",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/accordion": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/accordion"
+        "rootDir": "rocket-ui/components/surfaces/accordion",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/accordion-list": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/accordion-list"
+        "rootDir": "rocket-ui/components/surfaces/accordion-list",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/card": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card"
+        "rootDir": "rocket-ui/components/surfaces/card",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/card-actions": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card-actions"
+        "rootDir": "rocket-ui/components/surfaces/card-actions",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/card-header": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card-header"
+        "rootDir": "rocket-ui/components/surfaces/card-header",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/collapse-card": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/collapse-card"
+        "rootDir": "rocket-ui/components/surfaces/collapse-card",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "components/surfaces/stats-card": {
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.0",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/stats-card"
+        "rootDir": "rocket-ui/components/surfaces/stats-card",
+        "config": {
+            "totalsoft_oss.rocket-ui/envs/my-env": {},
+            "teambit.envs/envs": {
+                "env": "totalsoft_oss.rocket-ui/envs/my-env"
+            }
+        }
     },
     "core": {
         "scope": "totalsoft_oss.rocket-ui",

@@ -68,7 +68,9 @@ export class MyEnvMain {
         devDependencies: {
           '@types/react': '^18.0.17',
           '@types/react-dom': '^18.0.6',
-          "@teambit/react.react-env": "0.0.23"
+          '@teambit/react.react-env': '0.0.23',
+          'chart.js': '3.x',
+          'react-chartjs-2': '5.x'
         },
         peers: [
           {
@@ -82,29 +84,13 @@ export class MyEnvMain {
             version: '18.2.0',
             supportedRange: '^18.2.0',
             force: true
+          },
+          {
+            name: '@mui/material',
+            supportedRange: '^5.0.0',
+            version: '5.x'
           }
         ]
-      }),
-
-      envs.override({
-        getDependencies: () => {
-          const baseDependencies = react.reactEnv.getDependencies()
-
-          return {
-            ...baseDependencies,
-            dependencies: {
-              'chart.js': '3.x',
-              'react-chartjs-2': '5.x'
-            },
-            peers: [
-              {
-                name: '@mui/material',
-                supportedRange: '^5.0.0',
-                version: '5.x'
-              }
-            ]
-          }
-        }
       })
     ])
 

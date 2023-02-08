@@ -39,7 +39,7 @@ describe('Single-value Autocomplete', () => {
     render(<Autocomplete isClearable simpleValue value={1} options={basicOptions} onChange={jest.fn()} />)
     expect(screen.getByRole('combobox').value).toBe('first option')
 
-    userClick(screen.getByTitle('Clear'))
+    fireEvent.click(screen.getByTitle('Clear'))
     expect(screen.getByRole('combobox').value).toBe('')
   })
 
@@ -391,7 +391,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete loadOptions={mockLoadOptions} value={basicOptions[0]} defaultOptions={true} onChange={jest.fn()} />)
       expect(mockLoadOptions).toBeCalledWith('first option')
-      expect(mockLoadOptions).toBeCalledTimes(1)
+      expect(mockLoadOptions.mock.calls[0]).toHaveLength(1)
       await act(() => promise)
     })
 
@@ -400,7 +400,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete loadOptions={mockLoadOptions} value={basicOptions[0]} defaultOptions={basicOptions} onChange={jest.fn()} />)
       expect(mockLoadOptions).toBeCalledWith('first option')
-      expect(mockLoadOptions).toBeCalledTimes(1)
+      expect(mockLoadOptions.mock.calls[0]).toHaveLength(1)
       await act(() => promise)
     })
   })
@@ -440,7 +440,7 @@ describe('Async Autocomplete', () => {
       const mockLoadOptions = jest.fn(() => promise)
       render(<Autocomplete simpleValue loadOptions={mockLoadOptions} value={1} defaultOptions={basicOptions} onChange={jest.fn()} />)
       expect(mockLoadOptions).toBeCalledWith('first option')
-      expect(mockLoadOptions).toBeCalledTimes(1)
+      expect(mockLoadOptions.mock.calls[0]).toHaveLength(1)
       await act(() => promise)
     })
 

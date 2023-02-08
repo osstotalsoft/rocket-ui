@@ -135,7 +135,7 @@ describe('NavPills', () => {
 
   it('handles tab changes by default', () => {
     render(<NavPills tabs={tabs} />)
-    userClick(screen.getByText('Item two'))
+    fireEvent.click(screen.getByText('Item two'))
 
     expect(screen.getByText('Content 2')).toBeInTheDocument()
   })

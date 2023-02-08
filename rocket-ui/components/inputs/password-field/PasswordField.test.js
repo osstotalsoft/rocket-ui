@@ -30,7 +30,7 @@ describe('PasswordField', () => {
       expect(screen.getByText('Show password')).toBeInTheDocument()
     })
 
-    userClick(screen.getByRole('button'))
+    fireEvent.click(screen.getByRole('button'))
 
     fireEvent.mouseOver(screen.getByTestId('VisibilityIcon'))
     await waitFor(() => {

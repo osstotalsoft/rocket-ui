@@ -1,6 +1,6 @@
 import React from 'react'
 import DateTime from './DateTime'
-import { screen, waitFor } from '@testing-library/react'
+import { fireEvent, screen, waitFor } from '@testing-library/react'
 import fns from '@totalsoft_oss/rocket-ui.utils.test-wrapper'
 
 const { render, userClick } = fns
@@ -88,7 +88,7 @@ describe('Date Time buttons work', () => {
     render(<DateTime value={value} clearable={true} />)
 
     // act
-    await waitFor(() => userClick(screen.getByLabelText('Clear')))
+    await waitFor(() => fireEvent.click(screen.getByLabelText('Clear')))
 
     // assert
     expect(() => screen.getAllByDisplayValue('14.03.2022')).toThrow()
@@ -100,7 +100,7 @@ describe('Date Time buttons work', () => {
     expect(() => screen.getByRole('dialog')).toThrow()
 
     // act
-    await waitFor(() => userClick(screen.getByLabelText('Open')))
+    await waitFor(() => fireEvent.click(screen.getByLabelText('Open')))
 
     // assert
     expect(() => screen.getByRole('dialog')).not.toThrow()

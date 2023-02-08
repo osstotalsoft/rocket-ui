@@ -92,7 +92,7 @@
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/
-    "{components/**}": {
+    "{components/**}, themes": {
       "totalsoft_oss.rocket-ui/envs/my-env": {}
     }
   },

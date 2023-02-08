@@ -75,14 +75,14 @@ export class MyEnvMain {
         peers: [
           {
             name: 'react',
-            version: '18.2.0',
-            supportedRange: '^18.2.0',
+            version: '18.0.0',
+            supportedRange: '^18.0.0',
             force: true
           },
           {
             name: 'react-dom',
-            version: '18.2.0',
-            supportedRange: '^18.2.0',
+            version: '18.0.0',
+            supportedRange: '^18.0.0',
             force: true
           },
           {

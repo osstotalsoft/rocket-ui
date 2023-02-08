@@ -49,7 +49,7 @@
         "@typescript-eslint/eslint-plugin": "4.x",
         "@typescript-eslint/parser": "4.x",
         "attr-accept": "2.x",
-        "chart.js": "3.x",
+        "chart.js": "4.x",
         "classnames": "2.x",
         "date-fns": "2.x",
         "eslint-import-resolver-node": "0.x",

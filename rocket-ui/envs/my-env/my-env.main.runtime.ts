@@ -69,8 +69,8 @@ export class MyEnvMain {
           '@types/react': '^18.0.17',
           '@types/react-dom': '^18.0.6',
           '@teambit/react.react-env': '0.0.23',
-          'chart.js': '4.x',
-          'react-chartjs-2': '5.x'
+          'chart.js': '4.1',
+          'react-chartjs-2': '5.1'
         },
         peers: [
           {

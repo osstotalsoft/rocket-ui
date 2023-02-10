@@ -12,7 +12,8 @@ import {
   StatAction
 } from './StatsChartStyles'
 import { Chart } from 'react-chartjs-2'
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement } from 'chart.js'
+import { Chart as ChartJS } from 'chart.js/auto'
+import { CategoryScale, LinearScale, PointElement, LineElement, BarElement } from 'chart.js'
 import { Divider } from '@mui/material'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement)

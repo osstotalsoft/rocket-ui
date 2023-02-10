@@ -1,7 +1,5 @@
 export const statsChartOptions = {
   responsive: true,
-  backgroundColor: 'white',
-  borderColor: 'white',
   maintainAspectRatio: false,
   barPercentage: 0.2,
   plugins: {
@@ -71,11 +69,15 @@ export const statsChartData = {
   datasets: [
     {
       data: labels.map(() => Math.floor(Math.random() * 101)),
-      label: 'Dataset 1'
+      label: 'Dataset 1',
+      backgroundColor: 'white',
+      borderColor: 'white'
     },
     {
       data: labels.map(() => Math.floor(Math.random() * 101)),
-      label: 'Dataset 2'
+      label: 'Dataset 2',
+      backgroundColor: 'white',
+      borderColor: 'white'
     }
   ]
 }

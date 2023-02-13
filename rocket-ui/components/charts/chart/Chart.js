@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card from '@totalsoft_oss/rocket-ui.components.surfaces.card'
 import { Chart as BaseChart } from 'react-chartjs-2'
-import { Chart as ChartJS } from 'chart.js/auto'
-import { CategoryScale, LinearScale, PointElement, LineElement, BarElement } from 'chart.js'
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, BarElement } from 'chart.js'
 import { StyledCardHeader, CardContent, iconStyle } from './ChartStyles'
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement)

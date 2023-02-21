@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MuiCardHeader from './CardHeaderStyles'
 import { Box } from '@mui/material'
+import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
+import { isValidElement } from 'react'
 
-const CardHeader = ({ variant, actions, ...rest }) => {
+const CardHeader = ({ variant, actions, title, ...rest }) => {
   return (
     <MuiCardHeader
       variant={variant}
@@ -15,6 +17,16 @@ const CardHeader = ({ variant, actions, ...rest }) => {
               </Box>
             ))
           : actions
+      }
+      disableTypography
+      title={
+        title && isValidElement(title) ? (
+          title
+        ) : (
+          <Typography variant='subtitle1' emphasis='bold'>
+            {title}
+          </Typography>
+        )
       }
       {...rest}
     />

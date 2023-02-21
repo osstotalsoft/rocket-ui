@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import Card from '../Card'
 import { Grid, Link } from '@mui/material'
+import { EmojiPeople } from '@mui/icons-material'
 
 export const CardMedia = () => {
   return (
@@ -26,6 +27,7 @@ export const CardMedia = () => {
         <Grid item xs={6} md={4}>
           <Card
             title='Random Image'
+            subheader='Random Subtitle'
             mediaProps={{ component: 'img', image: 'https://i.imgur.com/8woNLN2.jpeg', size: 'l', alt: 'Squirrel' }}
           >
             <Typography>This image is rendered with default &#39;l&#39; size.</Typography>
@@ -70,6 +72,7 @@ export const CardMedia = () => {
         </Grid>
         <Grid item xs={6} md={4}>
           <Card
+            icon={EmojiPeople}
             title='Random Image'
             mediaProps={{ component: 'img', src: 'https://i.imgur.com/8woNLN2.jpeg', height: '280px', alt: 'Image Demo' }}
           >

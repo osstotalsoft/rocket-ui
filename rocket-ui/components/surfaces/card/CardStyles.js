@@ -24,7 +24,7 @@ const getThemeColor = (theme, color) => {
     case 'info':
       return { background: theme.palette.gradients.info }
     default:
-      return undefined
+      return { color: theme.palette.primary.main }
   }
 }
 
@@ -38,7 +38,6 @@ const Card = styled(BaseCard, {
       position: 'relative',
       width: '100%',
       margin: '25px 0',
-      color: theme.palette.primary.main,
       background: '#fff',
       overflow: 'visible'
     })

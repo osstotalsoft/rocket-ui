@@ -73,7 +73,20 @@ TabsWrapper.propTypes = {
 }
 
 export default function NavPills(props) {
-  const { active, onChange, tabs, tabProps, actions, selectedColor, capitalize, gradient, ...other } = props
+  const {
+    active = 0,
+    onChange,
+    tabs,
+    tabProps,
+    actions,
+    selectedColor = 'secondary',
+    capitalize,
+    gradient,
+    indicatorColor = 'secondary',
+    variant = 'scrollable',
+    orientation = 'horizontal',
+    ...other
+  } = props
   const [selfActive, setSelfActive] = useState(0)
 
   const handleChange = useCallback((_, newValue) => {
@@ -81,12 +94,15 @@ export default function NavPills(props) {
   }, [])
 
   return (
-    <OrientationWrapper orientation={props?.orientation} actions={actions}>
+    <OrientationWrapper orientation={orientation} actions={actions}>
       <TabsWrapper
         value={onChange ? active : selfActive}
         onChange={onChange ?? handleChange}
         actions={actions}
         aria-label='tabs'
+        indicatorColor={indicatorColor}
+        variant={variant}
+        orientation={orientation}
         {...other}
       >
         {tabs.map((tab, index) => (
@@ -110,16 +126,9 @@ export default function NavPills(props) {
   )
 }
 
-NavPills.defaultProps = {
-  active: 0,
-  indicatorColor: 'secondary',
-  selectedColor: 'secondary',
-  variant: 'scrollable',
-  orientation: 'horizontal'
-}
-
 NavPills.propTypes = {
   /**
+   * @default 0
    * Index of the default active pill
    */
   active: PropTypes.number,
@@ -146,6 +155,7 @@ NavPills.propTypes = {
    */
   tabProps: PropTypes.object,
   /**
+   * @default 'scrollable'
      * Determines additional display behavior of the tabs:
         - scrollable will invoke scrolling properties and allow for horizontally scrolling (or swiping) of the tab bar.
         - fullWidth will make the tabs grow to use all the available space, which should be used for small views, like on mobile.
@@ -191,5 +201,10 @@ NavPills.propTypes = {
    * A list of additional action components
    * e.g. a [<Button />, <Button />]
    */
-  actions: PropTypes.array
+  actions: PropTypes.array,
+  /**
+   * The component orientation (layout flow direction)
+   * @default "horizontal"
+   */
+  orientation: PropTypes.oneOf(['horizontal', 'vertical'])
 }

@@ -4,6 +4,7 @@ export interface SideMenuProps {
    */
   content?: React.ReactNode
   /**
+   * @default MenuOpenIcon
    * Icon to be displayed on the button
    */
   icon?: object

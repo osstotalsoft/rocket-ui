@@ -5,7 +5,7 @@ import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typogra
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import forbidden from './forbidden.png'
 
-const Forbidden = ({ forbiddenText, forbiddenButtonText }) => {
+const Forbidden = ({ forbiddenText = 'Not allowed to see this page!', forbiddenButtonText = 'Go to main page' }) => {
   return (
     <Grid container direction='column' justifyContent='center' alignItems='center' spacing={2}>
       <Grid item>
@@ -25,17 +25,14 @@ const Forbidden = ({ forbiddenText, forbiddenButtonText }) => {
   )
 }
 
-Forbidden.defaultProps = {
-  forbiddenText: 'Not allowed to see this page!',
-  forbiddenButtonText: 'Go to main page'
-}
-
 Forbidden.propTypes = {
   /**
+   * @default 'Not allowed to see this page!'
    * Text to be displayed
    */
   forbiddenText: PropTypes.string,
   /**
+   * @default 'Go to main page'
    * Text to be displayed on button
    */
   forbiddenButtonText: PropTypes.string

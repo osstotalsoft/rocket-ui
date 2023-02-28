@@ -22,7 +22,7 @@ const sizes = {
 }
 
 const Card = ({
-  variant,
+  variant = 'standard',
   color,
   children,
   disablePadding,
@@ -30,10 +30,10 @@ const Card = ({
   footer,
   title,
   subheader,
-  headerProps,
+  headerProps = {},
   footerProps,
   icon: Icon,
-  iconColor,
+  iconColor = 'secondary',
   mediaProps,
   ...props
 }) => {
@@ -64,14 +64,9 @@ const Card = ({
   )
 }
 
-Card.defaultProps = {
-  variant: 'standard',
-  headerProps: {},
-  iconColor: 'secondary'
-}
-
 Card.propTypes = {
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant: PropTypes.oneOf(['standard', 'filled']),
@@ -108,6 +103,7 @@ Card.propTypes = {
    */
   subheader: PropTypes.node,
   /**
+   * @default {}
    * Props applied to the CardHeader component.
    */
   headerProps: PropTypes.object,
@@ -116,6 +112,7 @@ Card.propTypes = {
    */
   icon: PropTypes.object,
   /**
+   * @default 'secondary'
    * Icon color.
    */
   iconColor: PropTypes.string,

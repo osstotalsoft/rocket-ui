@@ -14,15 +14,15 @@ const displayedRows =
 
 const Pagination = ({
   loading,
-  count,
+  count = 1,
   page,
   pageSize,
   onPageChange,
   onRowsPerPageChange,
-  rowsPerPageText,
+  rowsPerPageText = 'Rows per page:',
   onRefresh,
-  rowsOfText,
-  rowsPerPageOptions,
+  rowsOfText = 'of',
+  rowsPerPageOptions = [10, 25, 50, 100],
   ...rest
 }) => {
   const handlePageChange = useCallback(
@@ -76,19 +76,13 @@ const Pagination = ({
   )
 }
 
-Pagination.defaultProps = {
-  count: 1,
-  rowsOfText: 'of',
-  rowsPerPageText: 'Rows per page:',
-  rowsPerPageOptions: [10, 25, 50, 100]
-}
-
 Pagination.propTypes = {
   /**
    * If the page is loading, this property is set to true
    */
   loading: PropTypes.bool,
   /**
+   * @default 1
    * The total number of pages. This property is required.
    */
   count: PropTypes.number.isRequired,
@@ -119,14 +113,17 @@ Pagination.propTypes = {
    */
   onRefresh: PropTypes.func,
   /**
+   * @default 'Rows per page:'
    * Customize the rows per page label.
    */
   rowsPerPageText: PropTypes.node,
   /**
+   * @default 'of'
    * Customize the displayed rows label.
    */
   rowsOfText: PropTypes.string,
   /**
+   * @default '[10, 25, 50, 100]'
    * Customizes the options of the rows per page select field. If less than two options are
    * available, no select field will be displayed.
    * Use -1 for the value with a custom label to show all the rows.

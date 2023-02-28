@@ -16,39 +16,39 @@ import {
 
 const Autocomplete = ({
   options: receivedOptions,
-  defaultOptions,
+  defaultOptions = [],
   loadOptions,
   loading: receivedLoading,
   loadingText,
-  noOptionsText,
+  noOptionsText = 'No options',
   getOptionLabel,
   onChange,
   onInputChange,
-  creatable,
+  creatable = false,
   onMenuOpen,
   onClose,
-  value,
-  isMultiSelection,
-  withCheckboxes,
-  isClearable,
-  disabled,
-  simpleValue,
+  value = null,
+  isMultiSelection = false,
+  withCheckboxes = false,
+  isClearable = false,
+  disabled = false,
+  simpleValue = false,
   label,
-  valueKey,
-  labelKey,
-  error,
+  valueKey = 'id',
+  labelKey = 'name',
+  error = false,
   helperText,
-  required,
+  required = false,
   createdLabel,
-  typographyContentColor,
+  typographyContentColor = 'textSecondary',
   inputSelectedColor,
-  isSearchable,
+  isSearchable = true,
   getOptionDisabled,
   placeholder,
   inputTextFieldProps,
   ...other
 }) => {
-  const [options, setOptions] = useState(receivedOptions)
+  const [options, setOptions] = useState(receivedOptions ?? [])
   const [asyncOptions, setAsyncOptions] = useState(is(Array, defaultOptions) ? defaultOptions : [])
 
   const [localLoading, setLocalLoading] = useState(false)
@@ -230,7 +230,7 @@ const Autocomplete = ({
       label={label}
       disabled={disabled || isValueDisabled}
       loading={loading}
-      loadingText={loadingText}
+      loadingText={loadingText ?? <LinearProgress />}
       onOpen={handleMenuOpen}
       onClose={handleMenuClose}
       clearOnBlur={!creatable}
@@ -258,28 +258,9 @@ const Autocomplete = ({
   )
 }
 
-Autocomplete.defaultProps = {
-  options: [],
-  defaultOptions: [],
-  isMultiSelection: false,
-  isSearchable: true,
-  withCheckboxes: false,
-  isClearable: false,
-  disabled: false,
-  simpleValue: false,
-  valueKey: 'id',
-  labelKey: 'name',
-  error: false,
-  required: false,
-  value: null,
-  creatable: false,
-  typographyContentColor: 'textSecondary',
-  loadingText: <LinearProgress />,
-  noOptionsText: 'No options'
-}
-
 Autocomplete.propTypes = {
   /**
+   * @default []
    * The array of options from which the client can select a value.
    */
   options: PropTypes.array,
@@ -294,10 +275,12 @@ Autocomplete.propTypes = {
    */
   loading: PropTypes.bool,
   /**
+   * @default '<LinearProgress />'
    * Text/component to display when in a loading state.
    */
   loadingText: PropTypes.node,
   /**
+   * @default 'No options'
    * Text to display when there are no options.
    */
   noOptionsText: PropTypes.node,
@@ -306,6 +289,7 @@ Autocomplete.propTypes = {
    */
   getOptionLabel: PropTypes.func,
   /**
+   * @default null
    * The selected value from list of options.
    */
   value: PropTypes.oneOfType([PropTypes.object, PropTypes.array, PropTypes.number, PropTypes.string, PropTypes.bool]),
@@ -326,27 +310,33 @@ Autocomplete.propTypes = {
    */
   onClose: PropTypes.func,
   /**
+   * @default false
    * If true, the user can select multiple values from list.
    */
   isMultiSelection: PropTypes.bool,
   /**
+   * @default false
    * If true, the options list will have checkboxes.
    */
   withCheckboxes: PropTypes.bool,
   /**
+   * @default false
    * If true, the user can clear the selected value.
    */
   isClearable: PropTypes.bool,
   /**
+   * @default true
    * If false, the user cannot type in Autocomplete, filter options or create new ones.
    */
   isSearchable: PropTypes.bool,
   /**
+   * @default false
    * If true, the Autocomplete is free solo, meaning that the user input is not bound to provided options and can add
    * his own values.
    */
   creatable: PropTypes.bool,
   /**
+   * @default false
    * If true, the Autocomplete is disabled.
    */
   disabled: PropTypes.bool,
@@ -355,6 +345,7 @@ Autocomplete.propTypes = {
    */
   getOptionDisabled: PropTypes.func,
   /**
+   * @default false
    * If true, options will be an array of simple values, instead of objects.
    */
   simpleValue: PropTypes.bool,
@@ -363,10 +354,12 @@ Autocomplete.propTypes = {
    */
   label: PropTypes.string,
   /**
+   * @default 'id'
    * The key of values from options.
    */
   valueKey: PropTypes.string,
   /**
+   * @default 'name'
    * The key of the displayed label for each option.
    */
   labelKey: PropTypes.string,
@@ -375,6 +368,7 @@ Autocomplete.propTypes = {
    */
   helperText: PropTypes.node,
   /**
+   * @default false
    * If true, the helper text is displayed when an error pops up.
    */
   error: PropTypes.bool,
@@ -383,6 +377,7 @@ Autocomplete.propTypes = {
    */
   placeholder: PropTypes.string,
   /**
+   * @default false
    * Marks the input field as required (with an *).
    */
   required: PropTypes.bool,
@@ -391,10 +386,12 @@ Autocomplete.propTypes = {
    */
   createdLabel: PropTypes.string,
   /**
+   * @default []
    * The default set of options to show before the user starts searching. When set to true, the results for loadOptions('') will be autoloaded.
    */
   defaultOptions: PropTypes.oneOfType([PropTypes.bool, PropTypes.array]),
   /**
+   * @default 'textSecondary'
    * The color of both the text displayed when there are no options and placeholder. It supports those theme colors that make sense for this component.
    */
   typographyContentColor: PropTypes.oneOf(['initial', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary', 'error']),

@@ -16,10 +16,12 @@ export interface CustomDialogProps extends DialogDisplayProps {
    */
   showActions?: boolean
   /**
+   * @default 'Yes'
    * Text content of the first (left) action.
    */
   textDialogYes?: string
   /**
+   * @default 'No'
    * Text content of the second (right) action.
    */
   textDialogNo?: string
@@ -32,7 +34,7 @@ export interface CustomDialogProps extends DialogDisplayProps {
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/feedback/custom-dialog
  *
  *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/feedback/custom-dialog
- * 
+ *
  */
 
 export default function CustomDialog(props: CustomDialogProps): JSX.Element

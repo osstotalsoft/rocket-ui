@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import DialogDisplay from '@totalsoft_oss/rocket-ui.components.feedback.dialog-display'
 
-const CustomDialog = ({ onYes, onClose, buttonProps, textDialogYes, textDialogNo, disableBackdropClick, ...rest }) => {
+const CustomDialog = ({ onYes, onClose, buttonProps, textDialogYes = 'Yes', textDialogNo = 'No', disableBackdropClick, ...rest }) => {
   const handleClose = useCallback(
     (event, reason) => {
       if (disableBackdropClick && reason === 'backdropClick') return
@@ -32,11 +32,6 @@ const CustomDialog = ({ onYes, onClose, buttonProps, textDialogYes, textDialogNo
   )
 }
 
-CustomDialog.defaultProps = {
-  textDialogYes: 'Yes',
-  textDialogNo: 'No'
-}
-
 CustomDialog.propTypes = {
   /**
    * Props sent to the buttons.
@@ -54,10 +49,12 @@ CustomDialog.propTypes = {
    */
   onClose: PropTypes.func,
   /**
+   * @default 'Yes'
    * Text content of the first (left) action.
    */
   textDialogYes: PropTypes.string,
   /**
+   * @default 'No'
    * Text content of the second (right) action.
    */
   textDialogNo: PropTypes.string,

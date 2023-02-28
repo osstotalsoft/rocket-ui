@@ -12,29 +12,8 @@ export class MyEnvMain {
   static runtime = MainRuntime
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
-    //const webpackModifiers: UseWebpackModifiers = {
-    //  previewConfig: [previewConfigTransformer],
-    //  devServerConfig: [devServerConfigTransformer],
-    //};
-
-    //const tsModifiers: UseTypescriptModifiers = {
-    //  devConfig: [devConfigTransformer],
-    //  buildConfig: [buildConfigTransformer],
-    //};
-
     const MyEnvEnv = envs.compose(react.reactEnv, [
-      /**
-       * Uncomment to override the config files for TypeScript, Webpack or Jest
-       * Your config gets merged with the defaults
-       */
       react.overrideJestConfig(require.resolve('./jest/jest.config')),
-
-      /**
-       * override the ESLint default config here then check your files for lint errors
-       * @example
-       * bit lint
-       * bit lint --fix
-       */
       react.useEslint({
         transformers: [
           config => {
@@ -43,13 +22,6 @@ export class MyEnvMain {
           }
         ]
       }),
-
-      /**
-       * override the Prettier default config here the check your formatting
-       * @example
-       * bit format --check
-       * bit format
-       */
       //react.usePrettier({
       //  transformers: [
       //    (config) => {
@@ -58,39 +30,20 @@ export class MyEnvMain {
       //    }
       //  ]
       //}),
-
-      /**
-       * override dependencies here
-       * @example
-       * Uncomment types to include version 17.0.3 of the types package
-       */
       react.overrideDependencies({
         devDependencies: {
           '@types/react': '^18.0.17',
           '@types/react-dom': '^18.0.6',
           '@teambit/react.react-env': '0.0.23',
-          "chart.js": "3.9.1",
-          "react-chartjs-2": "4.3.1"
+          'chart.js': '3.9.1',
+          'react-chartjs-2': '4.3.1'
         },
-        peers: [
-          {
-            name: 'react',
-            version: '18.0.0',
-            supportedRange: '^18.0.0',
-            force: true
-          },
-          {
-            name: 'react-dom',
-            version: '18.0.0',
-            supportedRange: '^18.0.0',
-            force: true
-          },
-          {
-            name: '@mui/material',
-            supportedRange: '^5.0.0',
-            version: '5.x'
+        peerDependencies: {
+          '@totalsoft_oss/rocket-ui.providers.theme': {
+            version: 'latest',
+            resolveFromEnv: true
           }
-        ]
+        }
       })
     ])
 

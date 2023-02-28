@@ -5,7 +5,7 @@ import { ExpandMore } from '@mui/icons-material'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { AccordionSummary, AccordionDetails } from './AccordionStyles'
 
-const Accordion = ({ title, content, variant, ...rest }) => {
+const Accordion = ({ title, content, variant = 'standard', ...rest }) => {
   return (
     <BaseAccordion disableGutters TransitionProps={{ unmountOnExit: true }} {...rest}>
       <AccordionSummary variant={variant} expandIcon={<ExpandMore />}>
@@ -22,10 +22,6 @@ const Accordion = ({ title, content, variant, ...rest }) => {
   )
 }
 
-Accordion.defaultProps = {
-  variant: 'standard'
-}
-
 Accordion.propTypes = {
   /**
    * The title of accordion.
@@ -36,6 +32,7 @@ Accordion.propTypes = {
    */
   content: PropTypes.node,
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant: PropTypes.oneOf(['standard', 'filled'])

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FormControl, FormLabel, RadioGroup, FormControlLabel, Radio } from '@mui/material'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 
-const RadioButtonSelect = ({ label, options, value, valueKey, labelKey, onSelect }) => {
+const RadioButtonSelect = ({ label, options, value, valueKey = 'id', labelKey = 'name', onSelect }) => {
   return (
     <FormControl>
       <FormLabel id='radio-group-label'>
@@ -24,11 +24,6 @@ const RadioButtonSelect = ({ label, options, value, valueKey, labelKey, onSelect
       </RadioGroup>
     </FormControl>
   )
-}
-
-RadioButtonSelect.defaultProps = {
-  valueKey: 'id',
-  labelKey: 'name'
 }
 
 RadioButtonSelect.propTypes = {

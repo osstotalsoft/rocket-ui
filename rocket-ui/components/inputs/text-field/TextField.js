@@ -12,9 +12,9 @@ const NumberFormatCustom = React.forwardRef(function NumberFormatCustom(props, r
   const {
     value,
     onChange,
-    decimalScale,
-    fixedDecimalScale,
-    thousandSeparator,
+    decimalScale = 2,
+    fixedDecimalScale = true,
+    thousandSeparator = true,
     decimalSeparator,
     language: receivedLanguage,
     currency,
@@ -89,12 +89,6 @@ NumberFormatCustom.propTypes = {
   format: PropTypes.string
 }
 
-NumberFormatCustom.defaultProps = {
-  decimalScale: 2,
-  fixedDecimalScale: true,
-  thousandSeparator: true
-}
-
 const ClearButton = ({ onClearInput, disabled }) => (
   <InputAdornment position='end'>
     <IconButton disabled={disabled} aria-label='Clear' size='small' onClick={onClearInput}>
@@ -134,21 +128,21 @@ const TextField = ({
   fullWidth,
   InputLabelProps,
   value,
-  onChange,
-  debounceBy,
-  decimalScale,
+  onChange = () => {},
+  debounceBy = 0,
+  decimalScale = 2,
   fixedDecimalScale,
   thousandSeparator,
   decimalSeparator,
   language,
   currency,
-  readOnly,
   disabled,
   isClearable,
-  isStepper,
-  step,
-  minValue,
-  maxValue,
+  isStepper = false,
+  step = 1,
+  minValue = -Infinity,
+  maxValue = Infinity,
+  variant = 'standard',
   ...rest
 }) => {
   const isNumeric = receivedIsNumeric || isStepper
@@ -160,7 +154,7 @@ const TextField = ({
   }, [value])
 
   // we need to disable this warning since the useCallback hook is not sure about the dependencies of debounce
-  const debouncedOnChange = useCallback(debounce(onChange, debounceBy), [debounceBy, onChange]) //eslint-disable-line react-hooks/exhaustive-deps
+  const debouncedOnChange = useCallback(disabled ? onChange : debounce(onChange, debounceBy), [debounceBy, onChange]) //eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSubtract = useCallback(() => {
     const nextValue = !value ? -step : value - step
@@ -177,13 +171,13 @@ const TextField = ({
     endAdornment: isStepper ? (
       <AddButton onAdd={handleAdd} />
     ) : isClearable ? (
-      <ClearButton onClearInput={handleClearInput} disabled={disabled || readOnly} />
+      <ClearButton onClearInput={handleClearInput} disabled={disabled} />
     ) : (
       endAdornment
     ),
     className: `${isStepper && !fullWidth ? classes.stepperFixedWidth : ''}`,
     ...InputProps,
-    style: readOnly ? { ...InputProps?.style, pointerEvents: 'none' } : InputProps?.style
+    style: InputProps?.style
   }
 
   // props applied to the Input element
@@ -227,6 +221,7 @@ const TextField = ({
       value={liveValue}
       fullWidth={fullWidth}
       disabled={disabled}
+      variant={variant}
       {...rest}
       InputProps={customMuiInputProps}
       inputProps={customReactInputProps}
@@ -238,19 +233,9 @@ const TextField = ({
   )
 }
 
-TextField.defaultProps = {
-  isNumeric: false,
-  isStepper: false,
-  debounceBy: 0,
-  onChange: () => {},
-  variant: 'standard',
-  step: 1,
-  maxValue: Infinity,
-  minValue: -Infinity
-}
-
 TextField.propTypes = {
   /**
+   * @default false
    * If `true`, the input will accept only numeric values.
    */
   isNumeric: PropTypes.bool,
@@ -284,8 +269,8 @@ TextField.propTypes = {
    */
   value: PropTypes.any,
   /**
+   * @default '() => {}'
    * Callback fired when the value is changed.
-   *
    * @param {object} event The event source of the callback.
    * You can pull out the new value by accessing `event.target.value` (string).
    */
@@ -319,10 +304,6 @@ TextField.propTypes = {
    */
   currency: PropTypes.string,
   /**
-   * If `true`, the text field will be read-only.
-   */
-  readOnly: PropTypes.bool,
-  /**
    * If `true`, the component is disabled
    */
   disabled: PropTypes.bool,
@@ -331,21 +312,30 @@ TextField.propTypes = {
    */
   isClearable: PropTypes.bool,
   /**
+   * @default false
    * If `true`, will display `+` and `-` buttons for increasing/decreasing the value.
    */
   isStepper: PropTypes.bool,
   /**
+   * @default 1
    * Used together with `isStepper` prop; the value by which the current input increases.
    */
   step: PropTypes.number,
   /**
+   * @default -Infinity
    * Lower limit for the input.
    */
   minValue: PropTypes.number,
   /**
+   * @default Infinity
    * Upper limit for the input.
    */
-  maxValue: PropTypes.number
+  maxValue: PropTypes.number,
+  /**
+   * @default 'standard'
+   * The variant to use.
+   */
+  variant: PropTypes.oneOf(['filled', 'standard', 'outlined'])
 }
 
 export default TextField

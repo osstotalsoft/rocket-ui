@@ -5,7 +5,7 @@ import { Box } from '@mui/material'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { isValidElement } from 'react'
 
-const CardHeader = ({ variant, actions, title, ...rest }) => {
+const CardHeader = ({ variant = 'standard', actions, title, ...rest }) => {
   return (
     <MuiCardHeader
       variant={variant}
@@ -33,12 +33,9 @@ const CardHeader = ({ variant, actions, title, ...rest }) => {
   )
 }
 
-CardHeader.defaultProps = {
-  variant: 'standard'
-}
-
 CardHeader.propTypes = {
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant: PropTypes.oneOf(['standard', 'filled']),

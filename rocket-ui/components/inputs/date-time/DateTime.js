@@ -28,15 +28,15 @@ const displayType = {
 
 const DateTime = props => {
   const {
-    dateAdapter,
+    dateAdapter = AdapterDateFns,
     locale,
-    showPicker,
+    showPicker = 'date',
     components,
     inputProps,
-    format,
-    open: origOpen,
+    format = 'ro',
+    open: origOpen = false,
     onClose,
-    value: origValue,
+    value: origValue = null,
     onChange: origOnChange,
     clearable,
     disabled,
@@ -126,16 +126,9 @@ const DateTime = props => {
   )
 }
 
-DateTime.defaultProps = {
-  dateAdapter: AdapterDateFns,
-  showPicker: 'date',
-  format: 'ro',
-  open: false,
-  value: null
-}
-
 DateTime.propTypes = {
   /**
+   * @default AdapterDateFns
    * DateIO adapter class function
    */
   dateAdapter: PropTypes.func,
@@ -145,7 +138,7 @@ DateTime.propTypes = {
   locale: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   /**
    * Choose the type of picker you want displayed by the component
-   * @default "date"
+   * @default 'date'
    */
   showPicker: PropTypes.oneOf(['date', 'dateTime', 'time']),
   /**
@@ -166,10 +159,11 @@ DateTime.propTypes = {
   inputProps: PropTypes.object,
   /**
    * A small sample of ISO format names that will be used to display the date.
-   * @default "ro"
+   * @default 'ro'
    */
   format: PropTypes.oneOf(['de', 'en-US', 'fr', 'ro', 'ru']),
   /**
+   * @default null
    * Value of the picker
    */
   value: PropTypes.any,
@@ -182,6 +176,7 @@ DateTime.propTypes = {
    */
   clearable: PropTypes.bool,
   /**
+   * @default false
    * Control the popup or dialog open state.
    */
   open: PropTypes.bool,

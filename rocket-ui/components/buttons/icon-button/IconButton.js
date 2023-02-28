@@ -16,7 +16,7 @@ const iconType = {
   upward: ArrowUpward
 }
 
-const IconButton = ({ children, type, fontSize, loading, ...rest }) => {
+const IconButton = ({ children, type, fontSize = 'small', loading, size = 'medium', color = 'secondary', ...rest }) => {
   const CustomIcon = useMemo(() => iconType[type], [type])
 
   const iconButtonProps = {
@@ -24,20 +24,15 @@ const IconButton = ({ children, type, fontSize, loading, ...rest }) => {
   }
 
   return (
-    <MuiIconButton {...iconButtonProps} {...rest}>
+    <MuiIconButton {...iconButtonProps} size={size} color={color} {...rest}>
       {loading ? <CircularProgress color='inherit' size={24} /> : type ? <CustomIcon fontSize={fontSize} /> : children}
     </MuiIconButton>
   )
 }
 
-IconButton.defaultProps = {
-  color: 'secondary',
-  size: 'medium',
-  fontSize: 'small'
-}
-
 IconButton.propTypes = {
   /**
+   * @default 'secondary'
    * Color of the button
    */
   color: PropTypes.oneOf([
@@ -55,6 +50,7 @@ IconButton.propTypes = {
     'inherit'
   ]),
   /**
+   * @default 'medium'
    * Size of the button
    */
   size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large']),
@@ -87,6 +83,7 @@ IconButton.propTypes = {
    */
   type: PropTypes.oneOf(['add', 'cancel', 'delete', 'download', 'downward', 'edit', 'view', 'save', 'upward']),
   /**
+   * @default 'small'
    * Size of the icon.
    */
   fontSize: PropTypes.oneOf(['inherit', 'small', 'medium', 'large'])

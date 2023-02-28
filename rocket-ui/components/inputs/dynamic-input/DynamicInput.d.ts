@@ -17,10 +17,12 @@ export interface DynamicInputProps {
    */
   value?: unknown
   /**
+   * @default TextField
    * The default component.
    */
   DefaultComp?: (props: unknown) => JSX.Element
   /**
+   * @default '{ fullWidth: true, disabled: true }'
    * The props of the default component.
    */
   defaultCompProps?: unknown
@@ -32,12 +34,12 @@ export interface DynamicInputProps {
  * - https://bit.cloud/totalsoft_oss/rocket-ui/components/inputs/dynamic-input
  *
  *  Take a look over the code for further information: https://github.com/osstotalsoft/rocket-ui/tree/main/rocket-ui/components/inputs/dynamic-input
- * 
+ *
  * Components used:
- * 
+ *
  * - TextField: https://mui.com/api/text-field/
  * - Switch: https://mui.com/api/switch/
  * - Autocomplete: https://mui.com/api/autocomplete/
- * 
+ *
  */
 export default function DynamicInput(props: DynamicInputProps): JSX.Element

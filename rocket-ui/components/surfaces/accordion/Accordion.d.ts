@@ -9,8 +9,8 @@ export interface AccordionProps extends Omit<MuiAccordionProps, 'variant' | 'tit
    * The content of accordion.
    */
   content?: React.ReactNode
-
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant?: 'standard' | 'filled'

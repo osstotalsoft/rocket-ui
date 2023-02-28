@@ -11,16 +11,16 @@ export const TextFieldLabels = () => {
       content={
         <Grid container spacing={4} justifyItems={'flex-start'}>
           <Grid item xs={2}>
-            <TextField label='With label' readOnly={true} fullWidth />
+            <TextField label='With label' disabled fullWidth />
           </Grid>
           <Grid item xs={2}>
-            <TextField label=' ' helperText="Can preserve alignment with label = ' '" readOnly={true} fullWidth />
+            <TextField label=' ' helperText="Can preserve alignment with label = ' '" disabled fullWidth />
           </Grid>
           <Grid item xs={2}>
-            <TextField readOnly={true} fullWidth helperText='No label causes misalignment' />
+            <TextField disabled fullWidth helperText='No label causes misalignment' />
           </Grid>
           <Grid item xs={2}>
-            <TextField placeholder='With placeholder' readOnly={true} fullWidth />
+            <TextField placeholder='With placeholder' disabled fullWidth />
           </Grid>
         </Grid>
       }

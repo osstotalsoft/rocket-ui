@@ -18,7 +18,7 @@ import { Divider } from '@mui/material'
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement)
 
 function StatsChart(props) {
-  const { chartColor, iconColor, title, text, statText, StatIcon, type, data, statAction, ...chartProps } = props
+  const { chartColor = 'info', iconColor = 'grey', title, text, statText, StatIcon, type, data, statAction, ...chartProps } = props
 
   return (
     <StyledCard disablePadding>
@@ -43,11 +43,6 @@ function StatsChart(props) {
   )
 }
 
-StatsChart.defaultProps = {
-  iconColor: 'grey',
-  chartColor: 'info'
-}
-
 StatsChart.propTypes = {
   /**
    * Chart type.
@@ -66,10 +61,12 @@ StatsChart.propTypes = {
    */
   StatIcon: PropTypes.any,
   /**
+   * @default 'grey'
    * Chart icon color.
    */
   iconColor: PropTypes.oneOf(['warning', 'primary', 'danger', 'success', 'info', 'rose', 'grey']),
   /**
+   * @default 'info'
    * Chart color.
    */
   chartColor: PropTypes.oneOf(['warning', 'primary', 'danger', 'success', 'info', 'rose', 'grey']),

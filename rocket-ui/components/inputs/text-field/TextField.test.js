@@ -46,11 +46,6 @@ describe('TextField', () => {
     )
   })
 
-  test('can be read-only', () => {
-    render(<TextField readOnly={true} value={stringValue} InputProps={{ 'data-testid': 'input-root' }} />)
-    expect(screen.getByTestId('input-root')).toHaveStyle('pointer-events: none')
-  })
-
   test('erases the value on clear button click', async () => {
     render(<TextField value={stringValue} inputProps={{ 'data-testid': 'input-root' }} isClearable={true} />)
     userClick(screen.getByLabelText('Clear'))

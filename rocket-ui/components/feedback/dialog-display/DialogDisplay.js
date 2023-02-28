@@ -12,16 +12,18 @@ const DialogDisplay = ({
   textContent,
   actions,
   onClose,
-  disableBackdropClick,
+  disableBackdropClick = false,
   titleProps,
   textContentProps,
   actionsProps,
   closeButtonProps,
   fullScreen,
-  showX,
+  showX = true,
   transparentBackdrop,
-  dividers,
+  dividers = false,
   contentProps,
+  maxWidth = 'xl',
+  open = false,
   ...rest
 }) => {
   const dialogTitleId = `${id}-dialog-display-title`
@@ -44,7 +46,8 @@ const DialogDisplay = ({
       aria-labelledby={dialogTitleId}
       fullScreen={fullScreen || smallScreen}
       BackdropComponent={transparentBackdrop && TransparentBackdrop}
-      maxWidth={'xl'}
+      maxWidth={maxWidth}
+      open={open}
       {...rest}
     >
       <DialogTitle id={dialogTitleId} {...titleProps}>
@@ -72,17 +75,13 @@ const DialogDisplay = ({
   )
 }
 
-DialogDisplay.defaultProps = {
-  open: false,
-  showX: true
-}
-
 DialogDisplay.propTypes = {
   /**
    * Identifier of the dialog.
    */
   id: PropTypes.string.isRequired,
   /**
+   * @default false
    * If true, the component is shown.
    */
   open: PropTypes.bool.isRequired,
@@ -107,6 +106,7 @@ DialogDisplay.propTypes = {
    */
   actions: PropTypes.node,
   /**
+   * @default false
    * If true, clicking the backdrop will not fire the onClose callback.
    */
   disableBackdropClick: PropTypes.bool,
@@ -139,13 +139,20 @@ DialogDisplay.propTypes = {
    */
   fullScreen: PropTypes.bool,
   /**
+   * @default false
    * If true, the close button is shown.
    */
   showX: PropTypes.bool,
   /**
+   * @default false
    * Display dividers at the top and bottom of DialogContent.
    */
-  dividers: PropTypes.bool
+  dividers: PropTypes.bool,
+  /**
+   * @default 'xl'
+   * Determine the max-width of the dialog. The dialog width grows with the size of the screen. Set to false to disable maxWidth.
+   */
+  maxWidth: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', false])
 }
 
 export default DialogDisplay

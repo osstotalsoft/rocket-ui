@@ -3,7 +3,7 @@ import { SideMenuWrapper, SideMenuButton, SideMenuContent } from './SideMenuStyl
 import PropTypes from 'prop-types'
 import MenuOpenIcon from '@mui/icons-material/MenuOpen'
 
-const SideMenu = ({ icon: Icon, content, buttonProps, contentProps, iconProps }) => {
+const SideMenu = ({ icon, content, buttonProps, contentProps, iconProps }) => {
   const [show, setShow] = useState(false)
   const sideMenuRef = useRef()
 
@@ -24,6 +24,8 @@ const SideMenu = ({ icon: Icon, content, buttonProps, contentProps, iconProps })
     }
   }, [handleClickOutside])
 
+  const Icon = icon ? icon : MenuOpenIcon
+
   return (
     <SideMenuWrapper ref={sideMenuRef}>
       <SideMenuButton onClick={handleButtonClick} {...buttonProps}>
@@ -36,16 +38,13 @@ const SideMenu = ({ icon: Icon, content, buttonProps, contentProps, iconProps })
   )
 }
 
-SideMenu.defaultProps = {
-  icon: MenuOpenIcon
-}
-
 SideMenu.propTypes = {
   /**
    * Content of the menu
    */
   content: PropTypes.node,
   /**
+   * @default MenuOpenIcon
    * Icon to be displayed on the button
    */
   icon: PropTypes.object,

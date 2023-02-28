@@ -7,8 +7,8 @@ const SimpleSlider = ({
   label,
   fullWidth,
   value: origValue,
-  min,
-  max,
+  min = 0,
+  max = 100,
   onChange: origOnChange,
   error,
   helperText,
@@ -85,11 +85,6 @@ const SimpleSlider = ({
   )
 }
 
-SimpleSlider.defaultProps = {
-  min: 0,
-  max: 100
-}
-
 SimpleSlider.propTypes = {
   /**
    * The value of the label.
@@ -108,10 +103,12 @@ SimpleSlider.propTypes = {
    */
   fullWidth: PropTypes.bool,
   /**
+   * @default 0
    * The minimum allowed value of the slider. Should not be equal to max.
    */
   min: PropTypes.number,
   /**
+   * @default 100
    * The maximum allowed value of the slider. Should not be equal to min.
    */
   max: PropTypes.number,

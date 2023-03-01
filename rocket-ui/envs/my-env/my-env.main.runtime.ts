@@ -31,18 +31,19 @@ export class MyEnvMain {
       //  ]
       //}),
       react.overrideDependencies({
+        dependencies: {
+          '@totalsoft_oss/rocket-ui.providers.theme': '-'
+        },
         devDependencies: {
           '@types/react': '^18.0.17',
           '@types/react-dom': '^18.0.6',
           '@teambit/react.react-env': '0.0.23',
           'chart.js': '3.9.1',
-          'react-chartjs-2': '4.3.1'
+          'react-chartjs-2': '4.3.1',
+          '@totalsoft_oss/rocket-ui.providers.theme': '-'
         },
         peerDependencies: {
-          '@totalsoft_oss/rocket-ui.providers.theme': {
-            version: 'latest',
-            resolveFromEnv: true
-          }
+          '@totalsoft_oss/rocket-ui.providers.theme': '*'
         }
       })
     ])

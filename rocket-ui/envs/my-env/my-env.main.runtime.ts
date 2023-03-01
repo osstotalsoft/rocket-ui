@@ -42,9 +42,30 @@ export class MyEnvMain {
           'react-chartjs-2': '4.3.1',
           '@totalsoft_oss/rocket-ui.providers.theme': '-'
         },
-        peerDependencies: {
-          '@totalsoft_oss/rocket-ui.providers.theme': '*'
-        }
+        peers: [
+          {
+            name: 'react',
+            version: '18.0.0',
+            supportedRange: '^18.0.0',
+            force: true
+          },
+          {
+            name: 'react-dom',
+            version: '18.0.0',
+            supportedRange: '^18.0.0',
+            force: true
+          },
+          {
+            name: '@mui/material',
+            supportedRange: '^5.0.0',
+            version: '5.x'
+          },
+          {
+            name: '@totalsoft_oss/rocket-ui.providers.theme',
+            supportedRange: '*',
+            version: '*'
+          }
+        ]
       })
     ])
 

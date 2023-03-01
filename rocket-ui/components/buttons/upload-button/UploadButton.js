@@ -7,8 +7,8 @@ import validators from './uploadButtonValidators'
 import { map, __ } from 'ramda'
 
 const UploadButton = ({
-  fontSize,
-  Icon,
+  fontSize = 'small',
+  Icon = BackupIcon,
   accept,
   capture,
   multiple,
@@ -19,6 +19,7 @@ const UploadButton = ({
   onFilesChanged,
   onError,
   disabled,
+  size = 'medium',
   ...rest
 }) => {
   const handleFileSelected = useCallback(
@@ -38,7 +39,7 @@ const UploadButton = ({
   )
 
   return (
-    <IconButton aria-label='upload' disabled={disabled} {...rest} component='label'>
+    <IconButton aria-label='upload' size={size} disabled={disabled} {...rest} component='label'>
       <Input
         disabled={disabled}
         type='file'
@@ -52,18 +53,14 @@ const UploadButton = ({
   )
 }
 
-UploadButton.defaultProps = {
-  Icon: BackupIcon,
-  size: 'large',
-  fontSize: 'small'
-}
-
 UploadButton.propTypes = {
   /**
+   * @default BackupIcon
    * The icon to display
    */
   Icon: PropTypes.elementType,
   /**
+   * @default 'small'
    * Size of the icon.
    */
   fontSize: PropTypes.oneOf(['inherit', 'small', 'medium', 'large']),
@@ -110,7 +107,12 @@ UploadButton.propTypes = {
   /**
    * If `true`, the component is disabled.
    */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  /**
+   * @default 'medium'
+   * Button size
+   */
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large'])
 }
 
 export default UploadButton

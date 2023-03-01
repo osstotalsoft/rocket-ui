@@ -2,23 +2,20 @@ import { SkeletonProps as MuiSkeletonProps } from '@mui/material'
 
 export interface LoadingFakeTextProps extends Omit<MuiSkeletonProps, 'animation'> {
   /**
-   * The animation. If false, the animation effect is disabled
    * @default 'wave'
+   * The animation. If false, the animation effect is disabled
    */
   animation?: 'pulse' | 'wave' | 'false'
-  /*
+  /**
+   * @default 1
    * The number of fake line texts that will be rendered
    */
   lines?: number
-  /*
+  /**
+   * @default false
    * If set to true, the fake text will render on a Paper component
    */
   onPaper?: boolean
-  /**
-   * The shape of the loading fake text
-   * @default 'text'
-   */
-  variant?: 'text' | 'circular' | 'rectangular'
 }
 
 /**

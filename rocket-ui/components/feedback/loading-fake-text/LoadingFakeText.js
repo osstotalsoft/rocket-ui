@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Paper, Skeleton } from '@mui/material'
 
-const LoadingFakeText = ({ lines, onPaper, variant, ...props }) => {
+const LoadingFakeText = ({ lines = 1, onPaper = false, variant, animation = 'wave', ...props }) => {
   const defaultOrText = !variant || variant === 'text'
 
   const fakeText = (
@@ -11,7 +11,7 @@ const LoadingFakeText = ({ lines, onPaper, variant, ...props }) => {
         Array(lines)
           .fill()
           .map((_e, i) => {
-            if (i % 2 == 0) return <Skeleton key={i} variant={variant} {...props} />
+            if (i % 2 == 0) return <Skeleton key={i} variant={variant} animation={animation} {...props} />
             return <Skeleton key={i} variant={variant} {...props} width={'80%'} />
           })
       ) : (
@@ -27,25 +27,27 @@ const LoadingFakeText = ({ lines, onPaper, variant, ...props }) => {
   return fakeText
 }
 
-LoadingFakeText.defaultProps = {
-  animation: 'wave',
-  lines: 1,
-  onPaper: false
-}
-
 LoadingFakeText.propTypes = {
   /**
+   * @default 1
    * The number of lines appearing.
    */
   lines: PropTypes.number,
   /**
+   * @default false
    * If true, the fake text will be drawn on a Paper.
    */
   onPaper: PropTypes.bool,
   /**
+   * @default 'text'
    * The shape of the loading fake text
    */
-  variant: PropTypes.oneOf(['text', 'circular', 'rectangular'])
+  variant: PropTypes.oneOf(['text', 'circular', 'rectangular']),
+  /**
+   * The animation. If false, the animation effect is disabled
+   * @default 'wave'
+   */
+  animation: PropTypes.oneOf(['pulse', 'wave', false])
 }
 
 export default LoadingFakeText

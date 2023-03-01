@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { StyledCard, CardContent, StyledCardActions, CardTitle, CardDescription, StyledCardHeader, iconStyle } from './StatsCardStyles'
 import { Divider } from '@mui/material'
 
-const StatsCard = ({ icon: Icon, iconColor, title, description, footer, variant, footerProps, headerProps }) => {
+const StatsCard = ({ icon: Icon, iconColor = 'info', title, description, footer, variant, footerProps, headerProps }) => {
   return (
     <StyledCard disablePadding>
       <StyledCardHeader avatar={Icon && <Icon style={iconStyle} />} hasIcon={true} iconColor={iconColor} {...headerProps} />
@@ -19,16 +19,13 @@ const StatsCard = ({ icon: Icon, iconColor, title, description, footer, variant,
   )
 }
 
-StatsCard.defaultProps = {
-  iconColor: 'info'
-}
-
 StatsCard.propTypes = {
   /**
    * Icon to be displayed.
    */
   icon: PropTypes.elementType,
   /**
+   * @default 'info'
    * Icon color.
    */
   iconColor: PropTypes.oneOf(['warning', 'primary', 'error', 'success', 'info', 'rose', 'grey', 'secondary']),

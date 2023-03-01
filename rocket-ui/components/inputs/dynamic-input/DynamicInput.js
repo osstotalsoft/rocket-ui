@@ -14,7 +14,7 @@ const StringField = props => <TextField fullWidth {...props} />
 
 const ComboField = props => <Autocomplete fullWidth labelKey='value' valueKey='value' simpleValue {...props} />
 
-const DefaultField = ({ DefaultComp, onChange, ...other }) => {
+const DefaultField = ({ DefaultComp = TextField, onChange, ...other }) => {
   const onInputChange = useCallback(
     event => {
       onChange(event.target.value)
@@ -25,16 +25,20 @@ const DefaultField = ({ DefaultComp, onChange, ...other }) => {
   return <DefaultComp onChange={onInputChange} {...other} />
 }
 
-DefaultField.defaultProps = {
-  DefaultComp: TextField
-}
-
 DefaultField.propTypes = {
   onChange: PropTypes.func,
   DefaultComp: PropTypes.func
 }
 
-const DynamicInput = ({ controlType, onChange, loadOptions, value, DefaultComp, defaultCompProps, ...other }) => {
+const DynamicInput = ({
+  controlType,
+  onChange,
+  loadOptions,
+  value,
+  DefaultComp,
+  defaultCompProps = { fullWidth: true, disabled: true },
+  ...other
+}) => {
   const onCheckboxPropertyChange = useCallback(
     (_, inputValue) => {
       onChange(inputValue)
@@ -57,10 +61,6 @@ const DynamicInput = ({ controlType, onChange, loadOptions, value, DefaultComp, 
     default:
       return <DefaultField DefaultComp={DefaultComp} value={value ?? ''} onChange={onChange} {...defaultCompProps} />
   }
-}
-
-DynamicInput.defaultProps = {
-  defaultCompProps: { fullWidth: true, disabled: true }
 }
 
 DynamicInput.propTypes = {
@@ -88,6 +88,7 @@ DynamicInput.propTypes = {
    */
   DefaultComp: PropTypes.func,
   /**
+   * @default '{ fullWidth: true, disabled: true }'
    * The props of the default component.
    */
   defaultCompProps: PropTypes.object

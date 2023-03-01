@@ -1,11 +1,12 @@
-import { AccordionProps } from "@totalsoft_oss/rocket-ui.components.surfaces.accordion"
+import { AccordionProps } from '@totalsoft_oss/rocket-ui.components.surfaces.accordion'
 
-export interface AccordionListProps extends Omit<AccordionProps, 'defaultExpanded'> {
+export interface AccordionListProps extends Omit<AccordionProps, 'defaultExpanded' | 'content'> {
   /**
    * Default expanded accordion.
    */
   defaultExpanded?: number
   /**
+   * @default false
    * If false, only one accordion at a time can be expanded
    */
   canExpandAll?: boolean

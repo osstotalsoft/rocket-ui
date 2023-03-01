@@ -13,6 +13,7 @@ export type CardMediaProps = MuiCardMediaProps & {
 
 export interface CardProps extends Omit<MuiCardProps, 'title' | 'variant'> {
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant?: 'standard' | 'filled'
@@ -41,6 +42,7 @@ export interface CardProps extends Omit<MuiCardProps, 'title' | 'variant'> {
    */
   subheader?: React.ReactNode
   /**
+   * @default {}
    * Props applied to the CardHeader component.
    */
   headerProps?: CardHeaderProps
@@ -49,6 +51,7 @@ export interface CardProps extends Omit<MuiCardProps, 'title' | 'variant'> {
    */
   icon?: object
   /**
+   * @default 'secondary'
    * Icon color.
    */
   iconColor?: string

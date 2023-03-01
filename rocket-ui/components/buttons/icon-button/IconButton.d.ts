@@ -1,8 +1,8 @@
-import { ButtonProps } from "@totalsoft_oss/rocket-ui.components.buttons.button"
+import { ButtonProps } from '@totalsoft_oss/rocket-ui.components.buttons.button'
 
 export interface IconButtonProps extends Omit<ButtonProps, 'color' | 'type'> {
   /**
-   * @default 'theme'
+   * @default 'secondary'
    * Color of the button
    */
   color?:

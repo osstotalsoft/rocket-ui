@@ -3,7 +3,7 @@ import {
   DialogTitleProps as MuiDialogTitleProps,
   DialogContentProps as MuiDialogContentProps,
   DialogContentTextProps as MuiDialogContentTextProps,
-  DialogActionsProps as MuiDialogActionsProps,
+  DialogActionsProps as MuiDialogActionsProps
 } from '@mui/material'
 import { IconButtonProps } from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 
@@ -64,7 +64,7 @@ export interface DialogDisplayProps extends Omit<MuiDialogProps, 'maxWidth' | 't
    */
   transparentBackdrop?: boolean
   /**
-   * @default true
+   * @default false
    * If `true`, the close button is shown.
    */
   showX?: boolean

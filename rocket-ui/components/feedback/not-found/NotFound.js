@@ -4,7 +4,7 @@ import { NotFoundImage, NotFoundText } from './NotFoundStyles'
 import notFound from './notFound.png'
 import { Grid } from '@mui/material'
 
-const NotFound = ({ text, details }) => {
+const NotFound = ({ text = 'Not Found', details = 'The resource requested could not be found on this server!' }) => {
   return (
     <Grid>
       <NotFoundImage>
@@ -16,17 +16,14 @@ const NotFound = ({ text, details }) => {
   )
 }
 
-NotFound.defaultProps = {
-  text: 'Not Found',
-  details: 'The resource requested could not be found on this server!'
-}
-
 NotFound.propTypes = {
   /**
+   * @default 'Not Found'
    * The text to be displayed when this component is rendered
    */
   text: PropTypes.string,
   /**
+   * @default 'The resource requested could not be found on this server!'
    * The details to be displayed when this component is rendered
    */
   details: PropTypes.string

@@ -7,7 +7,7 @@ import { Visibility, VisibilityOff } from '@mui/icons-material'
 
 const getIcon = showPassword => (showPassword ? <Visibility /> : <VisibilityOff />)
 
-const PasswordField = ({ showPasswordText, hidePasswordText, disabled, error, ...rest }) => {
+const PasswordField = ({ showPasswordText = 'Show password', hidePasswordText = 'Hide password', disabled, error, ...rest }) => {
   const [showPassword, setShowPassword] = useState(false)
   const tooltip = showPassword ? hidePasswordText : showPasswordText
 
@@ -46,17 +46,14 @@ const PasswordField = ({ showPasswordText, hidePasswordText, disabled, error, ..
   )
 }
 
-PasswordField.defaultProps = {
-  hidePasswordText: 'Hide password',
-  showPasswordText: 'Show password'
-}
-
 PasswordField.propTypes = {
   /**
+   * @default 'Hide password'
    * Text to be displayed on tooltip when the user wants to hide the password.
    */
   hidePasswordText: PropTypes.string,
   /**
+   * @default 'Show password'
    * Text to be displayed on tooltip when the user wants to show the password.
    */
   showPasswordText: PropTypes.string,

@@ -6,7 +6,7 @@ import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import Card from '@totalsoft_oss/rocket-ui.components.surfaces.card'
 import { CardContent } from './CollapseCardStyles'
 
-const CollapseCard = ({ content, children, actions, variant, defaultExpanded, expanded, onToggle, subheader, ...rest }) => {
+const CollapseCard = ({ content, children, actions, variant = 'standard', defaultExpanded, expanded, onToggle, subheader, ...rest }) => {
   const [localExpanded, setLocalExpanded] = useState(defaultExpanded || false)
   const exp = expanded || localExpanded
 
@@ -33,10 +33,6 @@ const CollapseCard = ({ content, children, actions, variant, defaultExpanded, ex
   )
 }
 
-CollapseCard.defaultProps = {
-  variant: 'standard'
-}
-
 CollapseCard.propTypes = {
   /**
    * Content of the component.
@@ -51,6 +47,7 @@ CollapseCard.propTypes = {
    */
   content: PropTypes.node,
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant: PropTypes.oneOf(['standard', 'filled']),

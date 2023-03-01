@@ -25,12 +25,12 @@ const transformEmphasisToStyle = R.cond([
 const checkStyle = R.anyPass([R.isNil, R.isEmpty])
 const defaultToEmpty = R.defaultTo({})
 
-const Typography = ({ tooltip, emphasis, style, ...rest }) => {
+const Typography = ({ tooltip, emphasis, style, variant = 'inherit', ...rest }) => {
   const emphasisStyle = transformEmphasisToStyle(emphasis)
   const mergedStyle = R.mergeWithKey(mergeStyles, emphasisStyle, defaultToEmpty(style))
   const cleanStyle = R.when(checkStyle, R.always(undefined), mergedStyle)
 
-  const base = <MuiTypography style={cleanStyle} {...rest} />
+  const base = <MuiTypography style={cleanStyle} variant={variant} {...rest} />
   return tooltip ? (
     <Tooltip title={tooltip} placement='bottom-start'>
       {base}
@@ -38,10 +38,6 @@ const Typography = ({ tooltip, emphasis, style, ...rest }) => {
   ) : (
     base
   )
-}
-
-Typography.defaultProps = {
-  variant: 'inherit'
 }
 
 Typography.propTypes = {
@@ -76,6 +72,26 @@ Typography.propTypes = {
   emphasis: PropTypes.oneOfType([
     PropTypes.oneOf(['bold', 'italic', 'underline', 'line-through', 'overline']),
     PropTypes.arrayOf(PropTypes.oneOf(['bold', 'italic', 'underline', 'line-through', 'overline']))
+  ]),
+  /**
+   * @default 'inherit'
+   * Applies the theme typography styles.
+   */
+  variant: PropTypes.oneOf([
+    'body1',
+    'body2',
+    'button',
+    'caption',
+    'h1',
+    'h2',
+    'h3',
+    'h4',
+    'h5',
+    'h6',
+    'inherit',
+    'overline',
+    'subtitle1',
+    'subtitle2'
   ])
 }
 

@@ -2,6 +2,7 @@ import { CardHeaderProps as MuiCardHeaderProps } from '@mui/material'
 
 export interface CardHeaderProps extends MuiCardHeaderProps {
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant?: 'standard' | 'filled'

@@ -17,13 +17,10 @@ export const TextFieldStates = () => {
             <TextField label='Basic text field' value={value || ''} onChange={setValue} debounceBy={1000} fullWidth />
           </Grid>
           <Grid item xs={2}>
-            <TextField label='Read-only' value={'cannot be modified'} readOnly={true} fullWidth />
+            <TextField label='Disabled' value={'cannot be modified'} disabled fullWidth />
           </Grid>
           <Grid item xs={2}>
-            <TextField label='Disabled' value={'cannot be modified'} disabled={true} fullWidth />
-          </Grid>
-          <Grid item xs={2}>
-            <TextField required label='Error' value={errorValue || ''} onChange={setErrorValue} error={true} fullWidth />
+            <TextField required label='Error' value={errorValue || ''} onChange={setErrorValue} error fullWidth />
           </Grid>
         </Grid>
       }

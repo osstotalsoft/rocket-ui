@@ -4,7 +4,22 @@ import { createButton, getColorStyles, classes, transformDeprecatedSizes } from 
 import { Tooltip } from '@mui/material'
 import cx from 'classnames'
 
-const Button = ({ children, color, size, tooltip, round, right, justIcon, className, disabled, onClick, loading, gradient, ...rest }) => {
+const Button = ({
+  children,
+  color,
+  size = 'medium',
+  tooltip,
+  round,
+  right,
+  justIcon,
+  className,
+  disabled,
+  onClick,
+  loading,
+  gradient,
+  capitalize = true,
+  ...rest
+}) => {
   const buttonStyles = getColorStyles(color)
 
   const btnClasses = cx({
@@ -27,6 +42,7 @@ const Button = ({ children, color, size, tooltip, round, right, justIcon, classN
       disabled={disabled}
       onClick={!disabled ? onClick : undefined}
       component={disabled ? 'div' : 'button'}
+      capitalize={capitalize}
       {...(loading ? { loading } : {})}
       variant='contained' // need to set the default like this in order not to break 'WithBackground' and 'NoBackground' styles
       {...buttonStyles}
@@ -37,11 +53,6 @@ const Button = ({ children, color, size, tooltip, round, right, justIcon, classN
   )
 
   return tooltip ? <Tooltip title={tooltip}>{baseComp}</Tooltip> : baseComp
-}
-
-Button.defaultProps = {
-  size: 'medium',
-  capitalize: true
 }
 
 Button.propTypes = {
@@ -103,6 +114,7 @@ Button.propTypes = {
    */
   right: PropTypes.bool,
   /**
+   * @default 'medium'
    * Size of the button.
    */
   size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large']),
@@ -118,7 +130,12 @@ Button.propTypes = {
   /**
    * If true, a gradient background is applied.
    */
-  gradient: PropTypes.bool
+  gradient: PropTypes.bool,
+  /**
+   * @default true
+   * If true, button text is capitalized.
+   */
+  capitalize: PropTypes.bool
 }
 
 export default Button

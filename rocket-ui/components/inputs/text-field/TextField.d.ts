@@ -48,10 +48,6 @@ export interface TextFieldProps extends StandardTextFieldProps {
    */
   currency?: string
   /**
-   * If `true`, the text field will be read-only.
-   */
-  readOnly?: boolean
-  /**
    * If `true`, a clear button is shown.
    */
   isClearable?: boolean

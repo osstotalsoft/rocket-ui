@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import { LinearProgress as MuiLinearProgress, Label } from './LinearProgressStyles'
 import { isNil } from 'ramda'
 
-export default function LinearProgress({ color, variant, value, valueBuffer, showLabel, labelProps, ...rest }) {
+export default function LinearProgress({ color = 'grey', variant, value, valueBuffer, showLabel, labelProps, ...rest }) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Box sx={{ width: '100%', mr: 1 }}>
@@ -19,12 +19,9 @@ export default function LinearProgress({ color, variant, value, valueBuffer, sho
   )
 }
 
-LinearProgress.defaultProps = {
-  color: 'grey'
-}
-
 LinearProgress.propTypes = {
   /**
+   * @default 'grey'
    * Color of the component.
    */
   color: PropTypes.oneOf(['primary', 'secondary', 'warning', 'error', 'success', 'info', 'rose', 'grey']),

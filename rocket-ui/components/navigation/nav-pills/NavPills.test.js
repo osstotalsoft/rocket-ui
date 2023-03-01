@@ -5,7 +5,7 @@ import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import { defaultTheme } from '@totalsoft_oss/rocket-ui.themes'
 import fns from '@totalsoft_oss/rocket-ui.utils.test-wrapper'
 
-const { render, userClick } = fns
+const { render } = fns
 const theme = defaultTheme
 
 const tabs = [

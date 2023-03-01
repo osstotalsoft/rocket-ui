@@ -2,17 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MuiCardActions from './CardActionsStyles'
 
-const CardActions = ({ variant, align, ...rest }) => {
+const CardActions = ({ variant = 'standard', align = 'left', ...rest }) => {
   return <MuiCardActions variant={variant} align={align} {...rest} />
-}
-
-CardActions.defaultProps = {
-  variant: 'standard',
-  align: 'left'
 }
 
 CardActions.propTypes = {
   /**
+   * @default 'standard'
    * Variant to use.
    */
   variant: PropTypes.oneOf(['standard', 'filled']),

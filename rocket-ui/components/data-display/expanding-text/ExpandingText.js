@@ -3,7 +3,17 @@ import { PropTypes } from 'prop-types'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import ShowButton from './ExpandingTextStyles'
 
-const ExpandingText = ({ text, minLength, showLessText, showMoreText, display, textProps, buttonProps, expanded, ...rest }) => {
+const ExpandingText = ({
+  text,
+  minLength,
+  showLessText = 'Show less',
+  showMoreText = 'Show more',
+  display = 'block',
+  textProps,
+  buttonProps,
+  expanded = false,
+  ...rest
+}) => {
   const shouldCollapse = text.length > minLength
   const [localExpanded, setLocalExpanded] = useState(expanded)
 
@@ -22,13 +32,6 @@ const ExpandingText = ({ text, minLength, showLessText, showMoreText, display, t
       )}
     </>
   )
-}
-
-ExpandingText.defaultProps = {
-  showLessText: 'Show less',
-  showMoreText: 'Show more',
-  display: 'block',
-  expanded: false
 }
 
 ExpandingText.propTypes = {

@@ -4,7 +4,6 @@ import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typogra
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import Card from '../Card'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
-import { DonutLarge } from '@mui/icons-material'
 import { LocalActivity } from '@mui/icons-material'
 
 const LearnMoreButton = () => {

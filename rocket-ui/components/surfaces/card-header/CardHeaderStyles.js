@@ -23,13 +23,7 @@ const CardHeader = styled(MuiCardHeader, {
     })
   },
   [`& .MuiCardHeader-action`]: {
-    position: 'absolute',
-    right: '0px',
-    top: '0px',
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'flex-end',
-    padding: '20px 24px'
+    display: 'flex'
   }
 }))
 

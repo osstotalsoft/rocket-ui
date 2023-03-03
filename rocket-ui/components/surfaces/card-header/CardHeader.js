@@ -20,13 +20,15 @@ const CardHeader = ({ variant = 'standard', actions, title, ...rest }) => {
       }
       disableTypography
       title={
-        title && isValidElement(title) ? (
-          title
-        ) : (
-          <Typography variant='subtitle1' emphasis='bold'>
-            {title}
-          </Typography>
-        )
+        title ? (
+          isValidElement(title) ? (
+            title
+          ) : (
+            <Typography variant='subtitle1' emphasis='bold'>
+              {title}
+            </Typography>
+          )
+        ) : undefined
       }
       {...rest}
     />

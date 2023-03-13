@@ -3,6 +3,8 @@ import { Grid } from '@mui/material'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import Card from '../Card'
+import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
+import { LocalActivity } from '@mui/icons-material'
 
 const LearnMoreButton = () => {
   return (
@@ -63,6 +65,31 @@ export const BasicCard = () => {
               <img src={spaceship} id='img1' alt='spaceship' />
             </Grid> */}
           </Grid>
+        </Card>
+      </Grid>
+      <Grid item md={4}>
+        <Card
+          title='Card Title'
+          actions={[
+            <IconButton tooltip='Tooltip message' type='add' variant='text' size='small' />,
+            <IconButton tooltip='Tooltip message' type='download' variant='text' size='small' />
+          ]}
+          footer={<LearnMoreButton />}
+        >
+          {'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
+        </Card>
+      </Grid>
+      <Grid item md={4}>
+        <Card
+          icon={LocalActivity}
+          title='Card Title'
+          actions={[
+            <IconButton tooltip='Tooltip message' type='add' variant='text' size='small' />,
+            <IconButton tooltip='Tooltip message' type='download' variant='text' size='small' />
+          ]}
+          footer={<LearnMoreButton />}
+        >
+          {'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
         </Card>
       </Grid>
     </Grid>

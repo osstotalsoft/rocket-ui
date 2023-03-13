@@ -58,7 +58,7 @@ export class MyEnvMain {
           {
             name: '@mui/material',
             supportedRange: '^5.0.0',
-            version: '5.x'
+            version: '^5.11.10'
           },
           {
             name: '@totalsoft_oss/rocket-ui.providers.theme',

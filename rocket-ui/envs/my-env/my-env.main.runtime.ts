@@ -61,6 +61,11 @@ export class MyEnvMain {
             version: '^5.11.10'
           },
           {
+            name: '@mui/icons-material',
+            supportedRange: '^5.0.0',
+            version: '^5.11.11'
+          },
+          {
             name: '@totalsoft_oss/rocket-ui.providers.theme',
             supportedRange: '*',
             version: '*'

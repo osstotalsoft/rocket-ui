@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -41,7 +41,6 @@
       "dependencies": {
         "@babel/core": "7.x",
         "@babel/plugin-syntax-jsx": "7.x",
-        "@mui/icons-material": "5.x",
         "@mui/lab": "5.0.0-alpha.96",
         "@mui/x-date-pickers": "5.0.0-beta.6",
         "@teambit/harmony": "0.4.6",
@@ -76,7 +75,8 @@
         "@testing-library/react": "^13.x",
         "react": "18.x",
         "react-dom": "18.x",
-        "react-router-dom": "^6.x"
+        "react-router-dom": "^6.x",
+        "@mui/icons-material": "5.x"
       }
     },
     "linkCoreAspects": true
@@ -97,9 +97,7 @@
     }
   },
   "teambit.generator/generator": {
-    "aspects": [
-      "rocket-ui/generator/component-templates"
-    ]
+    "aspects": ["rocket-ui/generator/component-templates"]
   },
   "rocket-ui/generator/component-templates": {},
   "teambit.defender/tester": {

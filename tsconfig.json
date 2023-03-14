@@ -2,9 +2,8 @@
   "extends": "./node_modules/@teambit/react/typescript/tsconfig.json",
   // "include": [],
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
-  "exclude": [
-    "dist"
-  ]
+  "exclude": ["dist"]
 }

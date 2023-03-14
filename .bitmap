@@ -11,411 +11,207 @@
 {
     "components/buttons/back-to-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/back-to-button",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/buttons/back-to-button"
     },
     "components/buttons/button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/button",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/buttons/button"
     },
     "components/buttons/icon-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/icon-button",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/buttons/icon-button"
     },
     "components/buttons/upload-button": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/buttons/upload-button",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/buttons/upload-button"
     },
     "components/charts/chart": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/charts/chart",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/charts/chart"
     },
     "components/charts/stats-chart": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/charts/stats-chart",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/charts/stats-chart"
     },
     "components/data-display/expanding-text": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/expanding-text",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/data-display/expanding-text"
     },
     "components/data-display/fav-icon": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/fav-icon",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/data-display/fav-icon"
     },
     "components/data-display/typography": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/data-display/typography",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/data-display/typography"
     },
     "components/feedback/custom-dialog": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/custom-dialog",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/custom-dialog"
     },
     "components/feedback/dialog-display": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/dialog-display",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/dialog-display"
     },
     "components/feedback/forbidden": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/forbidden",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/forbidden"
     },
     "components/feedback/linear-progress": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/linear-progress",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/linear-progress"
     },
     "components/feedback/loading-fake-text": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/loading-fake-text",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/loading-fake-text"
     },
     "components/feedback/not-found": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/not-found",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/not-found"
     },
     "components/feedback/toast": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/feedback/toast",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/feedback/toast"
     },
     "components/inputs/autocomplete": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/autocomplete",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/autocomplete"
     },
     "components/inputs/date-time": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/date-time",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/date-time"
     },
     "components/inputs/dynamic-input": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/dynamic-input",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/dynamic-input"
     },
     "components/inputs/password-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/password-field",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/password-field"
     },
     "components/inputs/simple-slider": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/simple-slider",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/simple-slider"
     },
     "components/inputs/text-field": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/inputs/text-field",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/inputs/text-field"
     },
     "components/navigation/nav-pills": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/nav-pills",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/navigation/nav-pills"
     },
     "components/navigation/pagination": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/pagination",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/navigation/pagination"
     },
     "components/navigation/side-menu": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/navigation/side-menu",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/navigation/side-menu"
     },
     "components/surfaces/accordion": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/accordion",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/accordion"
     },
     "components/surfaces/accordion-list": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/accordion-list",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/accordion-list"
     },
     "components/surfaces/card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/card"
     },
     "components/surfaces/card-actions": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card-actions",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/card-actions"
     },
     "components/surfaces/card-header": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/card-header",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/card-header"
     },
     "components/surfaces/collapse-card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/collapse-card",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/collapse-card"
     },
     "components/surfaces/stats-card": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/components/surfaces/stats-card",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/components/surfaces/stats-card"
     },
     "core": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.js",
-        "rootDir": "rocket-ui/core",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons (bump dependencies versions)",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/core"
     },
     "envs/my-env": {
         "scope": "totalsoft_oss.rocket-ui",
-        "version": "2.0.14",
+        "version": "2.0.15",
         "mainFile": "index.ts",
-        "rootDir": "rocket-ui/envs/my-env",
-        "nextVersion": {
-            "version": "patch",
-            "message": "add separate imports for icons",
-            "username": "Costi",
-            "email": "cdiaconita@totalsoft.ro"
-        }
+        "rootDir": "rocket-ui/envs/my-env"
     },
     "generator/component-templates": {
         "scope": "totalsoft_oss.rocket-ui",

@@ -5,7 +5,11 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
 import { CalendarTodaySmallIcon } from './DateTimeStyles'
 import * as R from 'ramda'
-import { ro, fr, ru, de, enUS } from 'date-fns/locale'
+import ro from 'date-fns/locale/ro'
+import fr from 'date-fns/locale/fr'
+import ru from 'date-fns/locale/ru'
+import de from 'date-fns/locale/de'
+import enUS from 'date-fns/locale/en-US'
 import DateTimeEndAdornment from './DateTimeEndAdornment'
 
 const localeMap = {

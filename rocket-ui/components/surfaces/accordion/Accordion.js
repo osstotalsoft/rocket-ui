@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Accordion as BaseAccordion } from '@mui/material'
-import { ExpandMore } from '@mui/icons-material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { AccordionSummary, AccordionDetails } from './AccordionStyles'
 
 const Accordion = ({ title, content, variant = 'standard', ...rest }) => {
   return (
     <BaseAccordion disableGutters TransitionProps={{ unmountOnExit: true }} {...rest}>
-      <AccordionSummary variant={variant} expandIcon={<ExpandMore />}>
+      <AccordionSummary variant={variant} expandIcon={<ExpandMoreIcon />}>
         <Typography variant='subtitle1' gutterBottom color={'text.primary'}>
           {title}
         </Typography>

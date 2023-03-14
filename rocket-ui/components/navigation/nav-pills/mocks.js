@@ -1,25 +1,28 @@
 import React from 'react'
-import { CarRepair, Phone, Rocket, ShieldMoonSharp } from '@mui/icons-material'
+import CarRepairIcon from '@mui/icons-material/CarRepair'
+import PhoneIcon from '@mui/icons-material/Phone'
+import RocketIcon from '@mui/icons-material/Rocket'
+import ShieldMoonSharpIcon from '@mui/icons-material/ShieldMoonSharp'
 
 export const tabs = (withIcons, withText) => [
   {
     label: withText && 'Item one',
-    icon: withIcons ? <CarRepair /> : null,
+    icon: withIcons ? <CarRepairIcon /> : null,
     content: 'Content 1'
   },
   {
     label: withText && 'Item two',
-    icon: withIcons ? <Phone /> : null,
+    icon: withIcons ? <PhoneIcon /> : null,
     content: 'Content 2'
   },
   {
     label: withText && 'Item three',
-    icon: withIcons ? <Rocket /> : null,
+    icon: withIcons ? <RocketIcon /> : null,
     content: 'Content 3'
   },
   {
     label: withText && 'Item four',
-    icon: withIcons ? <ShieldMoonSharp /> : null,
+    icon: withIcons ? <ShieldMoonSharpIcon /> : null,
     content: 'Content 4'
   }
 ]

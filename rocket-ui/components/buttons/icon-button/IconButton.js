@@ -2,18 +2,26 @@ import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { CircularProgress } from '@mui/material'
 import MuiIconButton from './IconButtonStyles'
-import { Add, Cancel, Delete, CloudDownload, ArrowDownward, Edit, Visibility, Save, ArrowUpward } from '@mui/icons-material'
+import AddIcon from '@mui/icons-material/Add'
+import CancelIcon from '@mui/icons-material/Cancel'
+import DeleteIcon from '@mui/icons-material/Delete'
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import EditIcon from '@mui/icons-material/Edit'
+import VisibilityIcon from '@mui/icons-material/Visibility'
+import SaveIcon from '@mui/icons-material/Save'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 
 const iconType = {
-  add: Add,
-  cancel: Cancel,
-  delete: Delete,
-  download: CloudDownload,
-  downward: ArrowDownward,
-  edit: Edit,
-  view: Visibility,
-  save: Save,
-  upward: ArrowUpward
+  add: AddIcon,
+  cancel: CancelIcon,
+  delete: DeleteIcon,
+  download: CloudDownloadIcon,
+  downward: ArrowDownwardIcon,
+  edit: EditIcon,
+  view: VisibilityIcon,
+  save: SaveIcon,
+  upward: ArrowUpwardIcon
 }
 
 const IconButton = ({ children, type, fontSize = 'small', loading, size = 'medium', color = 'secondary', ...rest }) => {

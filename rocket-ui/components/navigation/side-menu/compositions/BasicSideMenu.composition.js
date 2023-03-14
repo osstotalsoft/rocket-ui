@@ -1,5 +1,9 @@
 import React from 'react'
-import { CloudDownload, CompareArrows, History, OpenInBrowser, Publish } from '@mui/icons-material'
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
+import CompareArrowsIcon from '@mui/icons-material/CompareArrows'
+import HistoryIcon from '@mui/icons-material/History'
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser'
+import PublishIcon from '@mui/icons-material/Publish'
 import { ListItemIcon, MenuItem, MenuList } from '@mui/material'
 import SideMenu from '../SideMenu'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
@@ -10,31 +14,31 @@ export const SideMenuContainer = () => (
       <MenuList>
         <MenuItem disableGutters dense>
           <ListItemIcon>
-            <OpenInBrowser />
+            <OpenInBrowserIcon />
           </ListItemIcon>
           <Typography>{'Load template'}</Typography>
         </MenuItem>
         <MenuItem disableGutters dense>
           <ListItemIcon>
-            <CloudDownload />
+            <CloudDownloadIcon />
           </ListItemIcon>
           <Typography>{'Export Yaml'}</Typography>
         </MenuItem>
         <MenuItem disableGutters dense>
           <ListItemIcon>
-            <Publish />
+            <PublishIcon />
           </ListItemIcon>
           <Typography>{'Import Yaml'}</Typography>
         </MenuItem>
         <MenuItem disableGutters dense>
           <ListItemIcon>
-            <CompareArrows />
+            <CompareArrowsIcon />
           </ListItemIcon>
           <Typography>{'Compare configuration'}</Typography>
         </MenuItem>
         <MenuItem disableGutters dense>
           <ListItemIcon>
-            <History />
+            <HistoryIcon />
           </ListItemIcon>
           <Typography>{'Configuration history'}</Typography>
         </MenuItem>

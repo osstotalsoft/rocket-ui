@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { Checkbox, Tooltip } from '@mui/material'
-import { CheckBoxOutlineBlank, CheckBox } from '@mui/icons-material'
+import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank'
+import CheckBoxIcon from '@mui/icons-material/CheckBox'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { Option as BaseOption } from './AutocompleteStyles'
 
@@ -18,8 +19,8 @@ const Option = ({ optionLabel, createdLabel, selected, withCheckboxes, ...rest }
   return withCheckboxes ? (
     <li {...rest}>
       <Checkbox
-        icon={<CheckBoxOutlineBlank fontSize='small' />}
-        checkedIcon={<CheckBox fontSize='small' />}
+        icon={<CheckBoxOutlineBlankIcon fontSize='small' />}
+        checkedIcon={<CheckBoxIcon fontSize='small' />}
         style={{ marginRight: 8 }}
         checked={selected}
       />

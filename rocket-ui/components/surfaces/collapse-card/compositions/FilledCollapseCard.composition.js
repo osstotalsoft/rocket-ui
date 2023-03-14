@@ -3,7 +3,7 @@ import CollapseCard from '../CollapseCard'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
-import { QuestionMark } from '@mui/icons-material'
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark'
 import { Box, Grid } from '@mui/material'
 
 export const FilledCollapseCard = () => {
@@ -13,7 +13,7 @@ export const FilledCollapseCard = () => {
       variant='filled'
       actions={
         <IconButton key='1' color='info' variant='text' size='small'>
-          <QuestionMark />
+          <QuestionMarkIcon />
         </IconButton>
       }
       content={

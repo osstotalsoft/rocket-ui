@@ -4,7 +4,7 @@ import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typogra
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import Card from '../Card'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
-import { LocalActivity } from '@mui/icons-material'
+import LocalActivityIcon from '@mui/icons-material/LocalActivity'
 
 const LearnMoreButton = () => {
   return (
@@ -81,7 +81,7 @@ export const BasicCard = () => {
       </Grid>
       <Grid item md={4}>
         <Card
-          icon={LocalActivity}
+          icon={LocalActivityIcon}
           title='Card Title'
           actions={[
             <IconButton tooltip='Tooltip message' type='add' variant='text' size='small' />,

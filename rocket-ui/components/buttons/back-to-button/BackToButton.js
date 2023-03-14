@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
-import ArrowBack from '@mui/icons-material/ArrowBack'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 
 const BackToButton = ({ path, fontSize = 'small', size = 'medium', ...rest }) => {
@@ -13,7 +13,7 @@ const BackToButton = ({ path, fontSize = 'small', size = 'medium', ...rest }) =>
 
   return (
     <IconButton aria-label='back' onClick={onBackToList} size={size} {...rest}>
-      <ArrowBack fontSize={fontSize} />
+      <ArrowBackIcon fontSize={fontSize} />
     </IconButton>
   )
 }

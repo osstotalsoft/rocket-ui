@@ -1,7 +1,7 @@
 import React from 'react'
 import StatsChart from '../StatsChart'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
-import { AccessTime } from '@mui/icons-material'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import { Grid } from '@mui/material'
 import { statsChartData, statsChartOptions } from '../mocks'
 
@@ -13,7 +13,7 @@ export const StatsChartTypes = () => {
           type='line'
           data={statsChartData}
           chartColor={'info'}
-          StatIcon={AccessTime}
+          StatIcon={AccessTimeIcon}
           statText={'Line chart'}
           title={'Line Chart with warning icon color'}
           options={statsChartOptions}
@@ -25,7 +25,7 @@ export const StatsChartTypes = () => {
           type='bar'
           data={statsChartData}
           chartColor={'info'}
-          StatIcon={AccessTime}
+          StatIcon={AccessTimeIcon}
           statText={'Bar chart infos'}
           title={'Bar Chart'}
           options={statsChartOptions}
@@ -36,7 +36,7 @@ export const StatsChartTypes = () => {
           type='line'
           data={statsChartData}
           chartColor={'info'}
-          StatIcon={AccessTime}
+          StatIcon={AccessTimeIcon}
           statText={'Line chart infos'}
           title={'Line Chart with action button'}
           options={statsChartOptions}

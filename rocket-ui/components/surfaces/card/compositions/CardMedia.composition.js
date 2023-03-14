@@ -2,7 +2,7 @@ import React from 'react'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import Card from '../Card'
 import { Grid, Link } from '@mui/material'
-import { EmojiPeople } from '@mui/icons-material'
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 
 export const CardMedia = () => {
   return (
@@ -72,7 +72,7 @@ export const CardMedia = () => {
         </Grid>
         <Grid item xs={6} md={4}>
           <Card
-            icon={EmojiPeople}
+            icon={EmojiPeopleIcon}
             title='Random Image'
             mediaProps={{ component: 'img', src: 'https://i.imgur.com/8woNLN2.jpeg', height: '280px', alt: 'Image Demo' }}
           >

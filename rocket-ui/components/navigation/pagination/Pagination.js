@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types'
 import { TablePagination } from '@mui/material'
 import { PaginationContainer, RefreshButtonContainer } from './PaginationStyles'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
-import { Refresh } from '@mui/icons-material'
+import RefreshIcon from '@mui/icons-material/Refresh'
 import { ascend, identity, sort, uniq } from 'ramda'
 
 const displayedRows =
@@ -68,7 +68,7 @@ const Pagination = ({
       {onRefresh && (
         <RefreshButtonContainer>
           <IconButton onClick={handleRefresh} color='default' variant='text'>
-            <Refresh />
+            <RefreshIcon />
           </IconButton>
         </RefreshButtonContainer>
       )}

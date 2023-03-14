@@ -3,7 +3,8 @@ description: 'SideMenu component.'
 labels: ['mui', 'react', 'side-menu']
 ---
 
-import { CloudDownload, OpenInBrowser } from '@mui/icons-material'
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser'
 import { ListItemIcon, MenuItem, MenuList } from '@mui/material'
 import SideMenu from './SideMenu'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
@@ -20,13 +21,13 @@ Basic example that renders a side-menu
     <MenuList>
       <MenuItem disableGutters dense>
         <ListItemIcon>
-          <OpenInBrowser />
+          <OpenInBrowserIcon />
         </ListItemIcon>
         <Typography>{'Load template'}</Typography>
       </MenuItem>
       <MenuItem disableGutters dense>
         <ListItemIcon>
-          <CloudDownload />
+          <CloudDownloadIcon />
         </ListItemIcon>
         <Typography>{'Export Yaml'}</Typography>
       </MenuItem>
@@ -45,7 +46,7 @@ Modify the text to see it change live:
     <MenuList>
       <MenuItem disableGutters dense>
         <ListItemIcon>
-          <OpenInBrowser />
+          <OpenInBrowserIcon />
         </ListItemIcon>
         <Typography>{'Load template'}</Typography>
       </MenuItem>

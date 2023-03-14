@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
 import { InputAdornment, Tooltip } from '@mui/material'
-import { Visibility, VisibilityOff } from '@mui/icons-material'
+import VisibilityIcon from '@mui/icons-material/Visibility'
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
 
-const getIcon = showPassword => (showPassword ? <Visibility /> : <VisibilityOff />)
+const getIcon = showPassword => (showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />)
 
 const PasswordField = ({ showPasswordText = 'Show password', hidePasswordText = 'Hide password', disabled, error, ...rest }) => {
   const [showPassword, setShowPassword] = useState(false)

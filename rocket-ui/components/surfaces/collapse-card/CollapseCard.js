@@ -1,7 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { Collapse } from '@mui/material'
 import PropTypes from 'prop-types'
-import { ExpandMore, ExpandLess } from '@mui/icons-material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import Card from '@totalsoft_oss/rocket-ui.components.surfaces.card'
 import { CardContent } from './CollapseCardStyles'
@@ -14,7 +15,7 @@ const CollapseCard = ({ content, children, actions, variant = 'standard', defaul
 
   const iconButton = (
     <IconButton size='small' variant='text' color='primary' onClick={toggleCard}>
-      {exp ? <ExpandLess /> : <ExpandMore />}
+      {exp ? <ExpandLessIcon /> : <ExpandMoreIcon />}
     </IconButton>
   )
 

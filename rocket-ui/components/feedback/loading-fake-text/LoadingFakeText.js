@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Paper, Skeleton } from '@mui/material'
+import Paper from '@mui/material/Paper'
+import Skeleton from '@mui/material/Skeleton'
 
 const LoadingFakeText = ({ lines = 1, onPaper = false, variant, animation = 'wave', ...props }) => {
   const defaultOrText = !variant || variant === 'text'

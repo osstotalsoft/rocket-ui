@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import IconButton from '../IconButton'
-import { FormControlLabel, Grid, Switch } from '@mui/material'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Switch from '@mui/material/Switch'
+import Grid from '@mui/material/Grid'
 import RocketIcon from '@mui/icons-material/Rocket'
 
 export const IconButtonLoading = () => {

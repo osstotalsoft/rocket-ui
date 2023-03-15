@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Button'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 
 const tooltip = 'I have a tooltip'
 const disabledButtonProps = { disabled: true, tooltip, size: 'small' }

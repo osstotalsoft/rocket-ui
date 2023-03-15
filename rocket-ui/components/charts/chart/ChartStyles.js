@@ -1,4 +1,5 @@
-import { styled, CardContent as MuiCardContent } from '@mui/material'
+import MuiCardContent from '@mui/material/CardContent'
+import { styled } from '@mui/material/styles'
 import CardHeader from '@totalsoft_oss/rocket-ui.components.surfaces.card-header'
 import { includes } from 'ramda'
 

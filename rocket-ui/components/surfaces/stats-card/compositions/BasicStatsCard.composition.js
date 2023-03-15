@@ -1,7 +1,7 @@
 import React from 'react'
 import StatsCard from '../StatsCard'
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 
 export const BasicStatsCard = () => {
   return (

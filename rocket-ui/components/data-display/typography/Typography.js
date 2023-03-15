@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MuiTypography from './TypographyStyles'
-import { Tooltip } from '@mui/material'
+import Tooltip from '@mui/material/Tooltip'
 import * as R from 'ramda'
 
 const multipleValueCssProp = ['textDecoration']

@@ -1,4 +1,4 @@
-import { styled } from '@mui/material'
+import { styled } from '@mui/material/styles'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 
 const IconButton = styled(Button)(() => ({

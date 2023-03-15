@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { Autocomplete as MuiAutocomplete, NoOptionsText, classes } from './AutocompleteStyles'
 import Option from './Option'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
-import { LinearProgress, Chip } from '@mui/material'
+import LinearProgress from '@mui/material/LinearProgress'
+import Chip from '@mui/material/Chip'
 import { is, isNil, equals, isEmpty, any, prop } from 'ramda'
 import {
   filterOptions,

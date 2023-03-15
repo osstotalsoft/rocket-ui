@@ -1,4 +1,5 @@
-import { CardActions as MuiCardActions, styled } from '@mui/material'
+import MuiCardActions from '@mui/material/CardActions'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 const CardActions = styled(MuiCardActions, {

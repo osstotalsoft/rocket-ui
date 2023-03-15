@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
 import Autocomplete from '@totalsoft_oss/rocket-ui.components.inputs.autocomplete'
-import { Switch } from '@mui/material'
+import Switch from '@mui/material/Switch'
 
 const BoolField = props => <Switch {...props} />
 

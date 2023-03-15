@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import UploadButton from '../UploadButton'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'
 

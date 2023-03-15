@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import AccordionList from '../AccordionList'
 
 const mockedAccordionContentList = [

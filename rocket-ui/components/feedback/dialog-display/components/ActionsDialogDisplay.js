@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import DialogDisplay from '../DialogDisplay'
 import { title, text } from '../mocks'
-import { Grid, TextField } from '@mui/material'
+import TextField from '@mui/material/TextField'
+import Grid from '@mui/material/Grid'
 
 const ActionsDialogDisplay = props => {
   return (

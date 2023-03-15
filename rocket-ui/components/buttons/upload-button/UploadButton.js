@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import BackupIcon from '@mui/icons-material/Backup'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
-import { Input } from '@mui/material'
+import Input from '@mui/material/Input'
 import validators from './uploadButtonValidators'
 import { map, __ } from 'ramda'
 

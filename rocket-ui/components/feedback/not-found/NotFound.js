@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { NotFoundImage, NotFoundText } from './NotFoundStyles'
 import notFound from './notFound.png'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 
 const NotFound = ({ text = 'Not Found', details = 'The resource requested could not be found on this server!' }) => {
   return (

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import PropTypes from 'prop-types'
-import { Box } from '@mui/material'
+import Box from '@mui/material/Box'
 import { Tabs, Tab } from './NavPillsStyles'
 
 function TabPanel({ children, active, index, ...other }) {

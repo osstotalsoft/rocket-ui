@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import forbidden from './forbidden.png'

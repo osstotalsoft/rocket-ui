@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { InputAdornment } from '@mui/material'
+import InputAdornment from '@mui/material/InputAdornment'
 import { ClearSmallIcon, IconButton } from './DateTimeStyles'
 
 const DateTimeEndAdornment = props => {

@@ -1,7 +1,8 @@
 import React from 'react'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import Card from '../Card'
-import { Grid, Link } from '@mui/material'
+import Link from '@mui/material/Link'
+import Grid from '@mui/material/Grid'
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 
 export const CardMedia = () => {

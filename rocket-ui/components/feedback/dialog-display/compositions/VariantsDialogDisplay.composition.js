@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react'
-import { Grid, Button } from '@mui/material'
+import Button from '@mui/material/Button'
+import Grid from '@mui/material/Grid'
 import BasicDialogDisplay from '../components/BasicDialogDisplay'
 import TextDialogDisplay from '../components/TextDialogDisplay'
 import DividersDialogDisplay from '../components/DividersDialogDisplay'

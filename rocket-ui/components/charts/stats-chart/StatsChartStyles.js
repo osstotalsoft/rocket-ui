@@ -1,4 +1,6 @@
-import { styled, CardContent as MuiCardContent, CardActions as MuiCardActions } from '@mui/material'
+import MuiCardContent from '@mui/material/CardContent'
+import MuiCardActions from '@mui/material/CardActions'
+import { styled } from '@mui/material/styles'
 import Card from '@totalsoft_oss/rocket-ui.components.surfaces.card'
 import CardHeader from '@totalsoft_oss/rocket-ui.components.surfaces.card-header'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'

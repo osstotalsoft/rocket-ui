@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DynamicInput from '../DynamicInput'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import ColumnHeader from '../ColumnHeader'
 
 const options = [{ value: 'first option' }, { value: 'second option' }, { value: 'third option' }]

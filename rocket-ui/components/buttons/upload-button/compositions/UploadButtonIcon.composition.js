@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import BrowserUpdatedIcon from '@mui/icons-material/BrowserUpdated'
 import ImageSearchIcon from '@mui/icons-material/ImageSearch'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload'

@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react'
 import { PropTypes } from 'prop-types'
-import { TablePagination } from '@mui/material'
+import TablePagination from '@mui/material/TablePagination'
 import { PaginationContainer, RefreshButtonContainer } from './PaginationStyles'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import RefreshIcon from '@mui/icons-material/Refresh'

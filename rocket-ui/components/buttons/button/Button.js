@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { createButton, getColorStyles, classes, transformDeprecatedSizes } from './ButtonStyles'
-import { Tooltip } from '@mui/material'
+import Tooltip from '@mui/material/Tooltip'
 import cx from 'classnames'
 
 const Button = ({

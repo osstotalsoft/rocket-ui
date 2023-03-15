@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
-import { FormControlLabel, Checkbox } from '@mui/material'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Checkbox from '@mui/material/Checkbox'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 
 const ControlledCheckbox = ({ value, onChange, label }) => {

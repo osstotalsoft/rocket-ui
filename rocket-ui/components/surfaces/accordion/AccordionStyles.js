@@ -1,4 +1,6 @@
-import { AccordionDetails as MuiAccordionDetails, AccordionSummary as MuiAccordionSummary, styled } from '@mui/material'
+import MuiAccordionDetails from '@mui/material/AccordionDetails'
+import MuiAccordionSummary from '@mui/material/AccordionSummary'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 export const AccordionDetails = styled(MuiAccordionDetails)(() => ({

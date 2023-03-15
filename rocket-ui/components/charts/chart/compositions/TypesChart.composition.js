@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import BarChartIcon from '@mui/icons-material/BarChart'
 import { lineChartData, barChartData, chartOptions } from '../mocks'
 import Chart from '../Chart'

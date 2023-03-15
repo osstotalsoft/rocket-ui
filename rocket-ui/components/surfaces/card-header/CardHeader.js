@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MuiCardHeader from './CardHeaderStyles'
-import { Box } from '@mui/material'
+import Box from '@mui/material/Box'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { isValidElement } from 'react'
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { screen } from '@testing-library/react'
 import DialogDisplay from './DialogDisplay'
 import { title, text } from './mocks'
-import { Button } from '@mui/material'
+import Button from '@mui/material/Button'
 import { defaultTheme } from '@totalsoft_oss/rocket-ui.themes'
 import fns from '@totalsoft_oss/rocket-ui.utils.test-wrapper'
 

@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import IconButton from '../IconButton'
 import RadioButtonSelect from '../RadioButtonSelect'
 

@@ -1,4 +1,5 @@
-import { Typography as BaseTypography, styled } from '@mui/material'
+import BaseTypography from '@mui/material/Typography'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 const Typography = styled(BaseTypography)(({ theme, variant }) => ({

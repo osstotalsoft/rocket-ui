@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import ControlledCheckbox from '../components/ControlledCheckBox'
 import BasicAutocomplete from '../components/BasicAutocomplete'
 import PrimitiveAutocomplete from '../components/PrimitiveAutocomplete'

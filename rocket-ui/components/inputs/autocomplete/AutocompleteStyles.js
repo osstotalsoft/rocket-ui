@@ -1,4 +1,5 @@
-import { styled, Autocomplete as MuiAutocomplete } from '@mui/material'
+import MuiAutocomplete from '@mui/material/Autocomplete'
+import { styled } from '@mui/material/styles'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 
 const PREFIX = 'StyledAutocomplete'

@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react'
-import { Grid, Button } from '@mui/material'
+import Button from '@mui/material/Button'
+import Grid from '@mui/material/Grid'
 import BasicCustomDialog from '../components/BasicCustomDialog'
 import TextCustomDialog from '../components/TextCustomDialog'
 import TransparentCustomDialog from '../components/TransparentCustomDialog'

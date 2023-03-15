@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import MuiCard, { iconStyle, CardContent } from './CardStyles'
-import { CardMedia } from '@mui/material'
+import CardMedia from '@mui/material/CardMedia'
 import CardHeader from '@totalsoft_oss/rocket-ui.components.surfaces.card-header'
 import CardActions from '@totalsoft_oss/rocket-ui.components.surfaces.card-actions'
 import { any, isNil } from 'ramda'

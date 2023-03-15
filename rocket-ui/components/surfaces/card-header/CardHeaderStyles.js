@@ -1,4 +1,5 @@
-import { CardHeader as MuiCardHeader, styled } from '@mui/material'
+import MuiCardHeader from '@mui/material/CardHeader'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 const CardHeader = styled(MuiCardHeader, {

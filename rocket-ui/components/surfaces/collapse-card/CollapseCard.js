@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Collapse } from '@mui/material'
+import Collapse from '@mui/material/Collapse'
 import PropTypes from 'prop-types'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'

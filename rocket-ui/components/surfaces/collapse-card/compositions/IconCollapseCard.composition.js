@@ -5,7 +5,8 @@ import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark'
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining'
-import { Box, Grid } from '@mui/material'
+import Box from '@mui/material/Box'
+import Grid from '@mui/material/Grid'
 
 export const IconCollapseCard = () => {
   return (

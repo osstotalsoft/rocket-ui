@@ -1,4 +1,7 @@
-import { styled, Slider as MuiSlider, FormControl as MuiFormControl, FormHelperText as MuiFormHelperText } from '@mui/material'
+import MuiSlider from '@mui/material/Slider'
+import MuiFormControl from '@mui/material/FormControl'
+import MuiFormHelperText from '@mui/material/FormHelperText'
+import { styled } from '@mui/material/styles'
 import TextField from '@totalsoft_oss/rocket-ui.components.inputs.text-field'
 
 export const Slider = styled(MuiSlider)(() => ({

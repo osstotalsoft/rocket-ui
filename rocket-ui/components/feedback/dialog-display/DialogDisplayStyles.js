@@ -1,4 +1,7 @@
-import { styled, DialogContent as MuiDialogContent, DialogTitle as MuiDialogTitle, Backdrop } from '@mui/material'
+import MuiDialogContent from '@mui/material/DialogContent'
+import MuiDialogTitle from '@mui/material/DialogTitle'
+import Backdrop from '@mui/material/Backdrop'
+import { styled } from '@mui/material/styles'
 
 export const justifyRight = {
   position: 'absolute',

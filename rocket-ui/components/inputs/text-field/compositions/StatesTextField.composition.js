@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import TextField from '../TextField'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 
 export const TextFieldStates = () => {
   const [value, setValue] = useState()

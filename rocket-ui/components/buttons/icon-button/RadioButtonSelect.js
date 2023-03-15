@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FormControl, FormLabel, RadioGroup, FormControlLabel, Radio } from '@mui/material'
+import FormControl from '@mui/material/FormControl'
+import FormLabel from '@mui/material/FormLabel'
+import RadioGroup from '@mui/material/RadioGroup'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Radio from '@mui/material/Radio'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 
 const RadioButtonSelect = ({ label, options, value, valueKey = 'id', labelKey = 'name', onSelect }) => {

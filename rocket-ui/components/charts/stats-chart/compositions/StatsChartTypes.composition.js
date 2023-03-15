@@ -2,7 +2,7 @@ import React from 'react'
 import StatsChart from '../StatsChart'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import { statsChartData, statsChartOptions } from '../mocks'
 
 export const StatsChartTypes = () => {

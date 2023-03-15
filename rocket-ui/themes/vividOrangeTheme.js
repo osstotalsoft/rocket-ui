@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
 import componentsOverride from './common/overrides'
 import { generateCustomShadows, generateShadows } from './common/shadows'
 import { palette } from './orangeTheme'

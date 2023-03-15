@@ -1,7 +1,8 @@
 import React from 'react'
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday'
 import ClearIcon from '@mui/icons-material/Clear'
-import { styled, IconButton as MuiIconButton } from '@mui/material'
+import MuiIconButton from '@mui/material/IconButton'
+import { styled } from '@mui/material/styles'
 
 export const CalendarTodaySmallIcon = props => {
   return <CalendarTodayIcon fontSize='small' {...props} />

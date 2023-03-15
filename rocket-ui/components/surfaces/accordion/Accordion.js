@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Accordion as BaseAccordion } from '@mui/material'
+import BaseAccordion from '@mui/material/Accordion'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { AccordionSummary, AccordionDetails } from './AccordionStyles'

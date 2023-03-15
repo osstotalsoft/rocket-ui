@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import AsyncAutocomplete from '../components/AsyncAutocomplete'
 import AsyncMultipleAutocomplete from '../components/AsyncMultipleAutocomplete'
 import ColumnHeader from '../components/ColumnHeader'

@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import Button from '../Button'
-import { FormControlLabel, Grid, Switch } from '@mui/material'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Grid from '@mui/material/Grid'
+import Switch from '@mui/material/Switch'
 
 export const ButtonLoading = () => {
   const [loading, setLoading] = useState(false)

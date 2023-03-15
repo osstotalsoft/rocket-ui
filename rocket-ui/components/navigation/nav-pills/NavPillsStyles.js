@@ -1,4 +1,6 @@
-import { styled, Tab as MuiTab, Tabs as MuiTabs } from '@mui/material'
+import MuiTab from '@mui/material/Tab'
+import MuiTabs from '@mui/material/Tabs'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 const localTabsOverriddenProps = ['indicatorColor', 'color', 'selectedColor']

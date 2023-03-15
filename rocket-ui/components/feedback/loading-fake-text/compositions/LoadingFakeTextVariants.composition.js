@@ -1,7 +1,8 @@
 import React from 'react'
 import LoadingFakeText from '../LoadingFakeText'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'
-import { Grid, Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 
 export const FakeTextVariants = () => {
   return (

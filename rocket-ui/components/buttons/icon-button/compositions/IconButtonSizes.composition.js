@@ -1,6 +1,6 @@
 import React from 'react'
 import IconButton from '../IconButton'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import RocketIcon from '@mui/icons-material/Rocket'
 
 export const IconButtonSizes = () => {

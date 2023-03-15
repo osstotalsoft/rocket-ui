@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-bind */
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import useToast from '../useToast'
 import Button from '@totalsoft_oss/rocket-ui.components.buttons.button'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'

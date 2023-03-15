@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import Card from '../Card'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 

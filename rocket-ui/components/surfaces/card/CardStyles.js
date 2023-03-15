@@ -1,4 +1,6 @@
-import { Card as BaseCard, CardContent as MuiCardContent, styled } from '@mui/material'
+import BaseCard from '@mui/material/Card'
+import MuiCardContent from '@mui/material/CardContent'
+import { styled } from '@mui/material/styles'
 import { includes } from 'ramda'
 
 export const iconStyle = {

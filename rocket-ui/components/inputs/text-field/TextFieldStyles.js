@@ -1,4 +1,6 @@
-import { styled, TextField as MuiTextField, Button } from '@mui/material'
+import MuiTextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
+import { styled } from '@mui/material/styles'
 
 const PREFIX = 'StyledTextField'
 export const classes = {

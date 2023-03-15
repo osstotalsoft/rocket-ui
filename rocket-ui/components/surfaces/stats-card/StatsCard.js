@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyledCard, CardContent, StyledCardActions, CardTitle, CardDescription, StyledCardHeader, iconStyle } from './StatsCardStyles'
-import { Divider } from '@mui/material'
+import Divider from '@mui/material/Divider'
 
 const StatsCard = ({ icon: Icon, iconColor = 'info', title, description, footer, variant, footerProps, headerProps }) => {
   return (

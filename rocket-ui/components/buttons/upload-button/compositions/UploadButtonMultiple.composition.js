@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import UploadButton from '../UploadButton'
 import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
 import { head, join, prop, map } from 'ramda'

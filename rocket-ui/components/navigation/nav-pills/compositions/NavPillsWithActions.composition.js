@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid'
 import { iconPositionOptions, numericRadioOptions, orientationOptions, tabs } from '../mocks'
 import IconButton from '@totalsoft_oss/rocket-ui.components.buttons.icon-button'
 import CollapseCard from '@totalsoft_oss/rocket-ui.components.surfaces.collapse-card'

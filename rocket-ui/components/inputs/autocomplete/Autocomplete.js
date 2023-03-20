@@ -224,7 +224,6 @@ const Autocomplete = ({
 
   return (
     <MuiAutocomplete
-      size='small'
       noOptionsText={<NoOptionsText color={typographyContentColor}>{noOptionsText}</NoOptionsText>}
       typographyContentColor={typographyContentColor}
       forcePopupIcon

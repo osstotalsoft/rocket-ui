@@ -1,4 +1,9 @@
-<h1 align="center">Rocket-UI</h1>
+# 📢 DEPRECATED
+## This library has been deprecated. The components have been rewitten using latest materi-UI and react versions and can be found here: [Rocket-UI](https://github.com/osstotalsoft/rocket-ui-ts)
+## For documentation and meaningful examples check-out the [GitBook Documentation](https://osstotalsoft.github.io/rocket-ui-ts/?path=/story/introduction--introduction)
+___
+
+<h1 align="center">Rocket-UI (deprecated)</h1>
 
 <p align="center">
   <a href="https://bit.cloud/totalsoft_oss/rocket-ui">

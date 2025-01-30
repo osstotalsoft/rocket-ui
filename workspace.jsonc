@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "rocket-ui",
+    "name": "totalsoft_oss.rocket-ui",
     /**
      * set the icon to be shown on the Bit server.
      **/

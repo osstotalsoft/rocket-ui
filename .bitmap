@@ -3,13 +3,14 @@
 /**
  * The Bitmap file is an auto generated file used by Bit to track all your Bit components. It maps the component to a folder in your file system.
  * This file should be committed to VCS(version control).
- * Components are listed using their component ID (https://bit.dev/docs/components/component-id).
+ * Components are listed using their component ID (https://bit.dev/reference/components/component-id).
  * If you want to delete components you can use the "bit remove <component-id>" command.
- * See the docs (https://bit.dev/docs/components/removing-components) for more information, or use "bit remove --help".
+ * See the docs (https://bit.dev/reference/components/removing-components) for more information, or use "bit remove --help".
  */
 
 {
     "components/buttons/back-to-button": {
+        "name": "components/buttons/back-to-button",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -22,6 +23,7 @@
         }
     },
     "components/buttons/button": {
+        "name": "components/buttons/button",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -34,6 +36,7 @@
         }
     },
     "components/buttons/icon-button": {
+        "name": "components/buttons/icon-button",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -46,6 +49,7 @@
         }
     },
     "components/buttons/upload-button": {
+        "name": "components/buttons/upload-button",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -58,6 +62,7 @@
         }
     },
     "components/charts/chart": {
+        "name": "components/charts/chart",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -70,6 +75,7 @@
         }
     },
     "components/charts/stats-chart": {
+        "name": "components/charts/stats-chart",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -82,6 +88,7 @@
         }
     },
     "components/data-display/expanding-text": {
+        "name": "components/data-display/expanding-text",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -94,6 +101,7 @@
         }
     },
     "components/data-display/fav-icon": {
+        "name": "components/data-display/fav-icon",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -106,6 +114,7 @@
         }
     },
     "components/data-display/typography": {
+        "name": "components/data-display/typography",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -118,6 +127,7 @@
         }
     },
     "components/feedback/custom-dialog": {
+        "name": "components/feedback/custom-dialog",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -130,6 +140,7 @@
         }
     },
     "components/feedback/dialog-display": {
+        "name": "components/feedback/dialog-display",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -142,6 +153,7 @@
         }
     },
     "components/feedback/forbidden": {
+        "name": "components/feedback/forbidden",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -154,6 +166,7 @@
         }
     },
     "components/feedback/linear-progress": {
+        "name": "components/feedback/linear-progress",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -166,6 +179,7 @@
         }
     },
     "components/feedback/loading-fake-text": {
+        "name": "components/feedback/loading-fake-text",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -178,6 +192,7 @@
         }
     },
     "components/feedback/not-found": {
+        "name": "components/feedback/not-found",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -190,6 +205,7 @@
         }
     },
     "components/feedback/toast": {
+        "name": "components/feedback/toast",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -202,6 +218,7 @@
         }
     },
     "components/inputs/autocomplete": {
+        "name": "components/inputs/autocomplete",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -214,6 +231,7 @@
         }
     },
     "components/inputs/date-time": {
+        "name": "components/inputs/date-time",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -226,6 +244,7 @@
         }
     },
     "components/inputs/dynamic-input": {
+        "name": "components/inputs/dynamic-input",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -238,6 +257,7 @@
         }
     },
     "components/inputs/password-field": {
+        "name": "components/inputs/password-field",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -250,6 +270,7 @@
         }
     },
     "components/inputs/simple-slider": {
+        "name": "components/inputs/simple-slider",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -262,6 +283,7 @@
         }
     },
     "components/inputs/text-field": {
+        "name": "components/inputs/text-field",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -274,6 +296,7 @@
         }
     },
     "components/navigation/nav-pills": {
+        "name": "components/navigation/nav-pills",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -286,6 +309,7 @@
         }
     },
     "components/navigation/pagination": {
+        "name": "components/navigation/pagination",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -298,6 +322,7 @@
         }
     },
     "components/navigation/side-menu": {
+        "name": "components/navigation/side-menu",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -310,6 +335,7 @@
         }
     },
     "components/surfaces/accordion": {
+        "name": "components/surfaces/accordion",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -322,6 +348,7 @@
         }
     },
     "components/surfaces/accordion-list": {
+        "name": "components/surfaces/accordion-list",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -334,6 +361,7 @@
         }
     },
     "components/surfaces/card": {
+        "name": "components/surfaces/card",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -346,6 +374,7 @@
         }
     },
     "components/surfaces/card-actions": {
+        "name": "components/surfaces/card-actions",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -358,6 +387,7 @@
         }
     },
     "components/surfaces/card-header": {
+        "name": "components/surfaces/card-header",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -370,6 +400,7 @@
         }
     },
     "components/surfaces/collapse-card": {
+        "name": "components/surfaces/collapse-card",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -382,6 +413,7 @@
         }
     },
     "components/surfaces/stats-card": {
+        "name": "components/surfaces/stats-card",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -394,6 +426,7 @@
         }
     },
     "core": {
+        "name": "core",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.js",
@@ -406,6 +439,7 @@
         }
     },
     "envs/my-env": {
+        "name": "envs/my-env",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.17",
         "mainFile": "index.ts",
@@ -418,24 +452,28 @@
         }
     },
     "generator/component-templates": {
+        "name": "generator/component-templates",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.3",
         "mainFile": "index.ts",
         "rootDir": "rocket-ui/generator/component-templates"
     },
     "providers/theme": {
+        "name": "providers/theme",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.4",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/providers/theme"
     },
     "themes": {
+        "name": "themes",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.6",
         "mainFile": "index.js",
         "rootDir": "rocket-ui/themes"
     },
     "utils/test-wrapper": {
+        "name": "utils/test-wrapper",
         "scope": "totalsoft_oss.rocket-ui",
         "version": "2.0.6",
         "mainFile": "index.js",

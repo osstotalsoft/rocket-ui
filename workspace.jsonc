@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "totalsoft_oss.rocket-ui",
+    "name": "totalsoft_oss.totalsoft-rocket-ui",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "totalsoft_oss.rocket-ui"
+    "defaultScope": "totalsoft_oss.totalsoft-rocket-ui"
   },
   /**
    * main configuration for component dependency resolution.

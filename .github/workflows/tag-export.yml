@@ -1,9 +1,7 @@
 name: Tag and Export
 on:
-  pull_request:
-    branches: 
-      - main
-    types: [closed]
+  release:
+    types: [published]
 jobs:
   release:
     if: ${{ github.event.pull_request.merged }}

@@ -17,6 +17,11 @@ jobs:
         uses: bit-tasks/init@v2
         with:
             ws-dir: 'totalsoft_oss.rocket-ui'
+      - name: Resolve component packages from bit.cloud registry (Mandatory for component installation using package managers other than Bit)
+        run: |
+          npm config set '@bit:registry' https://node-registry.bit.cloud
+          npm config set '@teambit:registry' https://node-registry.bit.cloud
+          npm config set //node-registry.bit.cloud/:_authToken ${{ env.BIT_CONFIG_ACCESS_TOKEN }}
       - name: Bit Tag and Export
         uses: bit-tasks/tag-export@v1
       - name: Commit Bitmap

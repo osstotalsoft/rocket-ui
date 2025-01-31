@@ -1,0 +1,68 @@
+---
+description: 'AccordionList component.'
+labels: ['mui', 'react', 'accordion-list']
+---
+
+import Grid from '@mui/material/Grid'
+import AccordionList from './AccordionList'
+
+## Basic AccordionList component
+
+Basic example that renders an accordion-list
+
+### Component usage
+
+```js
+<AccordionList
+  content={[
+    {
+      title: 'Basic AccordionList Item1',
+      details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+    },
+    {
+      title: 'Basic AccordionList Item2',
+      details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+    }
+  ]}
+/>
+```
+
+### Use this live example to interact with AccordionList component
+
+Live example:
+
+```js live
+<Grid container rowSpacing={4} columnSpacing={2}>
+  <Grid item xs={6}>
+    <AccordionList
+      content={[
+        {
+          title: 'Basic AccordionList Item1',
+          details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+        },
+        {
+          title: 'Basic AccordionList Item2',
+          details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+        }
+      ]}
+    />
+  </Grid>
+  <Grid item xs={6}>
+    <AccordionList
+      variant='filled'
+      square={true}
+      canExpandAll
+      content={[
+        {
+          title: 'Basic AccordionList ExpandAll',
+          details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+        },
+        {
+          title: 'Basic AccordionList ExpandAll',
+          details: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.Aliquam eget maximus est, id dignissim quam'
+        }
+      ]}
+    />
+  </Grid>
+</Grid>
+```

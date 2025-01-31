@@ -1,0 +1,64 @@
+---
+description: 'SideMenu component.'
+labels: ['mui', 'react', 'side-menu']
+---
+
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload'
+import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import MenuList from '@mui/material/MenuList'
+import MenuItem from '@mui/material/MenuItem'
+import SideMenu from './SideMenu'
+import Typography from '@totalsoft_oss/rocket-ui.components.data-display.typography'
+
+## Basic SideMenu component
+
+Basic example that renders a side-menu
+
+### Component usage
+
+```js
+<SideMenu
+  content={
+    <MenuList>
+      <MenuItem disableGutters dense>
+        <ListItemIcon>
+          <OpenInBrowserIcon />
+        </ListItemIcon>
+        <Typography>{'Load template'}</Typography>
+      </MenuItem>
+      <MenuItem disableGutters dense>
+        <ListItemIcon>
+          <CloudDownloadIcon />
+        </ListItemIcon>
+        <Typography>{'Export Yaml'}</Typography>
+      </MenuItem>
+    </MenuList>
+  }
+/>
+```
+
+### Use this live example to interact with SideMenu component
+
+Modify the text to see it change live:
+
+```js live
+<SideMenu
+  content={
+    <MenuList>
+      <MenuItem disableGutters dense>
+        <ListItemIcon>
+          <OpenInBrowserIcon />
+        </ListItemIcon>
+        <Typography>{'Load template'}</Typography>
+      </MenuItem>
+      <MenuItem disableGutters dense>
+        <ListItemIcon>
+          <CloudDownload />
+        </ListItemIcon>
+        <Typography>{'Export Yaml'}</Typography>
+      </MenuItem>
+    </MenuList>
+  }
+/>
+```

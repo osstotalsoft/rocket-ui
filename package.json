@@ -1,0 +1,105 @@
+{
+  "name": "@totalsoft/rocket-ui-deprecated",
+  "version": "1.0.1",
+  "description": " Deprecated react components library",
+  "keywords": [
+    "Material-UI",
+    "Reusable components",
+    "React",
+    "Components"
+  ],
+  "homepage": "https://osstotalsoft.github.io/rocket-ui",
+  "author": {
+    "name": "Totalsoft",
+    "url": "https://github.com/osstotalsoft"
+  },
+  "main": "dist/components/index.js",
+  "types": "dist/components/index.d.ts",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "clean": "rimraf dist",
+    "lint": "eslint src/*.{ts,tsx} && run build-test",
+    "linter": "eslint . --fix --ext .ts,.tsx",
+    "publish": "npm publish",
+    "test": "jest --collectCoverage --passWithNoTests--silent=false --runInBand",
+    "version": "version -i $(git describe --abbrev=0 --tags)"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "preset": "ts-jest",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "testEnvironment": "jsdom",
+    "verbose": true
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.x",
+    "@emotion/styled": "^11.x",
+    "@mui/icons-material": "5.x",
+    "@mui/material": "5.x",
+    "@testing-library/react": "^13.x",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "react-router-dom": "^6.x"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-jsx": "7.x",
+    "@mui/lab": "5.0.0-alpha.96",
+    "@mui/x-date-pickers": "5.0.0-beta.6",
+    "@teambit/harmony": "0.4.6",
+    "@testing-library/dom": "8.x",
+    "@typescript-eslint/eslint-plugin": "4.x",
+    "@typescript-eslint/parser": "4.x",
+    "attr-accept": "2.x",
+    "chart.js": "3.9.1",
+    "classnames": "2.x",
+    "date-fns": "2.x",
+    "eslint-import-resolver-node": "0.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "4.x",
+    "i18next": "21.x",
+    "lodash": "4.x",
+    "prop-types": "15.x",
+    "ramda": "0.x",
+    "react-chartjs-2": "4.3.1",
+    "react-number-format": "4.x",
+    "react-syntax-highlighter": "15.x",
+    "react-toastify": "8.x",
+    "typescript": "4.x"
+  },
+  "engines": {
+    "node": ">=20.x",
+    "npm": ">=8.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/preset-react": "^7.26.3"
+  }
+}

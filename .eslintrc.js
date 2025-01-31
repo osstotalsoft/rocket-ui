@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@teambit/eslint-config-bit-react', 'eslint:recommended', 'plugin:react/recommended', 'plugin:jest/recommended'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:jest/recommended'],
   env: {
     browser: true,
     es6: true,

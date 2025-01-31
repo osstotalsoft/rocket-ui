@@ -1,0 +1,47 @@
+---
+description: 'StatsChart component.'
+labels: ['mui', 'react', 'stats-chart']
+---
+
+import StatsChart from './StatsChart'
+import Grid from '@mui/material/Grid'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import { statsChartData, statsChartOptions } from './mocks'
+
+## Basic StatsChart component
+
+Basic example that renders a stats-chart
+
+### Component usage
+
+```js
+<StatsChart
+  type='line'
+  data={statsChartData}
+  chartColor={'info'}
+  StatIcon={AccessTimeIcon}
+  statText={'Line chart'}
+  title={'Line Chart with warning icon color'}
+  options={statsChartOptions}
+  iconColor='warning'
+/>
+```
+
+### Use this live example to interact with StatsChart component
+
+Live example:
+
+```js live
+<Grid item xs={12}>
+  <StatsChart
+    type='line'
+    data={statsChartData}
+    chartColor={'info'}
+    StatIcon={AccessTimeIcon}
+    statText={'Line chart'}
+    title={'Line Chart with warning icon color'}
+    options={statsChartOptions}
+    iconColor='warning'
+  />
+</Grid>
+```

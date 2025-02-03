@@ -1,6 +1,6 @@
 {
   "name": "@totalsoft/rocket-ui-deprecated",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": " Deprecated react components library",
   "keywords": [
     "Material-UI",
@@ -16,7 +16,7 @@
   "main": "dist/components/index.js",
   "types": "dist/components/index.d.ts",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --out-dir dist --copy-files",
     "clean": "rimraf dist",
     "lint": "eslint src/*.{ts,tsx} && run build-test",
     "linter": "eslint . --fix --ext .ts,.tsx",
